@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="burning-an-audio-cd">
+  <title>Burning an Audio CD</title>
+  <taskbody>
+    <context>
+      <p>You can burn your exported audio to a standard audio CD that plays in any CD player. <keyword keyref="product-name"/> itself does not burn CDs, so you export a WAV file and use your operating system's CD-burning tool.</p>
+    </context>
+    <!-- TODO: this task is a stub — the steps still need to be written. -->
+  </taskbody>
+</task>

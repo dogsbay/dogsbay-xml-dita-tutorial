@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+
+<bookmap>
+  <booktitle>
+    <mainbooktitle>Audacity User Guide</mainbooktitle>
+    <booktitlealt>The Complete Guide to Audio Editing with Audacity</booktitlealt>
+  </booktitle>
+
+  <bookmeta>
+    <bookrights>
+      <copyrfirst>
+        <year>2024</year>
+      </copyrfirst>
+      <bookowner>
+        <organization>Audacity Tutorial Project</organization>
+      </bookowner>
+    </bookrights>
+  </bookmeta>
+
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+    <!-- Key definitions -->
+    <keydef keys="product-name">
+      <topicmeta>
+        <keywords>
+          <keyword>Audacity</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="product-version">
+      <topicmeta>
+        <keywords>
+          <keyword>3.4</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="download-url">
+      <topicmeta>
+        <keywords>
+          <keyword>https://www.audacityteam.org/download/</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="project-extension">
+      <topicmeta>
+        <keywords>
+          <keyword>.aup3</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <!-- Glossary keys -->
+    <keydef keys="gl-sample-rate" href="topics/glossary/g-sample-rate.dita"/>
+    <keydef keys="gl-bit-depth" href="topics/glossary/g-bit-depth.dita"/>
+    <keydef keys="gl-clipping" href="topics/glossary/g-clipping.dita"/>
+    <keydef keys="gl-normalization" href="topics/glossary/g-normalization.dita"/>
+    <keydef keys="gl-compression" href="topics/glossary/g-compression.dita"/>
+    <keydef keys="gl-waveform" href="topics/glossary/g-waveform.dita"/>
+  </frontmatter>
+
+  <chapter href="topics/what-is-audacity.dita">
+    <topicref href="topics/what-is-digital-audio.dita"/>
+    <topicref href="topics/installing-audacity.dita"/>
+  </chapter>
+
+  <chapter href="topics/recording-your-first-track.dita">
+    <topicref href="topics/trimming-audio.dita"/>
+    <topicref href="topics/removing-background-noise.dita"/>
+    <topicref href="topics/exporting-audio.dita"/>
+  </chapter>
+
+  <chapter href="topics/podcast-production-workflow.dita"/>
+
+  <chapter href="topics/effects-reference.dita">
+    <topicref href="topics/supported-audio-formats.dita"/>
+    <topicref href="topics/keyboard-shortcuts.dita"/>
+  </chapter>
+
+  <backmatter>
+    <booklists>
+      <glossarylist>
+        <topicref href="topics/glossary/g-bit-depth.dita"/>
+        <topicref href="topics/glossary/g-clipping.dita"/>
+        <topicref href="topics/glossary/g-compression.dita"/>
+        <topicref href="topics/glossary/g-normalization.dita"/>
+        <topicref href="topics/glossary/g-sample-rate.dita"/>
+        <topicref href="topics/glossary/g-waveform.dita"/>
+      </glossarylist>
+    </booklists>
+  </backmatter>
+</bookmap>

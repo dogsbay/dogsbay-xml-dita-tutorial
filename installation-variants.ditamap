@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Installation (per-platform variants)</title>
+  <!-- DITA 1.3 branch filtering: one source topic, three filtered variants. Each
+       <ditavalref> tells DITA-OT to duplicate the install topic and filter it for one
+       platform, naming the generated resources with the dvrResourcePrefix. This
+       replaces maintaining three near-identical platform deliverables in project.json. -->
+  <topicref href="topics/installing-audacity.dita">
+    <ditavalref href="filters/platform-windows.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>win-</dvrResourcePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <ditavalref href="filters/platform-macos.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>mac-</dvrResourcePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <ditavalref href="filters/platform-linux.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>linux-</dvrResourcePrefix>
+      </ditavalmeta>
+    </ditavalref>
+  </topicref>
+</map>

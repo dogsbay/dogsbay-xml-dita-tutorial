@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Audacity Documentation Collection</title>
+
+  <topichead navtitle="Audacity User Guide">
+    <mapref href="audacity-guide.ditamap"/>
+  </topichead>
+  <topichead navtitle="Beginner's Guide">
+    <mapref href="beginner-guide.ditamap"/>
+  </topichead>
+  <topichead navtitle="Podcaster's Guide">
+    <mapref href="podcaster-guide.ditamap"/>
+  </topichead>
+</map>

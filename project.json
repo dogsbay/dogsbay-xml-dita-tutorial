@@ -1,0 +1,66 @@
+{
+  "deliverables": [
+    {
+      "name": "full",
+      "context": {
+        "id": "full",
+        "input": "audacity-guide.ditamap"
+      },
+      "output": "out/full",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          { "name": "nav-toc", "value": "full" }
+        ]
+      }
+    },
+    {
+      "name": "beginner-mac",
+      "context": {
+        "id": "beginner-mac",
+        "input": "beginner-guide.ditamap",
+        "profiles": {
+          "ditavals": ["filters/mac-beginner.ditaval"]
+        }
+      },
+      "output": "out/beginner-mac",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          { "name": "nav-toc", "value": "partial" }
+        ]
+      }
+    },
+    {
+      "name": "beginner-windows",
+      "context": {
+        "id": "beginner-windows",
+        "input": "beginner-guide.ditamap",
+        "profiles": {
+          "ditavals": ["filters/windows-beginner.ditaval"]
+        }
+      },
+      "output": "out/beginner-windows",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          { "name": "nav-toc", "value": "partial" }
+        ]
+      }
+    },
+    {
+      "name": "podcaster-linux",
+      "context": {
+        "id": "podcaster-linux",
+        "input": "podcaster-guide.ditamap",
+        "profiles": {
+          "ditavals": ["filters/linux-podcaster.ditaval"]
+        }
+      },
+      "output": "out/podcaster-linux",
+      "publication": {
+        "transtype": "pdf"
+      }
+    }
+  ]
+}

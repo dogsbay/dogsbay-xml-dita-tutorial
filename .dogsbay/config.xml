@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dogsbay-project>
+  <project-type>DITA</project-type>
+  <default-root-map>audacity-guide.ditamap</default-root-map>
+  <framework>DITA-OT 4.3.5</framework>
+  <default-deliverable file="project.json" name="full"/>
+  <metadata-policy>
+    <rule topic-type="task" field="created" presence="required" pattern="\d{4}-\d\d-\d\d"/>
+    <rule field="author" presence="recommended"/>
+    <rule field="keyword" presence="required"/>
+  </metadata-policy>
+  <format-style indent="spaces" size="2" max-line-width="0" preserve-mixed="true" newline="lf" final-newline="true" preserve-text-breaks="true" preserve-blank-lines="true" text-continuation="block" trim-whitespace="true"/>
+  <format-on-save>true</format-on-save>
+</dogsbay-project>

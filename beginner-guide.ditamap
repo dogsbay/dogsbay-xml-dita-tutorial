@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Audacity Beginner's Guide</title>
+
+  <mapref href="keydefs-product.ditamap"/>
+  <!-- This guide's own entry point, under the bare key "start-here". -->
+  <keydef keys="start-here" href="topics/recording-your-first-track.dita"/>
+
+  <topichead navtitle="Introduction">
+    <topicref href="topics/what-is-audacity.dita"/>
+    <topicref href="topics/installing-audacity.dita"/>
+  </topichead>
+
+  <topichead navtitle="Your First Recording">
+    <topicref href="topics/recording-your-first-track.dita"/>
+    <topicref href="topics/trimming-audio.dita"/>
+    <topicref href="topics/exporting-audio.dita"/>
+  </topichead>
+
+  <topichead navtitle="Quick Reference">
+    <topicref href="topics/keyboard-shortcuts.dita"/>
+    <topicref href="topics/supported-audio-formats.dita"/>
+  </topichead>
+</map>

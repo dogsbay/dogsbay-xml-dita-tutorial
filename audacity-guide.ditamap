@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Audacity User Guide</title>
+
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <!-- This guide's own entry point, under the bare key "start-here". -->
+  <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
+
+  <topichead navtitle="Getting Started">
+    <topicref href="topics/what-is-audacity.dita"/>
+    <topicref href="topics/what-is-digital-audio.dita"/>
+    <topicref href="topics/installing-audacity.dita"/>
+  </topichead>
+
+  <topichead navtitle="Recording and Editing">
+    <topicref href="topics/recording-your-first-track.dita"/>
+    <topicref href="topics/editing-techniques.dita"/>
+    <topicref href="topics/trimming-audio.dita"/>
+    <topicref href="topics/removing-background-noise.dita"/>
+    <topicref href="topics/exporting-audio.dita"/>
+    <topicref href="topics/burning-an-audio-cd.dita"/>
+    <topicref href="topics/keyboard-shortcuts.dita" id="keyboard-shortcuts"/>
+  </topichead>
+
+  <topichead navtitle="Podcast Production">
+    <topicref href="topics/podcast-production-workflow.dita"/>
+  </topichead>
+
+  <topichead navtitle="Reference" id="reference">
+    <topicref href="topics/supported-audio-formats.dita"/>
+    <topicref href="topics/effects-reference.dita"/>
+  </topichead>
+
+  <reltable>
+    <relheader>
+      <relcolspec type="concept"/>
+      <relcolspec type="task"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="topics/what-is-digital-audio.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/recording-your-first-track.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/supported-audio-formats.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref href="topics/exporting-audio.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/supported-audio-formats.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

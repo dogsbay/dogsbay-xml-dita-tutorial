@@ -1,0 +1,5 @@
+# Built deliverables (DITA-OT output) — each deliverable's <output> in project.json
+# is under out/. Keep generated HTML/PDF out of git so a fresh build stays clean.
+out/
+output/
+*.tmp

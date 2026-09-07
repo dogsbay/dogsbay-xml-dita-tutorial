@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
+<concept id="editing-techniques">
+  <title>Editing Techniques</title>
+  <conbody>
+    <p>Once you have a recording, Audacity offers several core editing techniques.
+    This topic collects four of them; each is large enough to deserve its own topic.</p>
+    <section>
+      <title>Trimming</title>
+      <p>Trimming removes unwanted audio from the start, end, or middle of a clip.
+      Select a region in the waveform and press <uicontrol>Delete</uicontrol> to remove it; the surrounding audio closes the gap.
+      Use trimming to cut silence, false starts, and mistakes before you process the track.</p>
+    </section>
+    <section>
+      <title>Fading</title>
+      <p>Fades smooth the start and end of a clip so audio eases in and out instead of clicking on.
+      Select the region to fade, then choose <menucascade><uicontrol>Effect</uicontrol><uicontrol>Fade In</uicontrol></menucascade> or <uicontrol>Fade Out</uicontrol>.
+      Fades are essential for clean transitions between segments.</p>
+    </section>
+    <section>
+      <title>Normalizing</title>
+      <p>Normalization raises (or lowers) the level of a clip so its loudest peak sits at a target level, giving consistent loudness across clips.
+      Choose <menucascade><uicontrol>Effect</uicontrol><uicontrol>Normalize</uicontrol></menucascade> and set the peak amplitude, typically around -1 dB.</p>
+    </section>
+    <section>
+      <title>Removing Noise</title>
+      <p>Noise reduction removes steady background noise such as hum or hiss.
+      Capture a noise profile from a quiet section, then apply the Noise Reduction effect to the whole track.
+      Apply it before normalization and compression so you shape clean audio.</p>
+    </section>
+  </conbody>
+</concept>
