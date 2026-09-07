@@ -49,17 +49,35 @@ state and run the demo again:
 git restore . && git clean -fd
 ```
 
-## Where this content comes from, and its licence
+## Licence and attribution
 
-The topics are adapted from the Audacity user documentation. The Audacity
-manual is published by the Audacity team under a Creative Commons licence, so
-this derivative carries the same obligations: attribution, and the same licence
-on redistribution.
+This project is licensed under the **Creative Commons Attribution 4.0
+International** licence (CC BY 4.0). The full text is in [LICENSE](LICENSE);
+the summary is at <https://creativecommons.org/licenses/by/4.0/>.
 
-**This repository does not yet carry a `LICENSE` file, and must not be
-published without one.** Two things need settling first: which Creative
-Commons version and variant the source material is under, and therefore what
-this repository must be licensed as. The demo material written for this
-project (`DEMO.md`, `ISSUES.md`, `AGENTS.md`, the DITAVAL filters and the
-Schematron house style) is DogsBay's own and can carry whatever licence
-DogsBay chooses, but the topics under `topics/` and `shared/` cannot.
+You may share and adapt this material, including commercially, provided you
+give appropriate credit, link to the licence, and say whether you changed
+anything.
+
+### Credit
+
+The topics under `topics/` and `shared/` are **adapted from the Audacity user
+documentation**, published by the Audacity team, and have been rewritten in
+DITA 1.3 and deliberately seeded with errors for teaching purposes. They do
+not describe Audacity accurately and should not be used as its documentation.
+
+Audacity® is a registered trademark of Dominic Mazzoni. This project is not
+affiliated with, nor endorsed by, the Audacity team.
+
+Everything else here — the walkthrough in `DEMO.md`, the answer key in
+`ISSUES.md`, `AGENTS.md`, the DITAVAL filters, the Schematron house style and
+the project configuration — is original work by DogsBay Ltd., under the same
+licence.
+
+### One thing to confirm before wider distribution
+
+CC BY 4.0 is chosen here as the plain attribution licence. If the upstream
+Audacity documentation turns out to be under a **ShareAlike** variant, this
+repository must carry that same variant instead, since ShareAlike obliges
+derivatives to keep it. Attribution and a link to the source are required
+either way, and are given above.
