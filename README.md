@@ -61,23 +61,20 @@ anything.
 
 ### Credit
 
-The topics under `topics/` and `shared/` are **adapted from the Audacity user
-documentation**, published by the Audacity team, and have been rewritten in
-DITA 1.3 and deliberately seeded with errors for teaching purposes. They do
-not describe Audacity accurately and should not be used as its documentation.
+The topics under `topics/` and `shared/` are **adapted from the
+[Audacity Manual](https://manual.audacityteam.org/)**, copyright the Audacity
+Team and the Manual's authors, which is available under the
+[Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/)
+licence. That copyright notice and those licence terms are kept in
+[NOTICE](NOTICE), as CC BY 3.0 requires of anyone reusing the material.
 
-Audacity® is a registered trademark of Dominic Mazzoni. This project is not
-affiliated with, nor endorsed by, the Audacity team.
+**What changed:** the material was rewritten as DITA 1.3 topics, restructured
+into maps, and deliberately seeded with errors so that fixing them can be
+taught. It no longer describes Audacity accurately and must not be used as its
+documentation. The Audacity Team does not endorse this work and is not
+affiliated with it. Audacity® is a registered trademark of Dominic Mazzoni.
 
 Everything else here — the walkthrough in `DEMO.md`, the answer key in
 `ISSUES.md`, `AGENTS.md`, the DITAVAL filters, the Schematron house style and
 the project configuration — is original work by DogsBay Ltd., under the same
-licence.
-
-### One thing to confirm before wider distribution
-
-CC BY 4.0 is chosen here as the plain attribution licence. If the upstream
-Audacity documentation turns out to be under a **ShareAlike** variant, this
-repository must carry that same variant instead, since ShareAlike obliges
-derivatives to keep it. Attribution and a link to the source are required
-either way, and are given above.
+CC BY 4.0 licence.
