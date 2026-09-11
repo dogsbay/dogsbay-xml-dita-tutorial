@@ -12,18 +12,31 @@ moves to project-scale tools — fixing the whole guide in single calls.
 
 1. Open this folder as a project in **DogsBay XML**.
 2. Open the **AI Agent** panel (right sidebar) and connect a provider.
-3. Follow **[`DEMO.md`](DEMO.md)** — staged in four parts (one file at a time →
-   why batch → project scale → the publish-ready gate), each scenario with the
-   exact prompt to type.
+3. Follow the walkthrough at
+   <https://dogsbay.ai/dogsbay-xml-docs/getting-started/tutorial-agentic> —
+   staged in four parts (one file at a time → why batch → project scale → the
+   publish-ready gate), each scenario with the exact prompt to type.
 
-- **[`DEMO.md`](DEMO.md)** — the scripted walkthrough (the main event).
-- **[`ISSUES.md`](ISSUES.md)** — the answer key: every planted issue and its fix.
 - **`AGENTS.md`** — project context + house rules the agent reads automatically.
 - **`.xagent/skills/audacity-house-style/`** — a project-specific agent skill.
 - **`project.json`** — the DITA-OT project file: the deliverables this guide ships.
 - **`.dogsbay/config.xml`** — shared editor project settings (default map, required
   framework, default deliverable); committed. `.dogsbay/local.xml` is a personal,
   gitignored override.
+
+### Not in the bundled copy
+
+`DEMO.md` (the scripted walkthrough) and `ISSUES.md` (the answer key: every
+planted issue and its fix) live here for maintainers, and `.gitattributes`
+marks both `export-ignore` so they stay out of the `git archive` snapshot the
+editor ships as its sample project.
+
+They name every planted issue and its fix. The sample exists to show the
+project tools *finding* those issues, and an agent pointed at the project will
+open a root-level `ISSUES.md` — so shipping the answer key beside the puzzle
+meant the demo could not demonstrate the thing it is for. The editor's e2e
+workflow checks out this repository rather than the bundled zip, so it still
+sees both.
 
 ## Layout
 
@@ -74,7 +87,6 @@ taught. It no longer describes Audacity accurately and must not be used as its
 documentation. The Audacity Team does not endorse this work and is not
 affiliated with it. Audacity® is a registered trademark of Dominic Mazzoni.
 
-Everything else here — the walkthrough in `DEMO.md`, the answer key in
-`ISSUES.md`, `AGENTS.md`, the DITAVAL filters, the Schematron house style and
-the project configuration — is original work by DogsBay Ltd., under the same
-CC BY 4.0 licence.
+Everything else here — the walkthrough, the answer key, `AGENTS.md`, the
+DITAVAL filters, the Schematron house style and the project configuration — is
+original work by DogsBay Ltd., under the same CC BY 4.0 licence.

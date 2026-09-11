@@ -1,0 +1,17 @@
+# Kept out of the `git archive` snapshot the editor bundles as its sample
+# project (the editor's `bundleDemo` Gradle task).
+#
+# Both files name every planted issue and its fix. The sample exists to show
+# the project tools FINDING those issues — project_health, validate_project,
+# check_links, conref_audit — and an agent pointed at the project will open a
+# root-level file called ISSUES.md, which is competent behaviour rather than
+# cheating. Shipping the answer key alongside the puzzle meant the demo could
+# not demonstrate the one thing it is for.
+#
+# They stay here, in the repo, where maintainers and the editor's e2e workflow
+# use them: e2e checks out this repository, not the bundled zip.
+#
+# The walkthrough for users lives in the documentation:
+# https://dogsbay.ai/dogsbay-xml-docs/getting-started/tutorial-agentic
+ISSUES.md export-ignore
+DEMO.md export-ignore
