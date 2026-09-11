@@ -3,6 +3,8 @@
 
 <task id="common-steps">
   <title>Common Steps</title>
+  <shortdesc>Reusable task steps that other topics pull in by conref. This task is a warehouse
+  for shared content and is not published on its own.</shortdesc>
   <taskbody>
     <steps>
       <step id="select-region">

@@ -3,6 +3,8 @@
 
 <topic id="common-notes">
   <title>Common Notes</title>
+  <shortdesc>Reusable notes and warnings that other topics pull in by conref. This topic is a
+  warehouse for shared content and is not published on its own.</shortdesc>
   <body>
     <note id="backup-warning" type="warning">
       <p>This operation modifies your audio data.
