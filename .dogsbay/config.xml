@@ -11,5 +11,4 @@
     <rule field="keyword" presence="required"/>
   </metadata-policy>
   <format-style indent="spaces" size="2" max-line-width="0" preserve-mixed="true" newline="lf" final-newline="true" preserve-text-breaks="true" preserve-blank-lines="true" text-continuation="block" trim-whitespace="true"/>
-  <format-on-save>true</format-on-save>
 </dogsbay-project>
