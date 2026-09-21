@@ -99,3 +99,29 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
   `<section>`** is invalid in `conbody` (blocks come first, sections last).
 - `check-all-stages.sh` needs `pipefail`: the gate's exit code was hidden
   behind `tail` and a failing stage counted as passed until the fix.
+
+## Lessons from Part 4 worth keeping
+
+- **Bookmap content model.** `<bookmap>` allows only booktitle, bookmeta,
+  frontmatter, chapters, parts, appendices, backmatter and reltables at the
+  top level. Key definitions, scheme maprefs and resource-only refs go inside
+  `<frontmatter>`.
+- **A conref'd `<hazardstatement>` needs a placeholder panel**, like the
+  `<cmd/>` of a conref'd step: `<messagepanel><typeofhazard/><howtoavoid/></messagepanel>`.
+- **`<repsep>` comes first** inside the `<groupseq>` it applies to, before
+  the keywords and variables.
+- **`<lcTime>` requires `@value`** (an ISO duration such as `PT5M`); a plain
+  `<p>` is not allowed in `<lcDuration>`.
+- **The editor's built-in catalog has no Learning and Training DTDs.**
+  `validate-project` and `project-health` report `learning/*.dita` as
+  invalid ("learningAssessment.dtd: No such file"), while DITA-OT and
+  `dogsbay-xml validate --catalog <DITA-OT>/catalog-dita.xml` validate them.
+  From stage 22 the gate validates `learning/` against the DITA-OT catalog
+  and runs `project-health` with an explicit `--include` list that leaves
+  out its grammar pass. Worth fixing in the editor: add the L&T DTDs to the
+  built-in catalog.
+- **`project-health --include` with `schematron`** in the list fails unless
+  house rules are configured; from stage 24 the gate runs the rules as a
+  separate step.
+- **The gate script needs `pipefail`** for the same reason the driver did;
+  `cmd | tee` hid validate-project's exit code.
