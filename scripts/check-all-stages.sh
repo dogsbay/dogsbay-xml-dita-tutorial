@@ -7,7 +7,7 @@
 #   scripts/check-all-stages.sh                 # every tutorial/NN-* branch, in order
 #   scripts/check-all-stages.sh 03 05           # only these stage numbers
 #   SKIP_BUILD=1 scripts/check-all-stages.sh    # passed through to the gate
-set -u
+set -u -o pipefail
 cd "$(dirname "$0")/.."
 WT="${TMPDIR:-/tmp}/stage-worktrees-$$"; mkdir -p "$WT"
 trap 'for d in "$WT"/*; do [ -d "$d" ] && git worktree remove --force "$d" >/dev/null 2>&1; done; rmdir "$WT" 2>/dev/null' EXIT
