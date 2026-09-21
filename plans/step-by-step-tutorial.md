@@ -186,8 +186,8 @@ A new repo `~/github/dogsbay-xml-dita-tutorial-docs`, published at
 ## Status (2026-09-21)
 
 All 26 stage branches exist, pass the gate and are tagged at `tutorial/final`.
-Docs pages exist for Parts 1 to 4; Part 5 pages are the remaining work, then
-`scripts/check-excerpts.sh` in the docs repo. Deviations from the ladder:
+Docs pages exist for all five parts (dogsbay-xml-dita-tutorial-docs); the remaining work is
+`scripts/check-excerpts.sh` in the docs repo (its prototype, fidelity.py, lives in a scratchpad). Deviations from the ladder:
 stage 17 uses a nested `<reference>` rather than a `<dita>` composite (the
 metadata policy cannot see a composite root), stage 16 drops the `<keydef
 scope="peer">` in favour of a peer `<mapref>`, and stage 22 needs the gate to
