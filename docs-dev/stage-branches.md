@@ -69,3 +69,33 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
 - Scripted edits: run `dogsbay-xml format -i` *before* matching text in a
   file, not after. The formatter reflows `<menucascade>` and MathML, so a
   string matched against the unformatted file misses on the next stage.
+
+## Lessons from Part 3 worth keeping
+
+- **Root-scope keys in a collection.** A conref push in a warehouse reaches
+  its target topic directly, outside any guide's key scope, and that copy of
+  the topic resolves its keys in the root scope. The collection map therefore
+  defines the keys such content needs (product keys, `common-notes`) at its
+  root as well.
+- **A bare key is not visible in the parent scope.** In the collection,
+  `start-here` is undefined; only `userguide.start-here`,
+  `beginner.start-here` and `podcaster.start-here` exist.
+- **Every root map needs every key its topics use.** A `<link keyref="install"/>`
+  in a shared topic fails the build of any map that does not define `install`
+  (DOTX028E). Give the topicref the same `keys` in each map, or keep such links
+  in topics that appear in one map only.
+- **`chunk="to-content"` on a branch that other content links to by key**
+  breaks those links in DITA-OT 4.3.5 (DOTX031E for `term keyref` into a
+  chunked glossary). Merge small topics that nothing links into; leave the
+  glossary as separate files.
+- **`<dita>` composite documents have no prolog on the root**, so the DogsBay
+  metadata policy reports them as missing keywords. Nest topics under a real
+  topic root instead (a `<reference>` may nest `<reference>`).
+- **`project-health` lists unused keys and recommended-metadata warnings only
+  alongside some other finding.** On their own the project reports healthy and
+  exits 0, so a stage can pass with idle keys and then "fail" for them the
+  moment an unrelated error appears. Use every key you define.
+- **`<shortcut>`, `svg:` and MathML** are in the Part 1 list; **`<p>` after a
+  `<section>`** is invalid in `conbody` (blocks come first, sections last).
+- `check-all-stages.sh` needs `pipefail`: the gate's exit code was hidden
+  behind `tail` and a failing stage counted as passed until the fix.
