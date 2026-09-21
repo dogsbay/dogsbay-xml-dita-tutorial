@@ -125,3 +125,24 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
   separate step.
 - **The gate script needs `pipefail`** for the same reason the driver did;
   `cmd | tee` hid validate-project's exit code.
+
+## Lessons from Part 5 worth keeping
+
+- **The formatter re-escapes `&amp;` on every pass.** `dogsbay-xml format -i`
+  turns `&amp;` into `&amp;amp;` and `&#x20;` into `&amp;#x20;`, and each
+  later stage's format run doubled it again (found at stage 23, corrupted from
+  stage 19). Do not put character entities in text: write "and", and let
+  whitespace-only elements such as `<repsep>` be empty. Worth fixing in the
+  editor. `format --check` on every file before committing catches a file the
+  formatter cannot make canonical.
+- **Rebasing the chain**: `scripts/rebase-stages.sh <NN> <old-sha>` carries
+  every later stage along after an amend and re-gates them. Use
+  `git rebase -X ours` by hand when the same line was reformatted on every
+  later stage (that is how the entity corruption was undone).
+- **House rules and `--include`**: once `.dogsbay/config.xml` names a
+  `<default-schematron>`, `project-health` runs the rules by default; the
+  gate's explicit include list (needed because of `learning/`) leaves
+  `schematron` out and runs it as its own step.
+- Resolving review markup is content work, not deletion: the
+  `<required-cleanup remap="table">` became the table it asked for, and the
+  answered `<draft-comment>` became a `<change-summary>` line.
