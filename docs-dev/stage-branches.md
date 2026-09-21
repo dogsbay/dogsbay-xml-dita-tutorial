@@ -54,3 +54,18 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
   MathML plugin is installed. Stage 06 keeps a `<ph>` text alternative beside
   the MathML inside `<equation-block>`, as the spec allows.
 - `xmllint` cannot validate DITA against these DTDs; use `dogsbay-xml`.
+
+## Lessons from Part 2 worth keeping
+
+- `<prolog>` order is fixed: author, source, publisher, copyright, critdates,
+  permissions, metadata, resourceid, data. `<resourceid>` and `<data>` sit
+  after `<metadata>`, not inside it.
+- A `<glossgroup>` is a topic of its own: the metadata policy applies to it as
+  well as to the entries it contains, so it needs its own prolog.
+- The `keys` command takes the root map, not a directory:
+  `dogsbay-xml keys audacity-guide.ditamap`.
+- DITA-OT resolves `@conkeyref` only when the key is defined in the root map's
+  key space; an undefined key is a build error (DOTJ046E), not a warning.
+- Scripted edits: run `dogsbay-xml format -i` *before* matching text in a
+  file, not after. The formatter reflows `<menucascade>` and MathML, so a
+  string matched against the unformatted file misses on the next stage.
