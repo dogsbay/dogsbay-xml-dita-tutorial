@@ -38,6 +38,14 @@ meant the demo could not demonstrate the thing it is for. The editor's e2e
 workflow checks out this repository rather than the bundled zip, so it still
 sees both.
 
+## Learn DITA step by step
+
+The same project is also built up one feature at a time on the
+`tutorial/00-setup` … `tutorial/25-final` branches: from one concept topic to a
+complete, publish-ready guide, each branch gated by `scripts/check-stage.sh`.
+See `plans/step-by-step-tutorial.md` for the ladder and
+`docs-dev/stage-branches.md` for how the branches work.
+
 ## Layout
 
 ```
