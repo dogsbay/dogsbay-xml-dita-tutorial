@@ -7,11 +7,14 @@
     <shortdesc>Record, edit and export audio with Audacity, from your first track to a finished file.</shortdesc>
   </topicmeta>
 
+  <mapref href="keydefs-product.ditamap"/>
+  <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
+
   <topichead navtitle="Getting started">
     <topicref href="topics/what-is-audacity.dita" collection-type="family">
-      <topicref href="topics/what-is-digital-audio.dita"/>
+      <topicref href="topics/what-is-digital-audio.dita" keys="digital-audio"/>
     </topicref>
-    <topicref href="topics/installing-audacity.dita"/>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
   </topichead>
 
   <topichead navtitle="Recording and editing">
@@ -25,7 +28,7 @@
   </topichead>
 
   <topichead navtitle="Reference" id="reference">
-    <topicref href="topics/supported-audio-formats.dita" locktitle="yes">
+    <topicref href="topics/supported-audio-formats.dita" keys="formats" locktitle="yes">
       <topicmeta>
         <navtitle>Audio formats</navtitle>
       </topicmeta>

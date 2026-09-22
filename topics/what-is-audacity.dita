@@ -2,12 +2,12 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
 <concept id="what-is-audacity">
-  <title>What is Audacity?</title>
-  <shortdesc>Audacity is a free, open-source audio editor and recorder for Windows, macOS and Linux.</shortdesc>
+  <title>What is <keyword keyref="product-name"/>?</title>
+  <shortdesc><keyword keyref="product-name"/> is a free, open-source audio editor and recorder for Windows, macOS and Linux.</shortdesc>
   <conbody>
-    <p>Audacity records live audio, imports and exports the common audio formats, and edits sound with cut, copy, paste and a library of effects.
+    <p><keyword keyref="product-name"/> records live audio, imports and exports the common audio formats, and edits sound with cut, copy, paste and a library of effects.
     It is free to download and use, and it runs on Windows, macOS and Linux.</p>
-    <p>With Audacity you can:</p>
+    <p>With <keyword keyref="product-name"/> you can:</p>
     <ul>
       <li>Record live audio through a microphone or mixer.</li>
       <li>Import and export audio in many formats, including WAV, MP3, OGG and FLAC.</li>
@@ -19,12 +19,13 @@
       <p>Podcasters record and clean up their episodes.
       Archivists digitize vinyl records and cassettes.
       Video makers edit sound effects and voice-overs.
-      Whatever the project, Audacity provides the tools at no cost.</p>
+      Whatever the project, <keyword keyref="product-name"/> provides the tools at no cost.</p>
     </section>
   </conbody>
   <related-links>
+    <link keyref="install"/>
     <link href="https://www.audacityteam.org/" scope="external" format="html">
-      <linktext>The Audacity website</linktext>
+      <linktext>The <keyword keyref="product-name"/> website</linktext>
       <desc>Downloads, the manual and the user forum.</desc>
     </link>
   </related-links>

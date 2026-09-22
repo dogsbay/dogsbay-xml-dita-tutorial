@@ -3,10 +3,10 @@
 
 <reference id="supported-audio-formats">
   <title>Supported audio formats</title>
-  <shortdesc>The audio formats Audacity imports and exports, and when to use each one.</shortdesc>
+  <shortdesc>The audio formats <keyword keyref="product-name"/> imports and exports, and when to use each one.</shortdesc>
   <refbody>
     <section>
-      <p>Audacity imports and exports audio in several formats.
+      <p><keyword keyref="product-name"/> imports and exports audio in several formats.
       <term>Lossless</term> formats keep every sample of the source; <term>lossy</term> formats discard detail to make smaller files.
       Exported files are named after the project, so <filepath>podcast-episode-1.aup3</filepath> exports as <filepath>podcast-episode-1.mp3</filepath>.</p>
     </section>
@@ -72,7 +72,7 @@
   </refbody>
   <related-links>
     <link href="https://manual.audacityteam.org/man/file_formats.html" scope="external" format="html">
-      <linktext>File formats in the Audacity Manual</linktext>
+      <linktext>File formats in the <keyword keyref="product-name"/> Manual</linktext>
     </link>
   </related-links>
 </reference>

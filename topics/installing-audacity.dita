@@ -2,19 +2,19 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
 <task id="installing-audacity">
-  <title>Installing Audacity</title>
-  <shortdesc>Download Audacity from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
+  <title>Installing <keyword keyref="product-name"/></title>
+  <shortdesc>Download <keyword keyref="product-name"/> from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
   <taskbody>
     <prereq>
       <p>You need about 250 MB of free disk space and an account that can install software.</p>
     </prereq>
     <context>
-      <p>Audacity is available for Windows, macOS and Linux.
+      <p><keyword keyref="product-name"/> is available for Windows, macOS and Linux.
       The steps differ by operating system only at the install step.</p>
     </context>
     <steps>
       <step>
-        <cmd>Download Audacity from <filepath>https://www.audacityteam.org/download/</filepath>.</cmd>
+        <cmd>Download <keyword keyref="product-name"/> <keyword keyref="product-version"/> from <xref keyref="download-url"/>.</cmd>
         <info>
           <p>Select the installer for your operating system.</p>
         </info>
@@ -33,7 +33,7 @@
           </chrow>
           <chrow>
             <choption>macOS</choption>
-            <chdesc>Open the downloaded <filepath>.dmg</filepath> file and drag Audacity to your <filepath>Applications</filepath> folder.</chdesc>
+            <chdesc>Open the downloaded <filepath>.dmg</filepath> file and drag <keyword keyref="product-name"/> to your <filepath>Applications</filepath> folder.</chdesc>
           </chrow>
           <chrow>
             <choption>Linux</choption>
@@ -42,10 +42,10 @@
         </choicetable>
       </step>
       <step>
-        <cmd>Launch Audacity.</cmd>
+        <cmd>Launch <keyword keyref="product-name"/>.</cmd>
         <substeps>
           <substep>
-            <cmd>If Audacity asks to scan for audio plugins, click <uicontrol>OK</uicontrol>.</cmd>
+            <cmd>If <keyword keyref="product-name"/> asks to scan for audio plugins, click <uicontrol>OK</uicontrol>.</cmd>
             <info>
               <p>This happens once, on first launch.</p>
             </info>
@@ -60,7 +60,7 @@
       </step>
     </steps>
     <result>
-      <p>Audacity is installed and ready to use.</p>
+      <p><keyword keyref="product-name"/> <keyword keyref="product-version"/> is installed and ready to use.</p>
     </result>
     <postreq>
       <p>Connect a microphone, then continue with <xref href="recording-your-first-track.dita"/>.</p>

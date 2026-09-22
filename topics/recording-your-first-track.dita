@@ -3,7 +3,7 @@
 
 <task id="recording-your-first-track">
   <title>Recording your first track</title>
-  <shortdesc>Make your first recording in Audacity: pick a microphone, record, stop and play it back.</shortdesc>
+  <shortdesc>Make your first recording in <keyword keyref="product-name"/>: pick a microphone, record, stop and play it back.</shortdesc>
   <taskbody>
     <context>
       <p>This task walks you through making your first audio recording.
@@ -13,9 +13,9 @@
     </context>
     <steps>
       <step>
-        <cmd>Open Audacity.</cmd>
+        <cmd>Open <keyword keyref="product-name"/>.</cmd>
         <info>
-          <p>On first launch Audacity opens an empty project window with a gray waveform area.</p>
+          <p>On first launch <keyword keyref="product-name"/> opens an empty project window with a gray waveform area.</p>
         </info>
       </step>
       <step>
@@ -44,7 +44,7 @@
       <step>
         <cmd>Click <uicontrol>Record</uicontrol>, or press <uicontrol>R</uicontrol>, to start recording.</cmd>
         <info>
-          <p>A blue waveform appears as Audacity captures audio from your microphone, like <xref href="what-is-digital-audio.dita#what-is-digital-audio/fig-waveform"/>.</p>
+          <p>A blue waveform appears as <keyword keyref="product-name"/> captures audio from your microphone, like <xref href="what-is-digital-audio.dita#what-is-digital-audio/fig-waveform"/>.</p>
           <note type="warning">A flat line instead of a waveform means the microphone is not selected correctly.
           Click <uicontrol>Stop</uicontrol> and check the recording device.</note>
         </info>

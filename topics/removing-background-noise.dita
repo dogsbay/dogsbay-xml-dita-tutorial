@@ -25,7 +25,7 @@
       <step>
         <cmd>Choose <menucascade><uicontrol>Effect</uicontrol><uicontrol>Noise Removal and Repair</uicontrol><uicontrol>Noise Reduction</uicontrol></menucascade>, then click <uicontrol>Get Noise Profile</uicontrol>.</cmd>
         <stepresult>
-          <p>Audacity captures the character of the noise and closes the dialog.</p>
+          <p><keyword keyref="product-name"/> captures the character of the noise and closes the dialog.</p>
         </stepresult>
       </step>
       <step>

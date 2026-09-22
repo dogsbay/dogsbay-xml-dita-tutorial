@@ -7,7 +7,7 @@
   <taskbody>
     <prereq>
       <p>Finish editing and save the project.
-      A project file (<filepath>.aup3</filepath>) can only be opened by Audacity; exporting creates an ordinary audio file.</p>
+      A project file (<filepath>.aup3</filepath>) can only be opened by <keyword keyref="product-name"/>; exporting creates an ordinary audio file.</p>
     </prereq>
     <steps>
       <step>
@@ -17,7 +17,7 @@
         </stepresult>
       </step>
       <step>
-        <cmd>Choose a format (see <xref href="supported-audio-formats.dita#supported-audio-formats/choosing"/>).</cmd>
+        <cmd>Choose a format (see <xref keyref="formats/choosing"/>).</cmd>
         <choices>
           <choice>Choose <uicontrol>WAV</uicontrol> or <uicontrol>FLAC</uicontrol> for an archive copy with no quality loss.</choice>
           <choice>Choose <uicontrol>MP3</uicontrol> or <uicontrol>OGG</uicontrol> for a small file to share.</choice>
