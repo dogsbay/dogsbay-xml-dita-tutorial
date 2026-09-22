@@ -48,8 +48,9 @@
           <p>For MP3, the bit rate controls the trade-off between size and quality.</p>
         </info>
         <stepxmp>
-          <p>A spoken-word podcast exports well at <uicontrol>128 kbps</uicontrol>, <uicontrol>Mono</uicontrol>.
+          <p audience="podcaster">A spoken-word podcast exports well at <uicontrol>128 kbps</uicontrol>, <uicontrol>Mono</uicontrol>.
           Music needs <uicontrol>192 kbps</uicontrol> or more, <uicontrol>Stereo</uicontrol>.</p>
+          <p audience="beginner">If in doubt, keep the defaults: they suit most recordings.</p>
         </stepxmp>
       </step>
       <step>
@@ -59,7 +60,7 @@
         </steptroubleshooting>
       </step>
       <step importance="optional">
-        <cmd>Fill in the <wintitle>Edit Metadata Tags</wintitle> dialog and click <uicontrol>OK</uicontrol>.</cmd>
+        <cmd rev="3.4">Fill in the <wintitle>Edit Metadata Tags</wintitle> dialog and click <uicontrol>OK</uicontrol>.</cmd>
         <info>
           <p>Title, artist and album are shown by most players.</p>
         </info>

@@ -33,6 +33,8 @@
     <p>Digital audio is sound that has been converted into a numerical representation.
     A few key concepts help you make better recordings and edits.
     If you would rather start recording, go straight to <xref href="recording-your-first-track.dita"/> and come back later.</p>
+    <p audience="beginner">You do not need all of this to start recording: the default settings work well.
+    Come back to this topic when you want to fine-tune a recording.</p>
     <section>
       <title>Waveforms</title>
       <p>Sound travels through air as a continuous <term keyref="gl-waveform">waveform</term> of pressure changes.
@@ -57,7 +59,7 @@
         </svg-container>
       </fig>
     </section>
-    <section>
+    <section audience="podcaster">
       <title>Sample rate</title>
       <p>The <term keyref="gl-sample-rate">sample rate</term> is the number of samples captured per second, measured in <abbreviated-form keyref="gl-hertz"/>.
       Common sample rates are:</p>
@@ -68,7 +70,7 @@
       </sl>
       <p>A higher sample rate captures more detail but produces larger files.<fn>File size grows in proportion to the sample rate: a 96 kHz file is more than twice the size of the same recording at 44.1 kHz.</fn></p>
     </section>
-    <section>
+    <section audience="podcaster">
       <title>Bit depth</title>
       <p><term keyref="gl-bit-depth">Bit depth</term> determines how precisely each sample's amplitude is recorded.</p>
       <simpletable>

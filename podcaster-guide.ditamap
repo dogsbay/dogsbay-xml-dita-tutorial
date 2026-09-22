@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Audacity for Podcasters</title>
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+
+  <topichead navtitle="Getting started">
+    <topicref href="topics/what-is-audacity.dita"/>
+    <topicref href="topics/what-is-digital-audio.dita"/>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
+  </topichead>
+  <topichead navtitle="Recording and editing">
+    <topicref href="topics/preparing-to-record.dita"/>
+    <topicref href="topics/recording-your-first-track.dita"/>
+    <topicref href="topics/trimming-audio.dita"/>
+    <topicref href="topics/removing-background-noise.dita"/>
+    <topicref href="topics/exporting-audio.dita"/>
+  </topichead>
+  <topichead navtitle="Podcast production">
+    <topicref href="topics/podcast-production-workflow.dita"/>
+  </topichead>
+  <topichead navtitle="Reference">
+    <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
+    <topicref href="topics/glossary/audio-units.dita"/>
+    <topicref href="topics/glossary/g-compression.dita"/>
+    <topicref href="topics/glossary/g-normalization.dita"/>
+  </topichead>
+</map>

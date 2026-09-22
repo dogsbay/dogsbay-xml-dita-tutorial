@@ -45,6 +45,10 @@
     <topicref href="topics/removing-background-noise.dita" linking="targetonly"/>
   </topichead>
 
+  <topichead navtitle="Podcast production" audience="podcaster">
+    <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
+  </topichead>
+
   <topichead navtitle="Reference" id="reference">
     <topicref href="topics/supported-audio-formats.dita" keys="formats" locktitle="yes">
       <topicmeta>

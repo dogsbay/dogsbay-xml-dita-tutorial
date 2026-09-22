@@ -27,6 +27,8 @@
       <p>Background noise such as hum from electronics, hiss from a microphone or fan noise degrades a recording.
       The Noise Reduction effect learns what the noise sounds like from a section that contains nothing else, then removes it everywhere.</p>
       <note conkeyref="common-notes/backup-warning"/>
+      <note type="tip" audience="podcaster">For podcast recordings, apply noise reduction before compression and equalization.
+      Clean the audio first, then shape its dynamics and tone.</note>
     </context>
     <steps>
       <step>
@@ -46,7 +48,7 @@
         </stepresult>
       </step>
       <step>
-        <cmd>Select the whole track with <uicontrol>Ctrl+A</uicontrol> or <uicontrol>Cmd+A</uicontrol>.</cmd>
+        <cmd>Select the whole track with <ph platform="windows linux"><uicontrol>Ctrl+A</uicontrol></ph><ph platform="mac"> <ph platform="windows linux">or, on macOS,</ph> <uicontrol>Cmd+A</uicontrol></ph>.</cmd>
       </step>
       <step>
         <cmd>Open <uicontrol>Noise Reduction</uicontrol> again, adjust the settings and click <uicontrol>OK</uicontrol>.</cmd>

@@ -21,7 +21,7 @@
   </prolog>
   <body>
     <note id="backup-warning" type="warning">This effect changes the audio data.
-    Save the project first; you can undo with <uicontrol>Ctrl+Z</uicontrol> (Windows and Linux) or <uicontrol>Cmd+Z</uicontrol> (macOS).</note>
+    Save the project first; you can undo with <ph platform="windows linux"><uicontrol>Ctrl+Z</uicontrol></ph><ph platform="mac"> <ph platform="windows linux">or, on macOS,</ph> <uicontrol>Cmd+Z</uicontrol></ph>.</note>
     <note id="quiet-room-tip" type="tip">For best results, record in a quiet room and position the microphone 15 to 30 cm from your mouth.</note>
     <p>Recommended starting settings for Noise Reduction:</p>
     <ul id="noise-reduction-settings">

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Audacity Beginner's Guide</title>
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/glossary/audio-units.dita" toc="no"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+
+  <topichead navtitle="Introduction">
+    <topicref href="topics/what-is-audacity.dita"/>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
+  </topichead>
+  <topichead navtitle="Your first recording">
+    <topicref href="topics/recording-your-first-track.dita"/>
+    <topicref href="topics/trimming-audio.dita"/>
+    <topicref href="topics/exporting-audio.dita"/>
+  </topichead>
+  <topichead navtitle="Quick reference">
+    <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
+  </topichead>
+</map>

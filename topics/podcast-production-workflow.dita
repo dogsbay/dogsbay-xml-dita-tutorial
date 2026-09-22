@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
+<concept id="podcast-production-workflow">
+  <title>Podcast production workflow</title>
+  <shortdesc>A typical order of work for a spoken-word podcast: prepare, record, clean up, level and export.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-02-01"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="intermediate"/>
+      <category>podcasting</category>
+      <keywords>
+        <keyword>podcast</keyword>
+        <keyword>workflow</keyword>
+        <keyword>noise reduction</keyword>
+        <keyword>compression</keyword>
+        <indexterm>podcasting<indexterm>workflow</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p><keyword keyref="product-name"/> is a popular choice for podcast production because it is free, cross-platform and capable of professional results.
+    This topic outlines a typical workflow.</p>
+    <section audience="podcaster">
+      <title>Pre-production</title>
+      <ol>
+        <li>Test your microphone levels; aim for peaks around -12 <abbreviated-form keyref="gl-decibel"/> to leave headroom.</li>
+        <li>Record in a quiet room with little echo.</li>
+        <li>Use a pop filter to soften plosive sounds (p, b, t).</li>
+        <li>Set the project to 44,100 Hz and 32-bit float for editing flexibility.</li>
+      </ol>
+    </section>
+    <section audience="podcaster">
+      <title>Recording</title>
+      <ol>
+        <li>Record a few seconds of silence at the start for a noise profile.</li>
+        <li>Press <uicontrol>R</uicontrol> to start recording; monitor the meter and stay out of the red.</li>
+        <li>If you make a mistake, pause briefly and say the sentence again; you will cut the first attempt later.</li>
+      </ol>
+    </section>
+    <section audience="podcaster">
+      <title>Post-production</title>
+      <p>Process the audio in this order:</p>
+      <ol>
+        <li><b>Noise reduction</b>: remove background noise using the noise profile from the silence.</li>
+        <li><b>Editing</b>: trim mistakes, long pauses and false starts.</li>
+        <li><b><term keyref="gl-normalization">Normalization</term></b>: bring the peak level to -1.0 dB.</li>
+        <li><b><term keyref="gl-compression">Compression</term></b>: even out volume differences (threshold -18 dB, ratio 3:1).</li>
+        <li><b>Export</b>: MP3 at 128 kbps mono for distribution.</li>
+      </ol>
+    </section>
+    <section audience="beginner">
+      <title>Getting started with podcasting</title>
+      <p>If you are new to podcasting, start simple: record, trim the beginning and end, and export as MP3.
+      As you gain experience, explore noise reduction, compression and the other effects to polish your sound.</p>
+    </section>
+  </conbody>
+</concept>

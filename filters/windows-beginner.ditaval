@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<val>
+  <prop att="platform" val="windows" action="include"/>
+  <prop att="platform" val="mac" action="exclude"/>
+  <prop att="platform" val="linux" action="exclude"/>
+  <prop att="audience" val="beginner" action="include"/>
+  <prop att="audience" val="podcaster" action="exclude"/>
+</val>
