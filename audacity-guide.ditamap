@@ -2,14 +2,63 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
 <map>
-  <title>Audio user guide</title>
-  <topicref href="topics/exporting-audio.dita"/>
-  <topicref href="topics/installing-audacity.dita"/>
-  <topicref href="topics/preparing-to-record.dita"/>
-  <topicref href="topics/recording-your-first-track.dita"/>
-  <topicref href="topics/removing-background-noise.dita"/>
-  <topicref href="topics/supported-audio-formats.dita"/>
-  <topicref href="topics/trimming-audio.dita"/>
-  <topicref href="topics/what-is-audacity.dita"/>
-  <topicref href="topics/what-is-digital-audio.dita"/>
+  <title>Audacity User Guide</title>
+  <topicmeta>
+    <shortdesc>Record, edit and export audio with Audacity, from your first track to a finished file.</shortdesc>
+  </topicmeta>
+
+  <topichead navtitle="Getting started">
+    <topicref href="topics/what-is-audacity.dita" collection-type="family">
+      <topicref href="topics/what-is-digital-audio.dita"/>
+    </topicref>
+    <topicref href="topics/installing-audacity.dita"/>
+  </topichead>
+
+  <topichead navtitle="Recording and editing">
+    <topicgroup collection-type="sequence">
+      <topicref href="topics/preparing-to-record.dita"/>
+      <topicref href="topics/recording-your-first-track.dita"/>
+      <topicref href="topics/trimming-audio.dita"/>
+      <topicref href="topics/exporting-audio.dita"/>
+    </topicgroup>
+    <topicref href="topics/removing-background-noise.dita" linking="targetonly"/>
+  </topichead>
+
+  <topichead navtitle="Reference" id="reference">
+    <topicref href="topics/supported-audio-formats.dita" locktitle="yes">
+      <topicmeta>
+        <navtitle>Audio formats</navtitle>
+      </topicmeta>
+    </topicref>
+  </topichead>
+  <reltable>
+    <title>Concept, task and reference links</title>
+    <relheader>
+      <relcolspec type="concept"/>
+      <relcolspec type="task"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="topics/what-is-digital-audio.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/preparing-to-record.dita"/>
+        <topicref href="topics/recording-your-first-track.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/supported-audio-formats.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref href="topics/exporting-audio.dita"/>
+        <topicref href="topics/trimming-audio.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="topics/supported-audio-formats.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

@@ -113,7 +113,6 @@
       <link href="preparing-to-record.dita"/>
     </linklist>
     <linkpool>
-      <link href="supported-audio-formats.dita"/>
       <link href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)" scope="external" format="html">
         <linktext>Sampling (signal processing)</linktext>
       </link>
