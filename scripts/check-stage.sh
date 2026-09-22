@@ -5,6 +5,8 @@
 #   1. dogsbay-xml validate-project   every topic and map validates against its DOCTYPE
 #   2. dogsbay-xml project-health     links, keys, element ids, conref pushes, index,
 #                                     metadata policy and house rules are clean
+#   2b. dogsbay-xml validate-conditions (once a subject scheme is referenced) every
+#                                     platform/audience value is a controlled value
 #   3. dita --project=project.json    every deliverable actually publishes
 #
 # Exit code is non-zero when any gate fails. Usage:
@@ -38,6 +40,13 @@ if [ "$STRICT" = "1" ]; then
   "$DOGSBAY_XML" project-health "$ROOT" || fail "project-health found issues"
 else
   "$DOGSBAY_XML" project-health --severity=error "$ROOT" || fail "project-health found errors"
+fi
+
+scheme=$(grep -l '<subjectScheme' "$ROOT"/*.ditamap 2>/dev/null | head -1 || true)
+if [ -n "$scheme" ]; then
+  # Without -S (or -m) the command discovers no scheme and passes vacuously.
+  say "validate-conditions  $ROOT  (scheme: ${scheme#$ROOT/})"
+  "$DOGSBAY_XML" validate-conditions -S "$scheme" "$ROOT" || fail "profiling values outside the subject scheme"
 fi
 
 if [ "$SKIP_BUILD" = "1" ]; then

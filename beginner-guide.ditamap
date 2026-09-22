@@ -3,6 +3,7 @@
 
 <map>
   <title>Audacity Beginner's Guide</title>
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
   <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->

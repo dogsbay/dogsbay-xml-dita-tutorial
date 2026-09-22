@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
+
+<subjectScheme>
+  <title>Controlled values for the Audacity guide</title>
+  <!-- The vocabulary: a taxonomy of subjects. -->
+  <subjectdef keys="os">
+    <topicmeta>
+      <navtitle>Operating systems</navtitle>
+    </topicmeta>
+    <subjectdef keys="windows">
+      <topicmeta>
+        <navtitle>Windows</navtitle>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="mac">
+      <topicmeta>
+        <navtitle>macOS</navtitle>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="linux">
+      <topicmeta>
+        <navtitle>Linux</navtitle>
+      </topicmeta>
+    </subjectdef>
+  </subjectdef>
+
+  <subjectdef keys="readers">
+    <topicmeta>
+      <navtitle>Audiences</navtitle>
+    </topicmeta>
+    <subjectdef keys="beginner">
+      <topicmeta>
+        <navtitle>Beginners: first recording, defaults, no jargon</navtitle>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="podcaster">
+      <topicmeta>
+        <navtitle>Podcasters: spoken word, levels, effects chain</navtitle>
+      </topicmeta>
+    </subjectdef>
+  </subjectdef>
+  <!-- The binding: which attribute may take which subjects. -->
+  <enumerationdef>
+    <attributedef name="platform"/>
+    <subjectdef keyref="os"/>
+  </enumerationdef>
+  <enumerationdef>
+    <attributedef name="audience"/>
+    <subjectdef keyref="readers"/>
+  </enumerationdef>
+  <!-- Relationship: every OS subject is narrower than "os" (already implied
+       by nesting; stated explicitly so tools can walk the hierarchy). -->
+  <hasNarrower>
+    <subjectdef keyref="os">
+      <subjectdef keyref="windows"/>
+      <subjectdef keyref="mac"/>
+      <subjectdef keyref="linux"/>
+    </subjectdef>
+  </hasNarrower>
+</subjectScheme>

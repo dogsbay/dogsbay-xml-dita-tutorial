@@ -3,6 +3,7 @@
 
 <map>
   <title>Audacity for Podcasters</title>
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
   <keydef keys="common-notes" href="shared/common-notes.dita"/>

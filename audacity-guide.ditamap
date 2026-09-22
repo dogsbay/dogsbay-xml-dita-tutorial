@@ -21,6 +21,7 @@
     </keywords>
   </topicmeta>
 
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
   <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
