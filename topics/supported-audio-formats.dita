@@ -7,7 +7,19 @@
   <refbody>
     <section>
       <p>Audacity imports and exports audio in several formats.
-      Lossless formats keep every sample of the source; lossy formats discard detail to make smaller files.</p>
+      <term>Lossless</term> formats keep every sample of the source; <term>lossy</term> formats discard detail to make smaller files.
+      Exported files are named after the project, so <filepath>podcast-episode-1.aup3</filepath> exports as <filepath>podcast-episode-1.mp3</filepath>.</p>
+    </section>
+    <section>
+      <title>Choosing a format</title>
+      <p>Keep a lossless master and export a lossy copy for distribution:</p>
+      <ol>
+        <li>Save the project (<filepath>.aup3</filepath>) while you are still editing.</li>
+        <li>Export a WAV or FLAC file as the archive copy.</li>
+        <li>Export an MP3 or OGG file to share.</li>
+      </ol>
+      <p>On Linux you can convert between formats afterwards with <cmdname>ffmpeg</cmdname>:</p>
+      <codeblock>ffmpeg -i episode.wav -b:a 128k episode.mp3</codeblock>
     </section>
     <table>
       <title>Common audio formats</title>
@@ -37,6 +49,7 @@
             <entry>Compressed</entry>
             <entry>Lossy</entry>
             <entry>Widely supported, small files.
+            Needs the <i>LAME</i> encoder, bundled since version 2.3.2.
             Good for sharing and the web.</entry>
           </row>
           <row>

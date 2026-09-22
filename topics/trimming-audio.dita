@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="trimming-audio">
+  <title>Trimming audio</title>
+  <shortdesc>Remove silence, false starts and mistakes by selecting a region of the waveform and deleting it.</shortdesc>
+  <taskbody>
+    <context>
+      <p>Trimming removes unwanted audio from the start, end or middle of a track.
+      When you delete a region, the audio on either side closes the gap.</p>
+      <note type="tip">Zoom in with <uicontrol>Ctrl+1</uicontrol> to make precise selections; zoom back out with <uicontrol>Ctrl+3</uicontrol>.</note>
+    </context>
+    <steps>
+      <step>
+        <cmd>Click and drag in the waveform to select the region you want to remove.</cmd>
+        <info>
+          <p>The selected region is highlighted.
+          To select the whole track, press <uicontrol>Ctrl+A</uicontrol> (Windows and Linux) or <uicontrol>Cmd+A</uicontrol> (macOS).</p>
+        </info>
+      </step>
+      <step>
+        <cmd>Press <uicontrol>Delete</uicontrol>, or choose <menucascade><uicontrol>Edit</uicontrol><uicontrol><shortcut>D</shortcut>elete</uicontrol></menucascade>.</cmd>
+        <info>
+          <note type="important">Deleting changes the audio in the project.
+          Undo with <uicontrol>Ctrl+Z</uicontrol> if you removed the wrong region.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>To keep only the selection and discard everything else, choose <menucascade><uicontrol>Edit</uicontrol><uicontrol>Remove Special</uicontrol><uicontrol>Trim Audio</uicontrol></menucascade> instead.</cmd>
+      </step>
+      <step>
+        <cmd>Play the track from just before the edit to check the join sounds natural.</cmd>
+        <info>
+          <p>If you hear a click at the join, select a few milliseconds around it and apply <menucascade><uicontrol>Effect</uicontrol><uicontrol>Fade In</uicontrol></menucascade> or <uicontrol>Fade Out</uicontrol>.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>Save the project with <menucascade><uicontrol>File</uicontrol><uicontrol>Save Project</uicontrol><uicontrol>Save Project</uicontrol></menucascade>.</cmd>
+        <info>
+          <p>Audacity saves the project as a single <filepath>.aup3</filepath> file in the folder you choose; the <wintitle>Save Project</wintitle> dialog suggests your Documents folder.</p>
+        </info>
+      </step>
+    </steps>
+    <result>
+      <p>The unwanted audio is gone and the track plays through without a gap.</p>
+    </result>
+  </taskbody>
+</task>

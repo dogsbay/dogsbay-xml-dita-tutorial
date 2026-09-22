@@ -8,6 +8,7 @@
     <context>
       <p>This task walks you through making your first audio recording.
       You need a microphone connected to your computer.</p>
+      <note type="tip">For best results, record in a quiet room and position the microphone 15 to 30 cm from your mouth.</note>
     </context>
     <steps>
       <step>
@@ -17,27 +18,28 @@
         </info>
       </step>
       <step>
-        <cmd>Select your microphone from the recording device list in the Device Toolbar.</cmd>
+        <cmd>Select your microphone from the recording device list in the <uicontrol>Device Toolbar</uicontrol>.</cmd>
         <info>
-          <p>The Device Toolbar is near the top of the window.
+          <p>The <uicontrol>Device Toolbar</uicontrol> is near the top of the window.
           The recording device list has a microphone icon next to it.</p>
         </info>
       </step>
       <step>
-        <cmd>Click Record to start recording.</cmd>
+        <cmd>Click <uicontrol>Record</uicontrol>, or press <uicontrol>R</uicontrol>, to start recording.</cmd>
         <info>
-          <p>A blue waveform appears as Audacity captures audio from your microphone.
-          A flat line means the microphone is not selected correctly: click Stop and check the recording device.</p>
+          <p>A blue waveform appears as Audacity captures audio from your microphone.</p>
+          <note type="warning">A flat line instead of a waveform means the microphone is not selected correctly.
+          Click <uicontrol>Stop</uicontrol> and check the recording device.</note>
         </info>
       </step>
       <step>
         <cmd>Speak into your microphone, or play the audio you want to capture.</cmd>
       </step>
       <step>
-        <cmd>Click Stop when you are finished.</cmd>
+        <cmd>Click <uicontrol>Stop</uicontrol> when you are finished.</cmd>
       </step>
       <step>
-        <cmd>Click Play to listen to your recording.</cmd>
+        <cmd>Click <uicontrol>Play</uicontrol> to listen to your recording.</cmd>
       </step>
     </steps>
     <result>
