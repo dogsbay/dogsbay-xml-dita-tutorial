@@ -10,7 +10,7 @@
       <term>Lossless</term> formats keep every sample of the source; <term>lossy</term> formats discard detail to make smaller files.
       Exported files are named after the project, so <filepath>podcast-episode-1.aup3</filepath> exports as <filepath>podcast-episode-1.mp3</filepath>.</p>
     </section>
-    <section>
+    <section id="choosing">
       <title>Choosing a format</title>
       <p>Keep a lossless master and export a lossy copy for distribution:</p>
       <ol>
@@ -70,4 +70,10 @@
       </tgroup>
     </table>
   </refbody>
+  <related-links>
+    <link href="exporting-audio.dita"/>
+    <link href="https://manual.audacityteam.org/man/file_formats.html" scope="external" format="html">
+      <linktext>File formats in the Audacity Manual</linktext>
+    </link>
+  </related-links>
 </reference>

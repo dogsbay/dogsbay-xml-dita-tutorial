@@ -63,7 +63,7 @@
       <p>Audacity is installed and ready to use.</p>
     </result>
     <postreq>
-      <p>Connect a microphone before you continue to recording.</p>
+      <p>Connect a microphone, then continue with <xref href="recording-your-first-track.dita"/>.</p>
     </postreq>
   </taskbody>
 </task>

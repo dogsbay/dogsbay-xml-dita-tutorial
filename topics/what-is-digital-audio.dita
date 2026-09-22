@@ -6,7 +6,8 @@
   <shortdesc>Digital audio is sound stored as numbers: samples taken thousands of times a second at a chosen precision.</shortdesc>
   <conbody>
     <p>Digital audio is sound that has been converted into a numerical representation.
-    A few key concepts help you make better recordings and edits.</p>
+    A few key concepts help you make better recordings and edits.
+    If you would rather start recording, go straight to <xref href="recording-your-first-track.dita"/> and come back later.</p>
     <section>
       <title>Waveforms</title>
       <p>Sound travels through air as a continuous <term>waveform</term> of pressure changes.
@@ -72,4 +73,17 @@
       <lq reftitle="The Audacity Manual">Audio is measured in decibels because the ear hears ratios, not differences.</lq>
     </section>
   </conbody>
+  <related-links>
+    <linklist>
+      <title>Put it into practice</title>
+      <link href="recording-your-first-track.dita"/>
+      <link href="preparing-to-record.dita"/>
+    </linklist>
+    <linkpool>
+      <link href="supported-audio-formats.dita"/>
+      <link href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)" scope="external" format="html">
+        <linktext>Sampling (signal processing)</linktext>
+      </link>
+    </linkpool>
+  </related-links>
 </concept>

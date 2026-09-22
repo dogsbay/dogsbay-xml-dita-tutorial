@@ -17,7 +17,7 @@
         </stepresult>
       </step>
       <step>
-        <cmd>Choose a format.</cmd>
+        <cmd>Choose a format (see <xref href="supported-audio-formats.dita#supported-audio-formats/choosing"/>).</cmd>
         <choices>
           <choice>Choose <uicontrol>WAV</uicontrol> or <uicontrol>FLAC</uicontrol> for an archive copy with no quality loss.</choice>
           <choice>Choose <uicontrol>MP3</uicontrol> or <uicontrol>OGG</uicontrol> for a small file to share.</choice>
@@ -56,4 +56,10 @@
       A 30-minute episode exports to a file of about 27 MB.</p>
     </example>
   </taskbody>
+  <related-links>
+    <link href="supported-audio-formats.dita"/>
+    <link href="trimming-audio.dita">
+      <desc>Clean up the recording before you export it.</desc>
+    </link>
+  </related-links>
 </task>

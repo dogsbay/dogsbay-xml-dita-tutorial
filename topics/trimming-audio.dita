@@ -45,4 +45,8 @@
       <p>The unwanted audio is gone and the track plays through without a gap.</p>
     </result>
   </taskbody>
+  <related-links>
+    <link href="recording-your-first-track.dita"/>
+    <link href="exporting-audio.dita"/>
+  </related-links>
 </task>
