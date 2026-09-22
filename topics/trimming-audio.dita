@@ -4,6 +4,25 @@
 <task id="trimming-audio">
   <title>Trimming audio</title>
   <shortdesc>Remove silence, false starts and mistakes by selecting a region of the waveform and deleting it.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-18"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>editing</category>
+      <keywords>
+        <keyword>trimming</keyword>
+        <keyword>editing</keyword>
+        <keyword>delete</keyword>
+        <keyword>selection</keyword>
+        <indexterm>trimming</indexterm>
+        <indexterm>editing<indexterm>trimming</indexterm></indexterm>
+        <indexterm>selection</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>Trimming removes unwanted audio from the start, end or middle of a track.

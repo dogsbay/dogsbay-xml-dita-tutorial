@@ -4,6 +4,21 @@
 <task id="common-steps">
   <title>Common steps</title>
   <shortdesc>Reusable steps that other tasks pull in by conref. This task is a warehouse and is not published on its own.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="author"/>
+      <category>warehouse</category>
+      <keywords>
+        <keyword>reuse</keyword>
+        <keyword>conref</keyword>
+        <keyword>steps</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step id="select-region">

@@ -4,6 +4,24 @@
 <task id="recording-your-first-track">
   <title>Recording your first track</title>
   <shortdesc>Make your first recording in <keyword keyref="product-name"/>: pick a microphone, record, stop and play it back.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>recording</category>
+      <keywords>
+        <keyword>recording</keyword>
+        <keyword>microphone</keyword>
+        <keyword>Device Toolbar</keyword>
+        <indexterm>recording<indexterm>first track</indexterm></indexterm>
+        <indexterm>microphone</indexterm>
+        <indexterm>Device Toolbar</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This task walks you through making your first audio recording.

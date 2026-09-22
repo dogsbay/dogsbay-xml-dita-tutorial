@@ -4,6 +4,21 @@
 <topic id="common-notes">
   <title>Common notes</title>
   <shortdesc>Reusable notes, tips and lists that other topics pull in by conref. This topic is a warehouse and is not published on its own.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="author"/>
+      <category>warehouse</category>
+      <keywords>
+        <keyword>reuse</keyword>
+        <keyword>conref</keyword>
+        <keyword>notes</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <note id="backup-warning" type="warning">This effect changes the audio data.
     Save the project first; you can undo with <uicontrol>Ctrl+Z</uicontrol> (Windows and Linux) or <uicontrol>Cmd+Z</uicontrol> (macOS).</note>

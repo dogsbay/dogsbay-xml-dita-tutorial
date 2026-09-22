@@ -4,4 +4,14 @@
 <glossentry id="gl-waveform">
   <glossterm>Waveform</glossterm>
   <glossdef>The shape of a sound wave over time, drawn as amplitude against time. Audacity shows each track as a waveform.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Waveform</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Waveform</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

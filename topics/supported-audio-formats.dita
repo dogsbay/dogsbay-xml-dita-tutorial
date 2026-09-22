@@ -4,6 +4,26 @@
 <reference id="supported-audio-formats">
   <title>Supported audio formats</title>
   <shortdesc>The audio formats <keyword keyref="product-name"/> imports and exports, and when to use each one.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-22"/>
+      <revised modified="2026-02-14"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>reference</category>
+      <keywords>
+        <keyword>audio formats</keyword>
+        <keyword>lossless</keyword>
+        <keyword>lossy</keyword>
+        <keyword>MP3</keyword>
+        <keyword>FLAC</keyword>
+        <indexterm>audio formats<indexterm>lossless</indexterm><indexterm>lossy</indexterm></indexterm>
+        <indexterm>codecs<index-see>audio formats</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p><keyword keyref="product-name"/> imports and exports audio in several formats.
@@ -46,7 +66,9 @@
           </row>
           <row>
             <entry>MP3</entry>
-            <entry><term keyref="gl-compression">Compressed</term></entry>
+            <entry>
+              <term keyref="gl-compression">Compressed</term>
+            </entry>
             <entry>Lossy</entry>
             <entry>Widely supported, small files.
             Needs the <i>LAME</i> encoder, bundled since version 2.3.2.

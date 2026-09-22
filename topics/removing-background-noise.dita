@@ -4,6 +4,24 @@
 <task id="removing-background-noise">
   <title>Removing background noise</title>
   <shortdesc>Take a noise profile from a quiet section, then apply Noise Reduction to the whole track to remove hum, hiss and fan noise.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-20"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="intermediate"/>
+      <category>editing</category>
+      <keywords>
+        <keyword>noise reduction</keyword>
+        <keyword>noise profile</keyword>
+        <keyword>effects</keyword>
+        <indexterm>noise reduction</indexterm>
+        <indexterm>effects<indexterm>Noise Reduction</indexterm></indexterm>
+        <indexterm>hum<index-see>noise reduction</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>Background noise such as hum from electronics, hiss from a microphone or fan noise degrades a recording.

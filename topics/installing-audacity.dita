@@ -4,6 +4,25 @@
 <task id="installing-audacity">
   <title>Installing <keyword keyref="product-name"/></title>
   <shortdesc>Download <keyword keyref="product-name"/> from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-12"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>installation</category>
+      <keywords>
+        <keyword>install</keyword>
+        <keyword>download</keyword>
+        <keyword>Windows</keyword>
+        <keyword>macOS</keyword>
+        <keyword>Linux</keyword>
+        <indexterm>installing<indexterm>Windows</indexterm><indexterm>macOS</indexterm><indexterm>Linux</indexterm></indexterm>
+        <indexterm>download</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <prereq>
       <p>You need about 250 MB of free disk space and an account that can install software.</p>

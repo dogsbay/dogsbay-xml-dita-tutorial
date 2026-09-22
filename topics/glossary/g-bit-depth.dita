@@ -4,4 +4,14 @@
 <glossentry id="gl-bit-depth">
   <glossterm>Bit depth</glossterm>
   <glossdef>The number of bits used to store each sample, which sets how precisely amplitude is recorded. 16-bit audio has 65,536 possible values; 24-bit has over 16 million.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Bit depth</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Bit depth</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

@@ -4,4 +4,14 @@
 <glossentry id="gl-normalization">
   <glossterm>Normalization</glossterm>
   <glossdef>Raising or lowering the level of a recording so that its loudest peak sits at a chosen target, giving consistent loudness across clips.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Normalization</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Normalization</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

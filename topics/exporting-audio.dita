@@ -4,6 +4,25 @@
 <task id="exporting-audio">
   <title>Exporting audio</title>
   <shortdesc>Export a finished project as a WAV, MP3, OGG or FLAC file that other programs and devices can play.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-22"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>exporting</category>
+      <keywords>
+        <keyword>export</keyword>
+        <keyword>MP3</keyword>
+        <keyword>WAV</keyword>
+        <keyword>FLAC</keyword>
+        <keyword>OGG</keyword>
+        <indexterm>exporting</indexterm>
+        <indexterm>audio formats<indexterm>MP3</indexterm><indexterm>WAV</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <prereq>
       <p>Finish editing and save the project.

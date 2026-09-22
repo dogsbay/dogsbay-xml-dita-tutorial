@@ -5,6 +5,20 @@
   <title>Audacity User Guide</title>
   <topicmeta>
     <shortdesc>Record, edit and export audio with Audacity, from your first track to a finished file.</shortdesc>
+    <author type="creator">The Audacity tutorial team</author>
+    <publisher>DogsBay Ltd.</publisher>
+    <copyright>
+      <copyryear year="2026"/>
+      <copyrholder>DogsBay Ltd.</copyrholder>
+    </copyright>
+    <critdates>
+      <created date="2026-01-10"/>
+    </critdates>
+    <audience type="user"/>
+    <keywords>
+      <keyword>Audacity</keyword>
+      <keyword>audio editing</keyword>
+    </keywords>
   </topicmeta>
 
   <mapref href="keydefs-product.ditamap"/>

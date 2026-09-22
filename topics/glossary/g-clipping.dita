@@ -4,4 +4,14 @@
 <glossentry id="gl-clipping">
   <glossterm>Clipping</glossterm>
   <glossdef>Distortion that occurs when a signal exceeds the maximum amplitude the system can represent. Clipped peaks are cut flat and cannot be repaired.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Clipping</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Clipping</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

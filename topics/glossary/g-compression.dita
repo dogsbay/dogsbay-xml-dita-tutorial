@@ -4,4 +4,14 @@
 <glossentry id="gl-compression">
   <glossterm>Compression</glossterm>
   <glossdef>Reducing the dynamic range of audio so that quiet parts are louder and loud parts quieter. Not to be confused with file compression such as MP3.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Compression</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Compression</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

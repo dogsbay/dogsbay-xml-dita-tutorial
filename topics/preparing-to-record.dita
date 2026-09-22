@@ -4,6 +4,24 @@
 <task id="preparing-to-record">
   <title>Preparing to record</title>
   <shortdesc>Checks to make in any order before you press Record: input level, sample rate and disk space.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>recording</category>
+      <keywords>
+        <keyword>recording</keyword>
+        <keyword>levels</keyword>
+        <keyword>sample rate</keyword>
+        <keyword>disk space</keyword>
+        <indexterm>recording<indexterm>preparing</indexterm><indexterm>levels</indexterm></indexterm>
+        <indexterm>clipping</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>None of these checks depends on another, so do them in whatever order suits you.</p>
