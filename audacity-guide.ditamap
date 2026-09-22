@@ -53,6 +53,10 @@
     </topicset>
   </topichead>
 
+  <topichead navtitle="Check your understanding">
+    <topicref href="learning/check-your-understanding.dita"/>
+  </topichead>
+
   <topichead navtitle="Troubleshooting" id="troubleshooting">
     <topicref href="topics/recording-is-silent.dita" keys="silent"/>
   </topichead>

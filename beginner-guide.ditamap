@@ -22,6 +22,7 @@
     <topicref href="topics/trimming-audio.dita"/>
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
+  <topicref href="learning/check-your-understanding.dita"/>
   <topichead navtitle="Troubleshooting">
     <topicref href="topics/recording-is-silent.dita" keys="silent"/>
   </topichead>
