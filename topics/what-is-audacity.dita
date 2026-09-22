@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
+<concept id="what-is-audacity">
+  <title>What is Audacity?</title>
+  <shortdesc>Audacity is a free, open-source audio editor and recorder for Windows, macOS and Linux.</shortdesc>
+  <conbody>
+    <p>Audacity records live audio, imports and exports the common audio formats, and edits sound with cut, copy, paste and a library of effects.
+    It is free to download and use, and it runs on Windows, macOS and Linux.</p>
+    <p>With Audacity you can:</p>
+    <ul>
+      <li>Record live audio through a microphone or mixer.</li>
+      <li>Import and export audio in many formats, including WAV, MP3, OGG and FLAC.</li>
+      <li>Edit audio with cut, copy, paste and delete.</li>
+      <li>Apply effects such as noise reduction, equalization and compression.</li>
+    </ul>
+    <section>
+      <title>Who uses it</title>
+      <p>Podcasters record and clean up their episodes.
+      Archivists digitize vinyl records and cassettes.
+      Video makers edit sound effects and voice-overs.
+      Whatever the project, Audacity provides the tools at no cost.</p>
+    </section>
+  </conbody>
+</concept>
