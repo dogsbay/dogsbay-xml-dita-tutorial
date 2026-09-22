@@ -103,6 +103,23 @@
       "publication": {
         "transtype": "html5"
       }
+    },
+    {
+      "name": "collection",
+      "context": {
+        "id": "collection",
+        "input": "audacity-collection.ditamap"
+      },
+      "output": "out/collection",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          {
+            "name": "nav-toc",
+            "value": "full"
+          }
+        ]
+      }
     }
   ]
 }

@@ -9,6 +9,8 @@
   <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->
   <topicref href="topics/glossary/audio-units.dita" toc="no"/>
   <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- This guide's own landing page, under the same bare key every guide uses. -->
+  <keydef keys="start-here" href="topics/recording-your-first-track.dita"/>
   <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
 
   <topichead navtitle="Introduction">

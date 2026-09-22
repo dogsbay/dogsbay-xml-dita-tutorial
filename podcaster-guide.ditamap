@@ -7,6 +7,11 @@
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
   <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- This guide's own landing page, under the same bare key every guide uses. -->
+  <keydef keys="start-here" href="topics/podcast-production-workflow.dita"/>
+  <!-- Cross-deliverable linking: keys of the beginner guide are visible here as
+       beginner.<key>, but resolve to that separately published deliverable. -->
+  <mapref href="beginner-guide.ditamap" scope="peer" keyscope="beginner"/>
   <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
 
   <topichead navtitle="Getting started">
@@ -22,7 +27,7 @@
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
   <topichead navtitle="Podcast production">
-    <topicref href="topics/podcast-production-workflow.dita"/>
+    <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
   </topichead>
   <topichead navtitle="Reference">
     <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
