@@ -43,7 +43,7 @@
     </section>
     <section audience="podcaster">
       <title>Post-production</title>
-      <p>Process the audio in this order:</p>
+      <p>Process the audio in this order (see <xref keyref="effects"/> for each effect's parameters):</p>
       <ol>
         <li><b>Noise reduction</b>: remove background noise using the noise profile from the silence.</li>
         <li><b>Editing</b>: trim mistakes, long pauses and false starts.</li>

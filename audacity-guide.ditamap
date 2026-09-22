@@ -28,9 +28,12 @@
   <!-- Warehouses: pulled in by conref and conkeyref, never pages of their own. -->
   <keydef keys="common-notes" href="shared/common-notes.dita"/>
   <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+  <!-- Print only: the licence page belongs in the PDF, not in the web TOC or search. -->
+  <topicref href="topics/about-this-guide.dita" print="printonly" toc="no" search="no"/>
 
   <topichead navtitle="Getting started">
-    <topicref href="topics/what-is-audacity.dita" collection-type="family">
+    <!-- Two small topics, one page: to-content merges the child into the parent. -->
+    <topicref href="topics/what-is-audacity.dita" collection-type="family" chunk="to-content">
       <topicref href="topics/what-is-digital-audio.dita" keys="digital-audio"/>
     </topicref>
     <topicref href="topics/installing-audacity.dita" keys="install"/>
@@ -43,7 +46,11 @@
       <topicref href="topics/trimming-audio.dita"/>
       <topicref href="topics/exporting-audio.dita"/>
     </topicgroup>
-    <topicref href="topics/removing-background-noise.dita" linking="targetonly"/>
+    <!-- A topicset: a named, reusable branch other maps can pull in by topicsetref. -->
+    <topicset id="cleanup" navtitle="Cleaning up a recording">
+      <topicref href="topics/removing-background-noise.dita" linking="targetonly"/>
+      <topicref href="topics/effect-order.dita"/>
+    </topicset>
   </topichead>
 
   <topichead navtitle="Podcast production" audience="podcaster">
@@ -56,6 +63,8 @@
         <navtitle>Audio formats</navtitle>
       </topicmeta>
     </topicref>
+    <topicref href="topics/effects-reference.dita" keys="effects"/>
+    <topicref href="topics/effect-presets.dita"/>
   </topichead>
   <topichead navtitle="Glossary">
     <topicref href="topics/glossary/audio-units.dita"/>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="chunk-parent">
+  <title>Chunking demonstration</title>
+  <shortdesc>Compare a combined page with separate pages for nested topics.</shortdesc>
+  <prolog>
+    <author>The tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>chunking</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>The parent and child share one source file.</p>
+    </section>
+  </refbody>
+  <reference id="chunk-child">
+    <title>Nested topic</title>
+    <shortdesc>The child can be published on its own page.</shortdesc>
+    <prolog>
+      <author>The tutorial team</author>
+      <metadata>
+        <keywords>
+          <keyword>chunking</keyword>
+        </keywords>
+      </metadata>
+    </prolog>
+    <refbody>
+      <section>
+        <p>Check the generated parent and child links.</p>
+      </section>
+    </refbody>
+  </reference>
+</reference>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="effects-reference">
+  <title>Effects reference</title>
+  <shortdesc>The built-in effects, what each one does, and the parameters that matter.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-02-10"/>
+    </critdates>
+    <metadata>
+      <audience type="user"/>
+      <category>reference</category>
+      <keywords>
+        <keyword>effects</keyword>
+        <keyword>Amplify</keyword>
+        <keyword>Compressor</keyword>
+        <keyword>Normalize</keyword>
+        <indexterm>effects<indexterm>reference</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p><keyword keyref="product-name"/> includes several built-in effects.
+        Select a region of audio, then choose an effect from the <uicontrol>Effect</uicontrol> menu.</p>
+    </section>
+    <table outputclass="compact">
+      <title>Built-in audio effects</title>
+      <tgroup cols="3">
+        <colspec colname="effect" colwidth="1*"/>
+        <colspec colname="description" colwidth="2*"/>
+        <colspec colname="parameters" colwidth="2*"/>
+        <thead>
+          <row>
+            <entry>Effect</entry>
+            <entry>Description</entry>
+            <entry>Key parameters</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Amplify</entry>
+            <entry>Increases or decreases the volume of the selection.</entry>
+            <entry>Amplification (dB); <uicontrol>Allow clipping</uicontrol>.</entry>
+          </row>
+          <row>
+            <entry>Noise Reduction</entry>
+            <entry>Removes steady background noise such as hum, hiss or fan noise.
+              Needs a noise profile.</entry>
+            <entry>Noise reduction (dB): 6 to 12 for mild noise, 12 to 24 for heavy; sensitivity; frequency smoothing.</entry>
+          </row>
+          <row>
+            <entry>Compressor</entry>
+            <entry>Reduces the dynamic range: quiet parts louder, loud parts quieter.</entry>
+            <entry>Threshold (dB), ratio (for example 3:1), attack and release times.</entry>
+          </row>
+          <row>
+            <entry>Normalize</entry>
+            <entry>Sets the peak amplitude to a target level and optionally removes DC offset.</entry>
+            <entry>Peak amplitude (dB), typically -1.0; <uicontrol>Remove DC offset</uicontrol>.</entry>
+          </row>
+          <row>
+            <entry>Fade In, Fade Out</entry>
+            <entry>Ramps the volume of the selection up from silence, or down to it.</entry>
+            <entry>None: a linear fade over the selection.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

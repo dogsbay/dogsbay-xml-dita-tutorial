@@ -23,6 +23,7 @@
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
   <topichead navtitle="Quick reference">
-    <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
+    <!-- The same source topic, published under a different file name in this guide. -->
+    <topicref href="topics/supported-audio-formats.dita" keys="formats" copy-to="topics/formats-quick-reference.dita"/>
   </topichead>
 </map>

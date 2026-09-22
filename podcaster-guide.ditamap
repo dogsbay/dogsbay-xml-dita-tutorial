@@ -23,7 +23,7 @@
     <topicref href="topics/preparing-to-record.dita"/>
     <topicref href="topics/recording-your-first-track.dita"/>
     <topicref href="topics/trimming-audio.dita"/>
-    <topicref href="topics/removing-background-noise.dita"/>
+    <topicsetref href="audacity-guide.ditamap#cleanup"/>
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
   <topichead navtitle="Podcast production">
@@ -31,6 +31,8 @@
   </topichead>
   <topichead navtitle="Reference">
     <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
+    <topicref href="topics/effects-reference.dita" keys="effects"/>
+    <topicref href="topics/effect-presets.dita"/>
     <topicref href="topics/glossary/audio-units.dita"/>
     <topicref href="topics/glossary/g-compression.dita"/>
     <topicref href="topics/glossary/g-normalization.dita"/>
