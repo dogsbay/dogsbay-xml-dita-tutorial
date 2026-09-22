@@ -34,11 +34,8 @@
           <p>If you hear a click at the join, select a few milliseconds around it and apply <menucascade><uicontrol>Effect</uicontrol><uicontrol>Fade In</uicontrol></menucascade> or <uicontrol>Fade Out</uicontrol>.</p>
         </info>
       </step>
-      <step>
-        <cmd>Save the project with <menucascade><uicontrol>File</uicontrol><uicontrol>Save Project</uicontrol><uicontrol>Save Project</uicontrol></menucascade>.</cmd>
-        <info>
-          <p><keyword keyref="product-name"/> saves the project as a single <filepath>.aup3</filepath> file in the folder you choose; the <wintitle>Save Project</wintitle> dialog suggests your Documents folder.</p>
-        </info>
+      <step conref="../shared/common-steps.dita#common-steps/save-project">
+        <cmd/>
       </step>
     </steps>
     <result>

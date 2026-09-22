@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="common-notes">
+  <title>Common notes</title>
+  <shortdesc>Reusable notes, tips and lists that other topics pull in by conref. This topic is a warehouse and is not published on its own.</shortdesc>
+  <body>
+    <note id="backup-warning" type="warning">This effect changes the audio data.
+    Save the project first; you can undo with <uicontrol>Ctrl+Z</uicontrol> (Windows and Linux) or <uicontrol>Cmd+Z</uicontrol> (macOS).</note>
+    <note id="quiet-room-tip" type="tip">For best results, record in a quiet room and position the microphone 15 to 30 cm from your mouth.</note>
+    <p>Recommended starting settings for Noise Reduction:</p>
+    <ul id="noise-reduction-settings">
+      <li id="nr-first">Noise reduction: 12 dB</li>
+      <li>Sensitivity: 6</li>
+      <li id="nr-last">Frequency smoothing: 3</li>
+    </ul>
+  </body>
+</topic>

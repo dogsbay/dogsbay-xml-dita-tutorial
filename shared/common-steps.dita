@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="common-steps">
+  <title>Common steps</title>
+  <shortdesc>Reusable steps that other tasks pull in by conref. This task is a warehouse and is not published on its own.</shortdesc>
+  <taskbody>
+    <steps>
+      <step id="select-region">
+        <cmd>Select the region of audio you want to work on.</cmd>
+        <info>
+          <p>Click and drag in the waveform to select a region; the selection is highlighted.</p>
+        </info>
+      </step>
+      <step id="save-project">
+        <cmd>Save the project with <menucascade><uicontrol>File</uicontrol><uicontrol>Save Project</uicontrol><uicontrol>Save Project</uicontrol></menucascade>.</cmd>
+        <info>
+          <p><keyword keyref="product-name"/> saves the project as a single <keyword keyref="project-extension"/> file in the folder you choose; the <wintitle>Save Project</wintitle> dialog suggests your Documents folder.</p>
+        </info>
+      </step>
+      <!-- Conref push: this step is inserted before the marked step in the recording task. -->
+      <step conaction="pushbefore">
+        <cmd>Turn the playback volume down before you listen.</cmd>
+        <info>
+          <p>A recording can be much louder than you expect; start low and turn it up.</p>
+        </info>
+      </step>
+      <step conaction="mark" conref="../topics/recording-your-first-track.dita#recording-your-first-track/play-back">
+        <cmd/>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -9,7 +9,7 @@
       <p>This task walks you through making your first audio recording.
       You need a microphone connected to your computer.
       If you are new to audio terms such as sample rate and clipping, read <xref href="what-is-digital-audio.dita"/> first.</p>
-      <note type="tip">For best results, record in a quiet room and position the microphone 15 to 30 cm from your mouth.</note>
+      <note conkeyref="common-notes/quiet-room-tip"/>
     </context>
     <steps>
       <step>
@@ -55,8 +55,11 @@
       <step>
         <cmd>Click <uicontrol>Stop</uicontrol> when you are finished.</cmd>
       </step>
-      <step>
+      <step id="play-back">
         <cmd>Click <uicontrol>Play</uicontrol> to listen to your recording.</cmd>
+      </step>
+      <step conref="../shared/common-steps.dita#common-steps/save-project">
+        <cmd/>
       </step>
     </steps>
     <result>

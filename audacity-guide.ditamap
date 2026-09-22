@@ -9,6 +9,9 @@
 
   <mapref href="keydefs-product.ditamap"/>
   <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
+  <!-- Warehouses: pulled in by conref and conkeyref, never pages of their own. -->
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
 
   <topichead navtitle="Getting started">
     <topicref href="topics/what-is-audacity.dita" collection-type="family">
