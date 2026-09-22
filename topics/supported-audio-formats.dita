@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="supported-audio-formats">
+  <title>Supported audio formats</title>
+  <shortdesc>The audio formats Audacity imports and exports, and when to use each one.</shortdesc>
+  <refbody>
+    <section>
+      <p>Audacity imports and exports audio in several formats.
+      Lossless formats keep every sample of the source; lossy formats discard detail to make smaller files.</p>
+    </section>
+    <table>
+      <title>Common audio formats</title>
+      <tgroup cols="4">
+        <colspec colname="format" colwidth="1*"/>
+        <colspec colname="type" colwidth="1*"/>
+        <colspec colname="quality" colwidth="1*"/>
+        <colspec colname="notes" colwidth="2*"/>
+        <thead>
+          <row>
+            <entry>Format</entry>
+            <entry>Type</entry>
+            <entry>Quality</entry>
+            <entry>Notes</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>WAV</entry>
+            <entry>Uncompressed</entry>
+            <entry>Lossless</entry>
+            <entry>Large files, no quality loss.
+            Best for archiving and further editing.</entry>
+          </row>
+          <row>
+            <entry>MP3</entry>
+            <entry>Compressed</entry>
+            <entry>Lossy</entry>
+            <entry>Widely supported, small files.
+            Good for sharing and the web.</entry>
+          </row>
+          <row>
+            <entry>OGG Vorbis</entry>
+            <entry>Compressed</entry>
+            <entry>Lossy</entry>
+            <entry>Open alternative to MP3.
+            Good quality at low bitrates.</entry>
+          </row>
+          <row>
+            <entry>FLAC</entry>
+            <entry>Compressed</entry>
+            <entry>Lossless</entry>
+            <entry>Smaller than WAV with no quality loss.
+            Ideal for archiving when space matters.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>
