@@ -3,6 +3,7 @@
 <dogsbay-project>
   <project-type>DITA</project-type>
   <default-root-map>audacity-guide.ditamap</default-root-map>
+  <default-schematron>house-style.sch</default-schematron>
   <framework>DITA-OT 4.3.5</framework>
   <metadata-policy>
     <rule topic-type="task" field="created" presence="required" pattern="\d{4}-\d\d-\d\d"/>

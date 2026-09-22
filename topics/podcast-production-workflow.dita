@@ -45,13 +45,30 @@
       <title>Post-production</title>
       <p>Process the audio in this order (see <xref keyref="effects"/> for each effect's parameters):</p>
       <ol>
-        <li><b>Noise reduction</b>: remove background noise using the noise profile from the silence.</li>
-        <li><b>Editing</b>: trim mistakes, long pauses and false starts.</li>
-        <li><b><term keyref="gl-normalization">Normalization</term></b>: bring the peak level to -1.0 dB.</li>
-        <li><b><term keyref="gl-compression">Compression</term></b>: even out volume differences (threshold -18 dB, ratio 3:1).</li>
-        <li><b>Export</b>: MP3 at 128 kbps mono for distribution, by hand or from a script (<xref keyref="scripting"/>).</li>
+        <li>Noise reduction: remove background noise using the noise profile from the silence.</li>
+        <li>Editing: trim mistakes, long pauses and false starts.</li>
+        <li><term keyref="gl-normalization">Normalization</term>: bring the peak level to -1.0 dB.</li>
+        <li><term keyref="gl-compression">Compression</term>: even out volume differences (threshold -18 dB, ratio 3:1).</li>
+        <li>Export: MP3 at 128 kbps mono for distribution, by hand or from a script (<xref keyref="scripting"/>).</li>
       </ol>
-      <required-cleanup remap="table">Target loudness per platform: Spotify -14 LUFS, Apple -16 LUFS, YouTube -14 LUFS. Turn into a table once the list is confirmed.</required-cleanup>
+      <simpletable>
+        <sthead>
+          <stentry>Platform</stentry>
+          <stentry>Target loudness</stentry>
+        </sthead>
+        <strow>
+          <stentry>Spotify</stentry>
+          <stentry>-14 LUFS</stentry>
+        </strow>
+        <strow>
+          <stentry>Apple Podcasts</stentry>
+          <stentry>-16 LUFS</stentry>
+        </strow>
+        <strow>
+          <stentry>YouTube</stentry>
+          <stentry>-14 LUFS</stentry>
+        </strow>
+      </simpletable>
     </section>
     <section audience="beginner">
       <title>Getting started with podcasting</title>

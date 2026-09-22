@@ -27,7 +27,7 @@
       <change-item>
         <change-person>The Audacity tutorial team</change-person>
         <change-completed>2026-03-05</change-completed>
-        <change-summary>Marked the metadata-tags step as new in 3.4.</change-summary>
+        <change-summary>Marked the metadata-tags step as new in 3.4; confirmed it is still a separate dialog.</change-summary>
       </change-item>
     </change-historylist>
   </prolog>
@@ -75,7 +75,6 @@
       </step>
     </steps>
     <result>
-      <draft-comment author="reviewer" time="2026-03-05" disposition="open">Check the 3.4 export dialog: is the metadata tags step still a separate dialog?</draft-comment>
       <p>The exported file is in the folder you chose.
       The project itself is unchanged.</p>
     </result>
