@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="scripting-reference">
+<reference id="scripting-reference" xml:lang="en-GB">
   <title>Scripting commands</title>
   <shortdesc>The scripting commands most useful for batch work, their parameters and the responses they return.</shortdesc>
   <prolog>
@@ -42,7 +42,7 @@
     </section>
     <refsyn>
       <title>Commands</title>
-      <parml>
+      <parml translate="no">
         <plentry>
           <pt>
             <cmdname>SelectAll:</cmdname>
@@ -68,7 +68,7 @@
       <title>Responses</title>
       <p>Every reply ends with a status line.
       Success looks like <msgph>BatchCommand finished: OK</msgph>; a failure names the command:</p>
-      <msgblock>Export2: Filename=episode.mp3 NumChannels=1
+      <msgblock translate="no">Export2: Filename=episode.mp3 NumChannels=1
 BatchCommand finished: Failed!</msgblock>
       <p>The <apiname>send</apiname> function in the sample script (<filepath>export-mp3.py</filepath>, listed in <xref href="exporting-from-a-script.dita"/>) returns the whole reply; check it for <msgnum>Failed!</msgnum> before sending the next command.</p>
     </section>

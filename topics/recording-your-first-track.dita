@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="recording-your-first-track">
+<task id="recording-your-first-track" xml:lang="en-GB">
   <title>Recording your first track</title>
   <shortdesc>Make your first recording in <keyword keyref="product-name"/>: pick a microphone, record, stop and play it back.</shortdesc>
   <prolog>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
+<map xml:lang="en-GB">
   <title>Product key definitions</title>
 
   <keydef keys="product-name">
     <topicmeta>
       <keywords>
-        <keyword>Audacity</keyword>
+        <keyword translate="no">Audacity</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -26,7 +26,7 @@
   <keydef keys="project-extension">
     <topicmeta>
       <keywords>
-        <keyword>.aup3</keyword>
+        <keyword translate="no">.aup3</keyword>
       </keywords>
     </topicmeta>
   </keydef>

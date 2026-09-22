@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="exporting-from-a-script">
+<task id="exporting-from-a-script" xml:lang="en-GB">
   <title>Exporting from a script</title>
   <shortdesc>Enable mod-script-pipe, then normalize and export the open project from a Python script.</shortdesc>
   <prolog>
@@ -31,13 +31,13 @@
       <step>
         <cmd>Save the sample script as <filepath>export-mp3.py</filepath>.</cmd>
         <info>
-          <codeblock outputclass="language-python"><coderef href="../samples/export-mp3.py"/></codeblock>
+          <codeblock outputclass="language-python" translate="no"><coderef href="../samples/export-mp3.py"/></codeblock>
         </info>
       </step>
       <step>
         <cmd>Run it, naming the output file.</cmd>
         <info>
-          <screen><userinput>python3 export-mp3.py episode.mp3</userinput>
+          <screen translate="no"><userinput>python3 export-mp3.py episode.mp3</userinput>
 <systemoutput>BatchCommand finished: OK
 BatchCommand finished: OK
 BatchCommand finished: OK</systemoutput></screen>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="effect-presets">
+<reference id="effect-presets" xml:lang="en-GB">
   <title>Presets</title>
   <shortdesc>Most effect dialogs can save their settings as a named preset.</shortdesc>
   <prolog>

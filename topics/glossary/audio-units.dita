@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
 
-<glossgroup id="audio-units">
+<glossgroup id="audio-units" xml:lang="en-GB">
   <title>Units</title>
   <prolog>
     <author type="creator">The Audacity tutorial team</author>
@@ -13,7 +13,7 @@
     </metadata>
   </prolog>
   <glossentry id="gl-decibel">
-    <glossterm>decibel</glossterm>
+    <glossterm><sort-as value="decibel"/>dB (decibel)</glossterm>
     <glossdef>A logarithmic unit for the ratio between two levels. In audio editing, 0 dB is the loudest level a file can hold, and quieter sounds are negative.</glossdef>
     <prolog>
       <author type="creator">The Audacity tutorial team</author>

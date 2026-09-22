@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
+<map xml:lang="en-GB">
   <title>Audacity User Guide</title>
   <topicmeta>
     <shortdesc>Record, edit and export audio with Audacity, from your first track to a finished file.</shortdesc>

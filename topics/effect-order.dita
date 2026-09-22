@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
-<concept id="effect-order">
+<concept id="effect-order" xml:lang="en-GB">
   <title>Why the order of effects matters</title>
   <shortdesc>Clean first, then shape: noise reduction before compression, and normalization last.</shortdesc>
   <prolog>

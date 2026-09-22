@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
-<concept id="what-is-audacity">
+<concept id="what-is-audacity" xml:lang="en-GB">
   <title>What is <keyword keyref="product-name"/>?</title>
   <shortdesc><keyword keyref="product-name"/> is a free, open-source audio editor and recorder for Windows, macOS and Linux.</shortdesc>
   <prolog>

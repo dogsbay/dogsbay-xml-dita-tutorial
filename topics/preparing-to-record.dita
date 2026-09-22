@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="preparing-to-record">
+<task id="preparing-to-record" xml:lang="en-GB">
   <title>Preparing to record</title>
   <shortdesc>Checks to make in any order before you press Record: input level, sample rate and disk space.</shortdesc>
   <prolog>

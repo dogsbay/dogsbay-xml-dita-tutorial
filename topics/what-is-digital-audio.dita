@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
-<concept id="what-is-digital-audio">
+<concept id="what-is-digital-audio" xml:lang="en-GB">
   <title>What is digital audio?</title>
   <shortdesc>Digital audio is sound stored as numbers: samples taken thousands of times a second at a chosen precision.</shortdesc>
   <prolog>
@@ -26,6 +26,7 @@
         <indexterm>decibel<index-see-also>amplitude</index-see-also></indexterm>
         <indexterm>amplitude</indexterm>
         <indexterm><index-sort-as>clipping</index-sort-as>Clipping (distortion)</indexterm>
+        <indexterm>dB<index-see>decibel</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -133,6 +134,7 @@
         </dlentry>
       </dl>
       <lq reftitle="The Audacity Manual">Audio is measured in decibels because the ear hears ratios, not differences.</lq>
+      <p>The same idea in Hebrew, for a right-to-left example: <ph xml:lang="he" dir="rtl">האוזן שומעת יחסים</ph> (the ear hears ratios).</p>
     </section>
   </conbody>
   <related-links>

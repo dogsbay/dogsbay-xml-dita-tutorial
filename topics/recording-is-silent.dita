@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
 
-<troubleshooting id="recording-is-silent">
+<troubleshooting id="recording-is-silent" xml:lang="en-GB">
   <title>The recording is silent</title>
   <shortdesc>You pressed Record but the waveform is a flat line and playback is silent: the input device, its level or its permissions are wrong.</shortdesc>
   <prolog>

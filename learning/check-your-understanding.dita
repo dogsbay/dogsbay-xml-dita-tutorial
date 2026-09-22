@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE learningAssessment PUBLIC "-//OASIS//DTD DITA Learning Assessment//EN" "learningAssessment.dtd">
 
-<learningAssessment id="check-your-understanding">
+<learningAssessment id="check-your-understanding" xml:lang="en-GB">
   <title>Check your understanding</title>
   <shortdesc>Four questions on recording, editing and exporting, with feedback on every answer.</shortdesc>
   <prolog>

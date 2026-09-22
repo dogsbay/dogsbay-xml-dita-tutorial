@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="chunk-parent">
+<reference id="chunk-parent" xml:lang="en-GB">
   <title>Chunking demonstration</title>
   <shortdesc>Compare a combined page with separate pages for nested topics.</shortdesc>
   <prolog>

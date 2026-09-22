@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="supported-audio-formats">
+<reference id="supported-audio-formats" xml:lang="en-GB">
   <title>Supported audio formats</title>
   <shortdesc>The audio formats <keyword keyref="product-name"/> imports and exports, and when to use each one.</shortdesc>
   <prolog>

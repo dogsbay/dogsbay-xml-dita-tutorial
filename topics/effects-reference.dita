@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="effects-reference">
+<reference id="effects-reference" xml:lang="en-GB">
   <title>Effects reference</title>
   <shortdesc>The built-in effects, what each one does, and the parameters that matter.</shortdesc>
   <prolog>
@@ -17,6 +17,7 @@
         <keyword>Amplify</keyword>
         <keyword>Compressor</keyword>
         <keyword>Normalize</keyword>
+        <keyword>Loudness Normalization</keyword>
         <indexterm>effects<indexterm>reference</indexterm></indexterm>
       </keywords>
     </metadata>
@@ -67,6 +68,11 @@
             <entry>Normalize</entry>
             <entry>Sets the peak amplitude to a target level and optionally removes DC offset.</entry>
             <entry>Peak amplitude (dB), typically -1.0; <uicontrol>Remove DC offset</uicontrol>.</entry>
+          </row>
+          <row rev="3.4" status="new">
+            <entry>Loudness Normalization</entry>
+            <entry>Sets the perceived loudness of the selection to a target, for podcast platforms that specify one.</entry>
+            <entry>Target (LUFS), typically -16 for podcasts; <uicontrol>Normalize</uicontrol> to perceived loudness or RMS.</entry>
           </row>
           <row>
             <entry>Fade In, Fade Out</entry>

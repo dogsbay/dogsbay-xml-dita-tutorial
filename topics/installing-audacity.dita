@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="installing-audacity">
+<task id="installing-audacity" xml:lang="en-GB">
   <title>Installing <keyword keyref="product-name"/></title>
   <shortdesc>Download <keyword keyref="product-name"/> from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
   <prolog>

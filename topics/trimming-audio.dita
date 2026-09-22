@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="trimming-audio">
+<task id="trimming-audio" xml:lang="en-GB">
   <title>Trimming audio</title>
   <shortdesc>Remove silence, false starts and mistakes by selecting a region of the waveform and deleting it.</shortdesc>
   <prolog>

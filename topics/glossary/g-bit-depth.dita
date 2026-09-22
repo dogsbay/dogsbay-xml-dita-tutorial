@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 
-<glossentry id="gl-bit-depth">
+<glossentry id="gl-bit-depth" xml:lang="en-GB">
   <glossterm>Bit depth</glossterm>
   <glossdef>The number of bits used to store each sample, which sets how precisely amplitude is recorded. 16-bit audio has 65,536 possible values; 24-bit has over 16 million.</glossdef>
   <prolog>

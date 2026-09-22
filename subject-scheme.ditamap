@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
 
-<subjectScheme>
+<subjectScheme xml:lang="en-GB">
   <title>Controlled values for the Audacity guide</title>
   <!-- The vocabulary: a taxonomy of subjects. -->
   <subjectdef keys="os">

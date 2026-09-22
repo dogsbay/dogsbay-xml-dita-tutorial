@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 
-<glossentry id="gl-normalization">
+<glossentry id="gl-normalization" xml:lang="en-GB">
   <glossterm>Normalization</glossterm>
   <glossdef>Raising or lowering the level of a recording so that its loudest peak sits at a chosen target, giving consistent loudness across clips.</glossdef>
   <prolog>
