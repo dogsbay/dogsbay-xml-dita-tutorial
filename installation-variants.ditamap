@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+
+<map>
+  <title>Installing Audacity: one topic, three platform variants</title>
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/glossary/audio-units.dita" toc="no"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- The exporting task links to the formats topic by key; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/supported-audio-formats.dita" keys="formats" toc="no"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+  <!-- Branch filtering (DITA 1.3): each ditavalref makes DITA-OT copy this branch
+       and filter the copy for one platform. The copies get the prefix and suffix
+       named in ditavalmeta; the keys defined inside the branch get a key scope
+       prefix so the three copies do not collide. -->
+  <topicref href="topics/installing-audacity.dita" keys="install">
+    <ditavalref href="filters/platform-windows.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>win-</dvrResourcePrefix>
+        <dvrKeyscopePrefix>win.</dvrKeyscopePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <ditavalref href="filters/platform-mac.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>mac-</dvrResourcePrefix>
+        <dvrKeyscopePrefix>mac.</dvrKeyscopePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <ditavalref href="filters/platform-linux.ditaval">
+      <ditavalmeta>
+        <dvrResourceSuffix>-linux</dvrResourceSuffix>
+        <dvrKeyscopePrefix>linux.</dvrKeyscopePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <topicref href="topics/recording-your-first-track.dita" keys="first-track"/>
+  </topicref>
+</map>

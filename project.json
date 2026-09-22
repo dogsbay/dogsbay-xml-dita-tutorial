@@ -92,6 +92,17 @@
       "publication": {
         "transtype": "html5"
       }
+    },
+    {
+      "name": "install-variants",
+      "context": {
+        "id": "install-variants",
+        "input": "installation-variants.ditamap"
+      },
+      "output": "out/install-variants",
+      "publication": {
+        "transtype": "html5"
+      }
     }
   ]
 }
