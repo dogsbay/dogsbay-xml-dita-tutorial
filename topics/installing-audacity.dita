@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="installing-audacity">
+  <title>Installing Audacity</title>
+  <shortdesc>Download Audacity from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>You need about 250 MB of free disk space and an account that can install software.</p>
+    </prereq>
+    <context>
+      <p>Audacity is available for Windows, macOS and Linux.
+      The steps differ by operating system only at the install step.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Download Audacity from <filepath>https://www.audacityteam.org/download/</filepath>.</cmd>
+        <info>
+          <p>Select the installer for your operating system.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>Install it.</cmd>
+        <choicetable>
+          <chhead>
+            <choptionhd>Operating system</choptionhd>
+            <chdeschd>How to install</chdeschd>
+          </chhead>
+          <chrow>
+            <choption>Windows</choption>
+            <chdesc>Double-click the downloaded <filepath>.exe</filepath> file and follow the setup wizard.
+            Accept the default location, <filepath>C:\Program Files\Audacity</filepath>, unless you have a reason to change it.</chdesc>
+          </chrow>
+          <chrow>
+            <choption>macOS</choption>
+            <chdesc>Open the downloaded <filepath>.dmg</filepath> file and drag Audacity to your <filepath>Applications</filepath> folder.</chdesc>
+          </chrow>
+          <chrow>
+            <choption>Linux</choption>
+            <chdesc>Install from your distribution's package manager, for example <codeph>sudo apt install audacity</codeph> on Ubuntu or Debian, <codeph>sudo dnf install audacity</codeph> on Fedora.</chdesc>
+          </chrow>
+        </choicetable>
+      </step>
+      <step>
+        <cmd>Launch Audacity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>If Audacity asks to scan for audio plugins, click <uicontrol>OK</uicontrol>.</cmd>
+            <info>
+              <p>This happens once, on first launch.</p>
+            </info>
+          </substep>
+          <substep importance="optional">
+            <cmd>Choose <menucascade><uicontrol>Help</uicontrol><uicontrol>Check for Updates</uicontrol></menucascade> to confirm you have the latest version.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <p>The main window opens with an empty project.</p>
+        </stepresult>
+      </step>
+    </steps>
+    <result>
+      <p>Audacity is installed and ready to use.</p>
+    </result>
+    <postreq>
+      <p>Connect a microphone before you continue to recording.</p>
+    </postreq>
+  </taskbody>
+</task>

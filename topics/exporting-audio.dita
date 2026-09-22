@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="exporting-audio">
+  <title>Exporting audio</title>
+  <shortdesc>Export a finished project as a WAV, MP3, OGG or FLAC file that other programs and devices can play.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>Finish editing and save the project.
+      A project file (<filepath>.aup3</filepath>) can only be opened by Audacity; exporting creates an ordinary audio file.</p>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Choose <menucascade><uicontrol>File</uicontrol><uicontrol>Export Audio</uicontrol></menucascade>.</cmd>
+        <stepresult>
+          <p>The <wintitle>Export Audio</wintitle> dialog opens.</p>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Choose a format.</cmd>
+        <choices>
+          <choice>Choose <uicontrol>WAV</uicontrol> or <uicontrol>FLAC</uicontrol> for an archive copy with no quality loss.</choice>
+          <choice>Choose <uicontrol>MP3</uicontrol> or <uicontrol>OGG</uicontrol> for a small file to share.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Set the format options.</cmd>
+        <info>
+          <p>For MP3, the bit rate controls the trade-off between size and quality.</p>
+        </info>
+        <stepxmp>
+          <p>A spoken-word podcast exports well at <uicontrol>128 kbps</uicontrol>, <uicontrol>Mono</uicontrol>.
+          Music needs <uicontrol>192 kbps</uicontrol> or more, <uicontrol>Stereo</uicontrol>.</p>
+        </stepxmp>
+      </step>
+      <step>
+        <cmd>Choose a folder and a file name, then click <uicontrol>Export</uicontrol>.</cmd>
+        <steptroubleshooting>
+          <p>If the <uicontrol>Export</uicontrol> button is disabled, the file name is empty or the folder is read-only.</p>
+        </steptroubleshooting>
+      </step>
+      <step importance="optional">
+        <cmd>Fill in the <wintitle>Edit Metadata Tags</wintitle> dialog and click <uicontrol>OK</uicontrol>.</cmd>
+        <info>
+          <p>Title, artist and album are shown by most players.</p>
+        </info>
+      </step>
+    </steps>
+    <result>
+      <p>The exported file is in the folder you chose.
+      The project itself is unchanged.</p>
+    </result>
+    <example>
+      <title>Exporting a podcast episode</title>
+      <p>Choose <uicontrol>MP3</uicontrol>, set <uicontrol>Bit Rate Mode</uicontrol> to <uicontrol>Constant</uicontrol>, <uicontrol>Quality</uicontrol> to <uicontrol>128 kbps</uicontrol> and <uicontrol>Channel Mode</uicontrol> to <uicontrol>Force export to mono</uicontrol>.
+      A 30-minute episode exports to a file of about 27 MB.</p>
+    </example>
+  </taskbody>
+</task>
