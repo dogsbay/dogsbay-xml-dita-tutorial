@@ -1,0 +1,39 @@
+DogsBay DITA tutorial — step by step
+Copyright (C) 2026 DogsBay Ltd.
+
+This work is licensed under the Creative Commons Attribution 4.0
+International licence. See LICENSE for the full text.
+
+-------------------------------------------------------------------------------
+Adapted material: the Audacity Manual
+-------------------------------------------------------------------------------
+Files:    topics/**, shared/**
+Source:   The Audacity Manual, https://manual.audacityteam.org/
+Credit:   Copyright the Audacity Team and the Manual's authors.
+Licence:  Creative Commons Attribution 3.0
+          https://creativecommons.org/licenses/by/3.0/
+
+The Manual states: "Pages in this Manual are available under the terms of the
+Creative Commons Attribution 3.0 license. In essence, you are free to (1) copy,
+distribute and transmit the work (2) to adapt the work, under condition you
+must attribute the work to the authors (but not in any way that suggests that
+they endorse you or your use of the work). For any reuse or distribution, you
+may not remove our copyright notice and must make clear to others the license
+terms of this work."
+
+That notice is retained here, and the licence terms of the source work are
+stated above, as the licence requires.
+
+Changes made: the material was rewritten as DITA 1.3 topics, shortened, and
+restructured into maps to teach DITA. It is a teaching sample, not Audacity's
+documentation, and may be out of date or simplified. The Audacity Team does not
+endorse this work and is not affiliated with it.
+
+Audacity(R) is a registered trademark of Dominic Mazzoni.
+
+-------------------------------------------------------------------------------
+Original material
+-------------------------------------------------------------------------------
+README.md, the DITAVAL filters under filters/, house-style.sch, project.json,
+the scripts/ and the .dogsbay/ and .xagent/ configuration are original work by
+DogsBay Ltd., under the same CC BY 4.0 licence as this work.
