@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="exporting-from-a-script">
+  <title>Exporting from a script</title>
+  <shortdesc>Enable mod-script-pipe, then normalize and export the open project from a Python script.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-03-01"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="expert"/>
+      <category>automation</category>
+      <keywords>
+        <keyword>scripting</keyword>
+        <keyword>Python</keyword>
+        <keyword>export</keyword>
+        <indexterm>scripting<indexterm>from Python</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <prereq>
+      <p>Python 3 is installed, and a project is open in <keyword keyref="product-name"/>.</p>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Choose <menucascade><uicontrol>Edit</uicontrol><uicontrol>Preferences</uicontrol><uicontrol>Modules</uicontrol></menucascade>, set <uicontrol>mod-script-pipe</uicontrol> to <uicontrol>Enabled</uicontrol>, and restart <keyword keyref="product-name"/>.</cmd>
+      </step>
+      <step>
+        <cmd>Save the sample script as <filepath>export-mp3.py</filepath>.</cmd>
+        <info>
+          <codeblock outputclass="language-python"><coderef href="../samples/export-mp3.py"/></codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Run it, naming the output file.</cmd>
+        <info>
+          <screen><userinput>python3 export-mp3.py episode.mp3</userinput>
+<systemoutput>BatchCommand finished: OK
+BatchCommand finished: OK
+BatchCommand finished: OK</systemoutput></screen>
+        </info>
+        <steptroubleshooting>
+          <p>If the script stops with <msgph>FileNotFoundError</msgph>, the pipe does not exist: <keyword keyref="product-name"/> is not running or the module is not enabled.
+          On Linux, <cmdname>ls</cmdname> <filepath>/tmp/audacity_script_pipe.*</filepath> shows whether the pipes are there.</p>
+        </steptroubleshooting>
+      </step>
+    </steps>
+    <result>
+      <p>The project is normalized to -1 dB and exported as mono MP3.
+      Change <parmname>NumChannels</parmname> to <codeph>2</codeph> for stereo.</p>
+    </result>
+  </taskbody>
+  <related-links>
+    <link href="scripting-reference.dita"/>
+  </related-links>
+</task>

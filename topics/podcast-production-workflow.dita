@@ -49,7 +49,7 @@
         <li><b>Editing</b>: trim mistakes, long pauses and false starts.</li>
         <li><b><term keyref="gl-normalization">Normalization</term></b>: bring the peak level to -1.0 dB.</li>
         <li><b><term keyref="gl-compression">Compression</term></b>: even out volume differences (threshold -18 dB, ratio 3:1).</li>
-        <li><b>Export</b>: MP3 at 128 kbps mono for distribution.</li>
+        <li><b>Export</b>: MP3 at 128 kbps mono for distribution, by hand or from a script (<xref keyref="scripting"/>).</li>
       </ol>
     </section>
     <section audience="beginner">

@@ -36,6 +36,8 @@
     <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
     <topicref href="topics/effects-reference.dita" keys="effects"/>
     <topicref href="topics/effect-presets.dita"/>
+    <topicref href="topics/scripting-reference.dita" keys="scripting"/>
+    <topicref href="topics/exporting-from-a-script.dita"/>
     <topicref href="topics/glossary/audio-units.dita"/>
     <topicref href="topics/glossary/g-compression.dita"/>
     <topicref href="topics/glossary/g-normalization.dita"/>

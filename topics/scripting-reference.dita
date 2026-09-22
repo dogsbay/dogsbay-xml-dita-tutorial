@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="scripting-reference">
+  <title>Scripting commands</title>
+  <shortdesc>The scripting commands most useful for batch work, their parameters and the responses they return.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-03-01"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="expert"/>
+      <category>reference</category>
+      <keywords>
+        <keyword>scripting</keyword>
+        <keyword>mod-script-pipe</keyword>
+        <keyword>automation</keyword>
+        <indexterm>scripting<indexterm>commands</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Syntax</title>
+      <p>A scripting command is a command name, a colon, and zero or more <varname>Name</varname>=<varname>Value</varname> parameters.
+      <keyword keyref="product-name"/> replies with the command's output followed by a status line.</p>
+      <syntaxdiagram>
+        <title>Scripting command</title>
+        <groupseq>
+          <kwd>CommandName</kwd>
+          <delim>:</delim>
+          <groupseq importance="optional">
+            <repsep/>
+            <var>Name</var>
+            <delim>=</delim>
+            <var>Value</var>
+          </groupseq>
+        </groupseq>
+      </syntaxdiagram>
+      <p>A synopsis in one line: <synph><kwd>Export2</kwd><delim>:</delim> <var>Filename</var>=<var>path</var> <var>NumChannels</var>=<var>1|2</var></synph>.</p>
+    </section>
+    <refsyn>
+      <title>Commands</title>
+      <parml>
+        <plentry>
+          <pt>
+            <cmdname>SelectAll:</cmdname>
+          </pt>
+          <pd>Selects every track from start to end. No parameters.</pd>
+        </plentry>
+        <plentry>
+          <pt><cmdname>Normalize:</cmdname> <parmname>PeakLevel</parmname>=<varname>dB</varname></pt>
+          <pd>Normalizes the selection so its peak sits at <varname>dB</varname>, typically <codeph>-1</codeph>.</pd>
+        </plentry>
+        <plentry>
+          <pt><cmdname>Export2:</cmdname> <parmname>Filename</parmname>=<varname>path</varname> <parmname>NumChannels</parmname>=<varname>n</varname></pt>
+          <pd>Exports the selection to <varname>path</varname>; the extension selects the format.
+          <option>NumChannels=1</option> forces mono.</pd>
+        </plentry>
+        <plentry>
+          <pt><cmdname>GetInfo:</cmdname> <parmname>Type</parmname>=<varname>Commands|Tracks|Clips</varname></pt>
+          <pd>Returns a JSON description of the requested objects.</pd>
+        </plentry>
+      </parml>
+    </refsyn>
+    <section>
+      <title>Responses</title>
+      <p>Every reply ends with a status line.
+      Success looks like <msgph>BatchCommand finished: OK</msgph>; a failure names the command:</p>
+      <msgblock>Export2: Filename=episode.mp3 NumChannels=1
+BatchCommand finished: Failed!</msgblock>
+      <p>The <apiname>send</apiname> function in the sample script (<filepath>export-mp3.py</filepath>, listed in <xref href="exporting-from-a-script.dita"/>) returns the whole reply; check it for <msgnum>Failed!</msgnum> before sending the next command.</p>
+    </section>
+    <properties>
+      <prophead>
+        <proptypehd>Platform</proptypehd>
+        <propvaluehd>Pipe location</propvaluehd>
+        <propdeschd>Notes</propdeschd>
+      </prophead>
+      <property platform="linux mac">
+        <proptype>Linux, macOS</proptype>
+        <propvalue>
+          <filepath>/tmp/audacity_script_pipe.to.<varname>uid</varname></filepath>
+        </propvalue>
+        <propdesc>A named pipe per user id; open it for writing.</propdesc>
+      </property>
+      <property platform="windows">
+        <proptype>Windows</proptype>
+        <propvalue>
+          <filepath>\\.\pipe\ToSrvPipe</filepath>
+        </propvalue>
+        <propdesc>A Windows named pipe; open it in text mode.</propdesc>
+      </property>
+    </properties>
+  </refbody>
+</reference>
