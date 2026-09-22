@@ -8,6 +8,7 @@
   </topicmeta>
 
   <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
   <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
   <!-- Warehouses: pulled in by conref and conkeyref, never pages of their own. -->
   <keydef keys="common-notes" href="shared/common-notes.dita"/>
@@ -37,6 +38,16 @@
       </topicmeta>
     </topicref>
   </topichead>
+  <topichead navtitle="Glossary">
+    <topicref href="topics/glossary/audio-units.dita"/>
+    <topicref href="topics/glossary/g-bit-depth.dita"/>
+    <topicref href="topics/glossary/g-clipping.dita"/>
+    <topicref href="topics/glossary/g-compression.dita"/>
+    <topicref href="topics/glossary/g-normalization.dita"/>
+    <topicref href="topics/glossary/g-sample-rate.dita"/>
+    <topicref href="topics/glossary/g-waveform.dita"/>
+  </topichead>
+
   <reltable>
     <title>Concept, task and reference links</title>
     <relheader>

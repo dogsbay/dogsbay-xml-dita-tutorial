@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+
+<glossentry id="gl-waveform">
+  <glossterm>Waveform</glossterm>
+  <glossdef>The shape of a sound wave over time, drawn as amplitude against time. Audacity shows each track as a waveform.</glossdef>
+</glossentry>

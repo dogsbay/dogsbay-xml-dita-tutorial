@@ -10,7 +10,7 @@
     If you would rather start recording, go straight to <xref href="recording-your-first-track.dita"/> and come back later.</p>
     <section>
       <title>Waveforms</title>
-      <p>Sound travels through air as a continuous <term>waveform</term> of pressure changes.
+      <p>Sound travels through air as a continuous <term keyref="gl-waveform">waveform</term> of pressure changes.
       A microphone converts these pressure changes into an electrical signal.
       To store the signal digitally, the computer takes thousands of measurements, called <term>samples</term>, of the signal's amplitude every second.</p>
       <fig id="fig-waveform">
@@ -34,7 +34,7 @@
     </section>
     <section>
       <title>Sample rate</title>
-      <p>The <term>sample rate</term> is the number of samples captured per second, measured in hertz (Hz).
+      <p>The <term keyref="gl-sample-rate">sample rate</term> is the number of samples captured per second, measured in <abbreviated-form keyref="gl-hertz"/>.
       Common sample rates are:</p>
       <sl>
         <sli>44,100 Hz: CD quality, enough for most audio work</sli>
@@ -45,7 +45,7 @@
     </section>
     <section>
       <title>Bit depth</title>
-      <p><term>Bit depth</term> determines how precisely each sample's amplitude is recorded.</p>
+      <p><term keyref="gl-bit-depth">Bit depth</term> determines how precisely each sample's amplitude is recorded.</p>
       <simpletable>
         <sthead>
           <stentry>Bit depth</stentry>
@@ -75,7 +75,7 @@
         <dlentry>
           <dt>Amplitude</dt>
           <dd>The height of a sound wave, corresponding to how loud the sound is.
-          Measured in decibels (dB), a ratio against a reference level:
+          Measured in <abbreviated-form keyref="gl-decibel"/>, a ratio against a reference level:
           <equation-block>
             <mathml>
               <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="block">
@@ -93,7 +93,9 @@
           A level of <equation-inline><mathml><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mtext>dB</m:mtext></m:mrow></m:math></mathml><ph>−6 dB</ph></equation-inline> is half the amplitude of the reference.</dd>
         </dlentry>
         <dlentry>
-          <dt>Clipping</dt>
+          <dt>
+            <term keyref="gl-clipping">Clipping</term>
+          </dt>
           <dd>Distortion that occurs when the signal exceeds the maximum amplitude the system can represent.
           It appears as flat-topped waveforms.</dd>
         </dlentry>

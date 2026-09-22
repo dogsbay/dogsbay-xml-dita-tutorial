@@ -10,9 +10,9 @@
     </context>
     <steps-unordered>
       <step>
-        <cmd>Speak at normal volume and watch the recording meter; aim for peaks around -12 dB.</cmd>
+        <cmd>Speak at normal volume and watch the recording meter; aim for peaks around -12 <abbreviated-form keyref="gl-decibel"/>.</cmd>
         <tutorialinfo>
-          <p>Leaving headroom avoids clipping, the flat-topped distortion that no effect can repair.</p>
+          <p>Leaving headroom avoids <term keyref="gl-clipping">clipping</term>, the flat-topped distortion that no effect can repair.</p>
         </tutorialinfo>
       </step>
       <step>

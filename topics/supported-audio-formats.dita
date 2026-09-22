@@ -7,7 +7,7 @@
   <refbody>
     <section>
       <p><keyword keyref="product-name"/> imports and exports audio in several formats.
-      <term>Lossless</term> formats keep every sample of the source; <term>lossy</term> formats discard detail to make smaller files.
+      <term>Lossless</term> formats keep every sample at the recorded <term keyref="gl-bit-depth">bit depth</term> of the source; <term>lossy</term> formats discard detail to make smaller files.
       Exported files are named after the project, so <filepath>podcast-episode-1.aup3</filepath> exports as <filepath>podcast-episode-1.mp3</filepath>.</p>
     </section>
     <section id="choosing">
@@ -46,7 +46,7 @@
           </row>
           <row>
             <entry>MP3</entry>
-            <entry>Compressed</entry>
+            <entry><term keyref="gl-compression">Compressed</term></entry>
             <entry>Lossy</entry>
             <entry>Widely supported, small files.
             Needs the <i>LAME</i> encoder, bundled since version 2.3.2.
