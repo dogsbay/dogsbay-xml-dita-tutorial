@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+
+<bookmap>
+  <booktitle>
+    <mainbooktitle>Audacity User Guide</mainbooktitle>
+    <booktitlealt>Record, edit and export audio with Audacity</booktitlealt>
+  </booktitle>
+  <bookmeta>
+    <author type="creator">The Audacity tutorial team</author>
+    <publisherinformation>
+      <organization>DogsBay Ltd.</organization>
+    </publisherinformation>
+    <critdates>
+      <created date="2026-01-10"/>
+      <revised modified="2026-03-02"/>
+    </critdates>
+    <bookid>
+      <bookpartno>AUD-UG-34</bookpartno>
+      <edition>3.4</edition>
+    </bookid>
+    <bookrights>
+      <copyrfirst>
+        <year>2026</year>
+      </copyrfirst>
+      <bookowner>
+        <organization>DogsBay Ltd.</organization>
+      </bookowner>
+    </bookrights>
+  </bookmeta>
+
+  <frontmatter>
+    <!-- A bookmap's content model is strict: keys and resource-only refs live
+         inside frontmatter, before the book lists. -->
+    <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
+    <mapref href="keydefs-product.ditamap"/>
+    <mapref href="keydefs-glossary.ditamap"/>
+    <keydef keys="common-notes" href="shared/common-notes.dita"/>
+    <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
+    <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <tablelist/>
+    </booklists>
+    <notices href="topics/about-this-guide.dita"/>
+    <preface href="topics/what-is-audacity.dita"/>
+  </frontmatter>
+
+  <part navtitle="Getting started">
+    <chapter href="topics/what-is-digital-audio.dita" keys="digital-audio"/>
+    <chapter href="topics/installing-audacity.dita" keys="install"/>
+  </part>
+  <part navtitle="Recording and editing">
+    <chapter href="topics/preparing-to-record.dita">
+      <topicref href="topics/recording-your-first-track.dita"/>
+    </chapter>
+    <chapter href="topics/trimming-audio.dita"/>
+    <chapter href="topics/removing-background-noise.dita">
+      <topicref href="topics/effect-order.dita"/>
+    </chapter>
+    <chapter href="topics/exporting-audio.dita"/>
+  </part>
+  <part navtitle="Podcasting">
+    <chapter href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
+  </part>
+
+  <appendix href="topics/supported-audio-formats.dita" keys="formats"/>
+  <appendix href="topics/effects-reference.dita" keys="effects"/>
+  <appendix href="topics/effect-presets.dita"/>
+
+  <backmatter>
+    <booklists>
+      <glossarylist>
+        <topicref href="topics/glossary/audio-units.dita"/>
+        <topicref href="topics/glossary/g-bit-depth.dita"/>
+        <topicref href="topics/glossary/g-clipping.dita"/>
+        <topicref href="topics/glossary/g-compression.dita"/>
+        <topicref href="topics/glossary/g-normalization.dita"/>
+        <topicref href="topics/glossary/g-sample-rate.dita"/>
+        <topicref href="topics/glossary/g-waveform.dita"/>
+      </glossarylist>
+      <indexlist/>
+    </booklists>
+  </backmatter>
+</bookmap>

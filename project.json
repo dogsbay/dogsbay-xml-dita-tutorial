@@ -120,6 +120,17 @@
           }
         ]
       }
+    },
+    {
+      "name": "book-pdf",
+      "context": {
+        "id": "book-pdf",
+        "input": "audacity-book.ditamap"
+      },
+      "output": "out/book-pdf",
+      "publication": {
+        "transtype": "pdf"
+      }
     }
   ]
 }
