@@ -1,0 +1,21 @@
+{
+  "deliverables": [
+    {
+      "name": "full",
+      "context": {
+        "id": "full",
+        "input": "audacity-guide.ditamap"
+      },
+      "output": "out/full",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          {
+            "name": "nav-toc",
+            "value": "full"
+          }
+        ]
+      }
+    }
+  ]
+}

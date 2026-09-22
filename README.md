@@ -2,7 +2,7 @@
 
 Build a guide through 27 stages. Maps begin at stage 02; HTML publication begins at stage 03.
 
-You are on stage 02: first map.
+You are on stage 03: first build.
 
 ## Stages
 
