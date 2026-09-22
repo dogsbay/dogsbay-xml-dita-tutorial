@@ -22,13 +22,29 @@
         <cmd>Select your microphone from the recording device list in the <uicontrol>Device Toolbar</uicontrol>.</cmd>
         <info>
           <p>The <uicontrol>Device Toolbar</uicontrol> is near the top of the window.
-          The recording device list has a microphone icon next to it.</p>
+          The recording device list has a microphone icon next to it.
+          Click a control in the picture to read about it.</p>
+          <imagemap>
+            <image href="../images/device-toolbar.png">
+              <alt>The Device Toolbar: audio host, recording device, channels and playback device</alt>
+            </image>
+            <area>
+              <shape>rect</shape>
+              <coords>170,20,370,60</coords>
+              <xref href="preparing-to-record.dita">Recording device</xref>
+            </area>
+            <area>
+              <shape>rect</shape>
+              <coords>380,20,490,60</coords>
+              <xref href="what-is-digital-audio.dita">Channels</xref>
+            </area>
+          </imagemap>
         </info>
       </step>
       <step>
         <cmd>Click <uicontrol>Record</uicontrol>, or press <uicontrol>R</uicontrol>, to start recording.</cmd>
         <info>
-          <p>A blue waveform appears as Audacity captures audio from your microphone.</p>
+          <p>A blue waveform appears as Audacity captures audio from your microphone, like <xref href="what-is-digital-audio.dita#what-is-digital-audio/fig-waveform"/>.</p>
           <note type="warning">A flat line instead of a waveform means the microphone is not selected correctly.
           Click <uicontrol>Stop</uicontrol> and check the recording device.</note>
         </info>

@@ -13,6 +13,24 @@
       <p>Sound travels through air as a continuous <term>waveform</term> of pressure changes.
       A microphone converts these pressure changes into an electrical signal.
       To store the signal digitally, the computer takes thousands of measurements, called <term>samples</term>, of the signal's amplitude every second.</p>
+      <fig id="fig-waveform">
+        <title>A recorded waveform, with clipping at the right</title>
+        <image href="../images/waveform.png" placement="break" scale="80">
+          <alt>A waveform whose peaks are cut flat at the right-hand end</alt>
+        </image>
+      </fig>
+      <p>Drawn schematically, one cycle of a pure tone looks like this:</p>
+      <fig>
+        <title>One cycle of a sine wave</title>
+        <svg-container>
+          <svg:svg xmlns:svg="http://www.w3.org/2000/svg" width="320" height="120" viewBox="0 0 320 120">
+            <svg:line x1="0" y1="60" x2="320" y2="60" stroke="#999" stroke-width="1"/>
+            <svg:path d="M0,60 C40,0 80,0 120,60 S200,120 240,60 S300,20 320,45" fill="none" stroke="#3c78c8" stroke-width="3"/>
+            <svg:text x="8" y="16" font-size="12" fill="#333">amplitude</svg:text>
+            <svg:text x="270" y="76" font-size="12" fill="#333">time</svg:text>
+          </svg:svg>
+        </svg-container>
+      </fig>
     </section>
     <section>
       <title>Sample rate</title>
@@ -57,7 +75,22 @@
         <dlentry>
           <dt>Amplitude</dt>
           <dd>The height of a sound wave, corresponding to how loud the sound is.
-          Measured in decibels (dB).</dd>
+          Measured in decibels (dB), a ratio against a reference level:
+          <equation-block>
+            <mathml>
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="block">
+                <m:mrow>
+                  <m:msub><m:mi>L</m:mi><m:mtext>dB</m:mtext></m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>20</m:mn>
+                  <m:msub><m:mi>log</m:mi><m:mn>10</m:mn></m:msub>
+                  <m:mfrac><m:mi>A</m:mi><m:msub><m:mi>A</m:mi><m:mn>0</m:mn></m:msub></m:mfrac>
+                </m:mrow>
+              </m:math>
+            </mathml>
+            <ph>L (dB) = 20 log10 (A / A0)</ph>
+          </equation-block>
+          A level of <equation-inline><mathml><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mtext>dB</m:mtext></m:mrow></m:math></mathml><ph>−6 dB</ph></equation-inline> is half the amplitude of the reference.</dd>
         </dlentry>
         <dlentry>
           <dt>Clipping</dt>
