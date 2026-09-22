@@ -28,6 +28,12 @@
       You need a microphone connected to your computer.
       If you are new to audio terms such as sample rate and clipping, read <xref href="what-is-digital-audio.dita"/> first.</p>
       <note conkeyref="common-notes/quiet-room-tip"/>
+      <hazardstatement conkeyref="common-notes/hearing-hazard">
+        <messagepanel>
+          <typeofhazard/>
+          <howtoavoid/>
+        </messagepanel>
+      </hazardstatement>
     </context>
     <steps>
       <step>

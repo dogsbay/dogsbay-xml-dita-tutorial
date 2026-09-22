@@ -23,6 +23,17 @@
     <note id="backup-warning" type="warning">This effect changes the audio data.
     Save the project first; you can undo with <ph platform="windows linux"><uicontrol>Ctrl+Z</uicontrol></ph><ph platform="mac"> <ph platform="windows linux">or, on macOS,</ph> <uicontrol>Cmd+Z</uicontrol></ph>.</note>
     <note id="quiet-room-tip" type="tip">For best results, record in a quiet room and position the microphone 15 to 30 cm from your mouth.</note>
+    <hazardstatement id="hearing-hazard" type="caution">
+      <messagepanel>
+        <typeofhazard>Loud playback through headphones</typeofhazard>
+        <consequence>Sustained listening above 85 dB can damage your hearing permanently.</consequence>
+        <howtoavoid>Set the playback volume low before you press Play and raise it gradually.</howtoavoid>
+        <howtoavoid>Take the headphones off before applying Amplify or Normalize with the track playing.</howtoavoid>
+      </messagepanel>
+      <hazardsymbol href="../images/hazard-hearing.png" height="32px">
+        <alt>Warning triangle</alt>
+      </hazardsymbol>
+    </hazardstatement>
     <p>Recommended starting settings for Noise Reduction:</p>
     <ul id="noise-reduction-settings">
       <li id="nr-first">Noise reduction: 12 dB</li>

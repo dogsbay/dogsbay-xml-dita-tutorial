@@ -20,7 +20,8 @@
     Its topics are adapted from the Audacity Manual, copyright the Audacity Team and the Manual's authors, under the Creative Commons Attribution 3.0 licence.</p>
     <p>New to <keyword keyref="product-name"/>? Start with <xref keyref="start-here"/>.
     New to audio? Read <xref keyref="digital-audio"/> first.
-    Here for podcasting? Go straight to <xref keyref="podcast-workflow"/>.</p>
+    Here for podcasting? Go straight to <xref keyref="podcast-workflow"/>.
+    Recording nothing but silence? See <xref keyref="silent"/>.</p>
     <p><keyword keyref="product-name"/> is a registered trademark of Dominic Mazzoni.
     The Audacity Team does not endorse this guide and is not affiliated with it.</p>
   </body>

@@ -65,7 +65,7 @@
     <chapter href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
   </part>
 
-  <appendix href="topics/recording-is-silent.dita"/>
+  <appendix href="topics/recording-is-silent.dita" keys="silent"/>
   <appendix href="topics/supported-audio-formats.dita" keys="formats"/>
   <appendix href="topics/effects-reference.dita" keys="effects"/>
   <appendix href="topics/effect-presets.dita"/>

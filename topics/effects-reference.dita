@@ -25,6 +25,13 @@
     <section>
       <p><keyword keyref="product-name"/> includes several built-in effects.
         Select a region of audio, then choose an effect from the <uicontrol>Effect</uicontrol> menu.</p>
+      <hazardstatement type="warning">
+        <messagepanel>
+          <typeofhazard>Amplify with <uicontrol>Allow clipping</uicontrol> enabled</typeofhazard>
+          <consequence>The output can exceed 0 dB and reach your speakers or headphones as a sudden, very loud burst.</consequence>
+          <howtoavoid>Leave <uicontrol>Allow clipping</uicontrol> off unless you intend to clip, and preview at low volume.</howtoavoid>
+        </messagepanel>
+      </hazardstatement>
     </section>
     <table outputclass="compact">
       <title>Built-in audio effects</title>

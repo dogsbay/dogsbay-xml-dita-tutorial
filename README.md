@@ -2,7 +2,7 @@
 
 Build a guide through 27 stages. Maps begin at stage 02; HTML publication begins at stage 03.
 
-You are on stage 20: troubleshooting.
+You are on stage 21: hazards and safety.
 
 ## Stages
 
