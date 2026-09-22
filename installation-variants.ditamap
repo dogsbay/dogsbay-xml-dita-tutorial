@@ -35,6 +35,8 @@
         <dvrKeyscopePrefix>linux.</dvrKeyscopePrefix>
       </ditavalmeta>
     </ditavalref>
-    <topicref href="topics/recording-your-first-track.dita" keys="first-track"/>
+    <topicref href="topics/recording-your-first-track.dita" keys="first-track">
+      <topicref href="topics/recording-is-silent.dita" keys="silent"/>
+    </topicref>
   </topicref>
 </map>

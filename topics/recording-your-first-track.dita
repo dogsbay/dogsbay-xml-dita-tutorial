@@ -63,8 +63,8 @@
         <cmd>Click <uicontrol>Record</uicontrol>, or press <uicontrol>R</uicontrol>, to start recording.</cmd>
         <info>
           <p>A blue waveform appears as <keyword keyref="product-name"/> captures audio from your microphone, like <xref href="what-is-digital-audio.dita#what-is-digital-audio/fig-waveform"/>.</p>
-          <note type="warning">A flat line instead of a waveform means the microphone is not selected correctly.
-          Click <uicontrol>Stop</uicontrol> and check the recording device.</note>
+          <note type="trouble">A flat line instead of a waveform means nothing is being captured.
+          See <xref keyref="silent" href="recording-is-silent.dita"/>.</note>
         </info>
       </step>
       <step>

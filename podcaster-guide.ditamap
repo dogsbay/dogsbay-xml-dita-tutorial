@@ -26,6 +26,9 @@
     <topicsetref href="audacity-guide.ditamap#cleanup"/>
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
+  <topichead navtitle="Troubleshooting">
+    <topicref href="topics/recording-is-silent.dita"/>
+  </topichead>
   <topichead navtitle="Podcast production">
     <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
   </topichead>

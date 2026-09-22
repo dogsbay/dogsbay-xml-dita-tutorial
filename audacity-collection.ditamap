@@ -12,6 +12,7 @@
   <mapref href="keydefs-glossary.ditamap"/>
   <keydef keys="common-notes" href="shared/common-notes.dita"/>
   <keydef keys="formats" href="topics/supported-audio-formats.dita"/>
+  <keydef keys="silent" href="topics/recording-is-silent.dita"/>
   <!-- Each guide defines its own "start-here" key. Combined flat they would
        collide (first definition wins). A key scope on each mapref keeps them
        apart: userguide.start-here, beginner.start-here, podcaster.start-here. -->

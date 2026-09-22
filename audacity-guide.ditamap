@@ -53,6 +53,10 @@
     </topicset>
   </topichead>
 
+  <topichead navtitle="Troubleshooting" id="troubleshooting">
+    <topicref href="topics/recording-is-silent.dita" keys="silent"/>
+  </topichead>
+
   <topichead navtitle="Podcast production" audience="podcaster">
     <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
   </topichead>
