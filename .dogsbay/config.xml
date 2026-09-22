@@ -2,6 +2,7 @@
 
 <dogsbay-project>
   <project-type>DITA</project-type>
+  <default-root-map>audacity-guide.ditamap</default-root-map>
   <framework>DITA-OT 4.3.5</framework>
   <format-style indent="spaces" size="2" max-line-width="0" preserve-mixed="true" newline="lf" final-newline="true" preserve-text-breaks="true" preserve-blank-lines="true" text-continuation="block" trim-whitespace="true"/>
 </dogsbay-project>
