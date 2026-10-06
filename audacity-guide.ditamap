@@ -3,7 +3,7 @@
 
 <map>
   <title>Audio user guide</title>
+  <topicref href="topics/what-is-audacity.dita"/>
   <topicref href="topics/recording-your-first-track.dita"/>
   <topicref href="topics/supported-audio-formats.dita"/>
-  <topicref href="topics/what-is-audacity.dita"/>
 </map>
