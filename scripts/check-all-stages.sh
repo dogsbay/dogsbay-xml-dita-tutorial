@@ -16,13 +16,29 @@ branches=$(git for-each-ref --format='%(refname:short)' 'refs/heads/tutorial/[0-
 if [ $# -gt 0 ]; then
   sel=""; for n in "$@"; do sel="$sel"$(printf '%s\n' "$branches" | grep "^tutorial/$n-")$'\n'; done; branches="$sel"
 fi
+if ! printf '%s\n' "$branches" | grep -q '^tutorial/'; then
+  echo "No matching local tutorial branches; create the tracking branches first." >&2
+  exit 2
+fi
 
 failed=""; passed=0
 for b in $branches; do
   d="$WT/${b#tutorial/}"
   git worktree add --detach -q "$d" "$b" || { failed="$failed $b(worktree)"; continue; }
   printf '\n######## %s ########\n' "$b"
-  if OUT="$WT/out-${b#tutorial/}" "$d/scripts/check-stage.sh" "$d" | tail -3; then passed=$((passed+1)); else failed="$failed $b"; fi
+  if OUT="$WT/out-${b#tutorial/}" "$d/scripts/check-stage.sh" "$d" | tail -3; then
+    if [ "${SKIP_BUILD:-0}" != "1" ] && [ -f "$d/project.json" ]; then
+      if python3 scripts/check-output-links.py "$WT/out-${b#tutorial/}/out"; then
+        passed=$((passed+1))
+      else
+        failed="$failed $b(output-links)"
+      fi
+    else
+      passed=$((passed+1))
+    fi
+  else
+    failed="$failed $b"
+  fi
   git worktree remove --force "$d" >/dev/null 2>&1
 done
 

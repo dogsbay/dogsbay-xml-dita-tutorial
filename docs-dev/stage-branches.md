@@ -1,10 +1,10 @@
 # The tutorial stage branches
 
 The step-by-step tutorial lives on a chain of branches, `tutorial/00-setup`
-through `tutorial/25-final`. Each branch is the previous one plus the commits
-for one lesson, so `git diff tutorial/03-inline-and-block tutorial/04-rich-tasks`
-is exactly what stage 04 teaches. The plan with the full ladder is
-`plans/step-by-step-tutorial.md`.
+through `tutorial/26-final`. Each branch is the previous one plus the commits
+for one lesson, so `git diff tutorial/05-inline-and-block tutorial/06-rich-tasks`
+is exactly what stage 06 teaches. See `docs-dev/redesign.md` for the current
+sequence and verification results.
 
 ## Shape
 
@@ -20,11 +20,33 @@ is exactly what stage 04 teaches. The plan with the full ladder is
 
 ## Checking the whole ladder
 
+The reader documentation now offers a core course and optional modules.
+The redesigned sequence introduces maps at stage 02 and builds at stage 03.
+A reader who skips a
+module starts the next lesson from its prerequisite reference branch.
+
 ```bash
 scripts/check-all-stages.sh            # every stage, each in a temporary worktree
 scripts/check-all-stages.sh 04 06      # just those stages
 SKIP_BUILD=1 scripts/check-all-stages.sh
 ```
+
+After a successful stage build, the runner checks the generated HTML with
+`scripts/check-output-links.py`. `SKIP_BUILD=1` skips that check too. The
+checker needs Python 3.9 or later. It reports broken local pages, fragments,
+and assets across the output directories. Historical gate success alone
+does not guarantee that this additional check passes.
+
+Check quoted documentation after a stage change:
+
+```bash
+bash scripts/check-excerpts.sh ../dogsbay-xml-dita-tutorial-docs
+python3 -B scripts/test_checks.py
+```
+
+Use `--ref-prefix origin/tutorial/` with the excerpt checker when the stage
+branches exist only as remote-tracking refs. It compares titled listings and
+both sides of diff hunks against the corresponding stages.
 
 ## Adding a stage
 
@@ -37,7 +59,7 @@ SKIP_BUILD=1 scripts/check-all-stages.sh
 Later stages must be rebased onto the change, in order:
 
 ```bash
-git rebase --onto tutorial/03-inline-and-block <old-03-sha> tutorial/04-rich-tasks
+git rebase --onto tutorial/05-inline-and-block <old-05-sha> tutorial/06-rich-tasks
 # ... and so on up the chain, then
 scripts/check-all-stages.sh
 ```
@@ -51,7 +73,7 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
 - Inline SVG must use the `svg:` prefix (`<svg:svg xmlns:svg=…>`): the DTD
   declares the SVG elements under that prefix.
 - DITA-OT 4.3.5 html5 drops `<mathml>` (a `foreign` specialisation) unless a
-  MathML plugin is installed. Stage 06 keeps a `<ph>` text alternative beside
+  MathML plugin is installed. Stage 08 keeps a `<ph>` text alternative beside
   the MathML inside `<equation-block>`, as the spec allows.
 - `xmllint` cannot validate DITA against these DTDs; use `dogsbay-xml`.
 
@@ -88,9 +110,11 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
   breaks those links in DITA-OT 4.3.5 (DOTX031E for `term keyref` into a
   chunked glossary). Merge small topics that nothing links into; leave the
   glossary as separate files.
-- **`<dita>` composite documents have no prolog on the root**, so the DogsBay
-  metadata policy reports them as missing keywords. Nest topics under a real
-  topic root instead (a `<reference>` may nest `<reference>`).
+- **`<dita>` composite documents have no prolog on the root.** The recorded
+  metadata checker treats that container as a topic requiring keywords.
+  This is a checker limitation; choose nesting only for a parent-child
+  relationship. Unrelated topics can use separate files or a composite
+  with appropriate validation.
 - **`project-health` lists unused keys and recommended-metadata warnings only
   alongside some other finding.** On their own the project reports healthy and
   exits 0, so a stage can pass with idle keys and then "fail" for them the
@@ -116,12 +140,12 @@ A `scripts/rebase-stages.sh` helper is planned once the ladder is complete.
   `validate-project` and `project-health` report `learning/*.dita` as
   invalid ("learningAssessment.dtd: No such file"), while DITA-OT and
   `dogsbay-xml validate --catalog <DITA-OT>/catalog-dita.xml` validate them.
-  From stage 22 the gate validates `learning/` against the DITA-OT catalog
+  From stage 23 the gate validates `learning/` against the DITA-OT catalog
   and runs `project-health` with an explicit `--include` list that leaves
   out its grammar pass. Worth fixing in the editor: add the L&T DTDs to the
   built-in catalog.
 - **`project-health --include` with `schematron`** in the list fails unless
-  house rules are configured; from stage 24 the gate runs the rules as a
+  house rules are configured; from stage 25 the gate runs the rules as a
   separate step.
 - **The gate script needs `pipefail`** for the same reason the driver did;
   `cmd | tee` hid validate-project's exit code.

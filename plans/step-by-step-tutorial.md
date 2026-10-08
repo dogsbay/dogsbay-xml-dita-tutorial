@@ -1,5 +1,9 @@
 # Plan: the step-by-step DITA tutorial
 
+This is the original design record. The implemented 27-stage sequence and
+verification results are documented in [the redesign](../docs-dev/redesign.md).
+Its first map and build are stages 02 and 03.
+
 Turn this sample into a guided, stage-by-stage tour of DITA 1.3, built up from
 one concept topic to a complete, coherent Audacity documentation set, with each
 stage on its own git branch and the walkthrough published as a DogsBay MD site.
