@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+
+<concept id="effect-order" xml:lang="en-GB">
+  <title>Why the order of effects matters</title>
+  <shortdesc>Clean first, then shape: noise reduction before compression, and normalization last.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <audience type="user" experiencelevel="intermediate"/>
+      <category>concept</category>
+      <keywords>
+        <keyword>effects</keyword>
+        <keyword>order</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Every effect works on whatever the previous one left.
+    Compression raises quiet passages, so background noise compressed before it is removed becomes louder and harder to profile.
+    Normalization sets the final peak, so anything applied after it can push the audio into <term keyref="gl-clipping">clipping</term>.</p>
+    <p>A safe order for spoken word: noise reduction, editing, compression, normalization, export.</p>
+  </conbody>
+</concept>

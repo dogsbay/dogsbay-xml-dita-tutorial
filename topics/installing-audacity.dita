@@ -1,56 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="installing-audacity">
+<task id="installing-audacity" xml:lang="en-GB">
   <title>Installing <keyword keyref="product-name"/></title>
+  <shortdesc>Download <keyword keyref="product-name"/> from the official website, or install it with your package manager, and launch it once to finish setup.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-12"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>installation</category>
+      <keywords>
+        <keyword>install</keyword>
+        <keyword>download</keyword>
+        <keyword>Windows</keyword>
+        <keyword>macOS</keyword>
+        <keyword>Linux</keyword>
+        <indexterm>installing<indexterm>Windows</indexterm><indexterm>macOS</indexterm><indexterm>Linux</indexterm></indexterm>
+        <indexterm>download</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
+    <prereq>
+      <p>You need about 250 MB of free disk space and an account that can install software.</p>
+      <p platform="linux">Most distributions package <keyword keyref="product-name"/>, but the packaged version may be older than <keyword keyref="product-version"/>; the AppImage from the download page is always current.</p>
+    </prereq>
     <context>
-      <p><keyword keyref="product-name"/> is available for Windows, macOS, and Linux.
-      Download it from the official website or install it using your system's package manager.</p>
-      <x>TODO: confirm minimum OS versions before publishing</x>
+      <p><keyword keyref="product-name"/> is available for Windows, macOS and Linux.
+      The steps differ by operating system only at the install step.</p>
     </context>
     <steps>
       <step>
-        <cmd>Download <keyword keyref="product-name"/> from the official website.</cmd>
+        <cmd>Download <keyword keyref="product-name"/> <keyword keyref="product-version"/> from <xref keyref="download-url"/>.</cmd>
         <info>
-          <p>Visit <keyword keyref="download-url"/> and select the installer for your operating system.</p>
-        </info>
-      </step>
-      <step platform="windows">
-        <cmd>Double-click the downloaded <filepath>.exe</filepath> installer and follow the setup wizard.</cmd>
-        <info>
-          <p>Accept the default installation location (<filepath>C:\Program Files\Audacity</filepath>) unless you have a reason to change it.</p>
-        </info>
-      </step>
-      <step platform="macos">
-        <cmd>Open the downloaded <filepath>.dmg</filepath> file and drag <keyword keyref="product-name"/> to your <filepath>Applications</filepath> folder.</cmd>
-      </step>
-      <step platform="linux">
-        <cmd>Install from your distribution's package manager.</cmd>
-        <info>
-          <codeblock>
-# Ubuntu / Debian
-sudo apt install audacity
-
-# Fedora
-sudo dnf install audacity
-
-# Arch Linux
-sudo pacman -S audacity</codeblock>
+          <p>Select the installer for your operating system.</p>
         </info>
       </step>
       <step>
-        <cmd>Launch <keyword keyref="product-name"/> to verify the installation.</cmd>
-        <info>
-          <note type="tipp">
-            <p>On first launch, <keyword keyref="product-name"/> may ask to scan for audio plugins.
-            Click <uicontrol>OK</uicontrol> to let it scan — this only happens once.</p>
-          </note>
-        </info>
+        <cmd>Install it.</cmd>
+        <choicetable>
+          <chhead>
+            <choptionhd>Operating system</choptionhd>
+            <chdeschd>How to install</chdeschd>
+          </chhead>
+          <chrow platform="windows">
+            <choption>Windows</choption>
+            <chdesc>Double-click the downloaded <filepath>.exe</filepath> file and follow the setup wizard.
+            Accept the default location, <filepath>C:\Program Files\Audacity</filepath>, unless you have a reason to change it.</chdesc>
+          </chrow>
+          <chrow platform="mac">
+            <choption>macOS</choption>
+            <chdesc>Open the downloaded <filepath>.dmg</filepath> file and drag <keyword keyref="product-name"/> to your <filepath>Applications</filepath> folder.</chdesc>
+          </chrow>
+          <chrow platform="linux">
+            <choption>Linux</choption>
+            <chdesc>Install from your distribution's package manager, for example <codeph>sudo apt install audacity</codeph> on Ubuntu or Debian, <codeph>sudo dnf install audacity</codeph> on Fedora.</chdesc>
+          </chrow>
+        </choicetable>
+      </step>
+      <step>
+        <cmd>Launch <keyword keyref="product-name"/>.</cmd>
+        <substeps>
+          <substep>
+            <cmd>If <keyword keyref="product-name"/> asks to scan for audio plugins, click <uicontrol>OK</uicontrol>.</cmd>
+            <info>
+              <p>This happens once, on first launch.</p>
+            </info>
+          </substep>
+          <substep importance="optional">
+            <cmd>Choose <menucascade><uicontrol>Help</uicontrol><uicontrol>Check for Updates</uicontrol></menucascade> to confirm you have the latest version.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <p>The main window opens with an empty project.</p>
+        </stepresult>
       </step>
     </steps>
     <result>
-      <p><keyword keyref="product-name"/> <keyword keyref="produkt-version"/> is now installed and ready to use.</p>
+      <p><keyword keyref="product-name"/> <keyword keyref="product-version"/> is installed and ready to use.</p>
     </result>
+    <postreq>
+      <p>Connect a microphone, then continue with <xref href="recording-your-first-track.dita"/>.</p>
+    </postreq>
   </taskbody>
 </task>

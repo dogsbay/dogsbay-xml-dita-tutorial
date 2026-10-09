@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+
+<troubleshooting id="recording-is-silent" xml:lang="en-GB">
+  <title>The recording is silent</title>
+  <shortdesc>You pressed Record but the waveform is a flat line and playback is silent: the input device, its level or its permissions are wrong.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-02-20"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>troubleshooting</category>
+      <keywords>
+        <keyword>silent recording</keyword>
+        <keyword>flat line</keyword>
+        <keyword>microphone</keyword>
+        <indexterm>troubleshooting<indexterm>silent recording</indexterm></indexterm>
+        <indexterm>microphone<indexterm>not detected</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <title>Condition</title>
+      <p>You click <uicontrol>Record</uicontrol>, the track appears, but the waveform stays a flat line.
+      Playing the track produces no sound.</p>
+    </condition>
+    <troubleSolution>
+      <cause>
+        <title>The wrong input device is selected</title>
+        <p>The <uicontrol>Device Toolbar</uicontrol> is set to a device that is not connected, or to a line input rather than the microphone.</p>
+      </cause>
+      <remedy>
+        <title>Select the microphone</title>
+        <steps>
+          <step>
+            <cmd>Click <uicontrol>Stop</uicontrol>.</cmd>
+          </step>
+          <step>
+            <cmd>In the <uicontrol>Device Toolbar</uicontrol>, open the recording device list and choose your microphone.</cmd>
+          </step>
+          <step>
+            <cmd>Choose <menucascade><uicontrol>Transport</uicontrol><uicontrol>Rescan Audio Devices</uicontrol></menucascade> if the microphone is missing from the list.</cmd>
+          </step>
+        </steps>
+      </remedy>
+    </troubleSolution>
+    <troubleSolution>
+      <cause>
+        <title>The input level is zero</title>
+        <p>The recording volume slider is at its minimum, so the device is selected but nothing is captured.</p>
+      </cause>
+      <remedy>
+        <title>Raise the recording volume</title>
+        <steps>
+          <step>
+            <cmd>Drag the recording volume slider (the one with the microphone icon) to about three quarters.</cmd>
+          </step>
+          <step>
+            <cmd>Click the recording meter to start monitoring, then speak; the meter should move.</cmd>
+          </step>
+        </steps>
+      </remedy>
+    </troubleSolution>
+    <troubleSolution platform="mac">
+      <cause>
+        <title>macOS has not granted microphone access</title>
+        <p>The first time an application asks to use the microphone, macOS asks for permission.
+        If the request was refused, <keyword keyref="product-name"/> records silence.</p>
+      </cause>
+      <remedy>
+        <title>Allow microphone access</title>
+        <steps-informal>
+          <p>Open <menucascade><uicontrol>System Settings</uicontrol><uicontrol>Privacy and Security</uicontrol><uicontrol>Microphone</uicontrol></menucascade>, switch on <keyword keyref="product-name"/>, then restart it.</p>
+        </steps-informal>
+      </remedy>
+    </troubleSolution>
+  </troublebody>
+  <related-links>
+    <link href="recording-your-first-track.dita"/>
+    <link href="preparing-to-record.dita"/>
+  </related-links>
+</troubleshooting>

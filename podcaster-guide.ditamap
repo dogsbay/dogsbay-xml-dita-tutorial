@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
+<map xml:lang="en-GB">
   <title>Audacity for Podcasters</title>
-
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
-  <!-- This guide's own entry point, under the bare key "start-here". -->
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- This guide's own landing page, under the same bare key every guide uses. -->
   <keydef keys="start-here" href="topics/podcast-production-workflow.dita"/>
+  <!-- Cross-deliverable linking: keys of the beginner guide are visible here as
+       beginner.<key>, but resolve to that separately published deliverable. -->
+  <mapref href="beginner-guide.ditamap" scope="peer" keyscope="beginner"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
 
-  <topichead navtitle="Getting Started">
+  <topichead navtitle="Getting started">
     <topicref href="topics/what-is-audacity.dita"/>
     <topicref href="topics/what-is-digital-audio.dita"/>
-    <topicref href="topics/installing-audacity.dita"/>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
   </topichead>
-
-  <topichead navtitle="Recording and Editing">
+  <topichead navtitle="Recording and editing">
+    <topicref href="topics/preparing-to-record.dita"/>
     <topicref href="topics/recording-your-first-track.dita"/>
     <topicref href="topics/trimming-audio.dita"/>
-    <topicref href="topics/removing-background-noise.dita"/>
+    <topicsetref href="audacity-guide.ditamap#cleanup"/>
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
-
-  <topichead navtitle="Podcast Production">
-    <topicref href="topics/podcast-production-workflow.dita"/>
+  <topichead navtitle="Troubleshooting">
+    <topicref href="topics/recording-is-silent.dita"/>
   </topichead>
-
+  <topichead navtitle="Podcast production">
+    <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
+  </topichead>
   <topichead navtitle="Reference">
-    <topicref href="topics/effects-reference.dita"/>
-    <topicref href="topics/supported-audio-formats.dita"/>
-    <topicref href="topics/keyboard-shortcuts.dita"/>
+    <topicref href="topics/supported-audio-formats.dita" keys="formats"/>
+    <topicref href="topics/effects-reference.dita" keys="effects"/>
+    <topicref href="topics/effect-presets.dita"/>
+    <topicref href="topics/scripting-reference.dita" keys="scripting"/>
+    <topicref href="topics/exporting-from-a-script.dita"/>
+    <topicref href="topics/glossary/audio-units.dita"/>
+    <topicref href="topics/glossary/g-compression.dita"/>
+    <topicref href="topics/glossary/g-normalization.dita"/>
   </topichead>
 </map>

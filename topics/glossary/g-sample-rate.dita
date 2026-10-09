@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 
-<glossentry id="gl-sample-rate">
-  <glossterm>Sample Rate</glossterm>
-  <glossdef>The number of audio samples captured per second, measured in Hertz (Hz).
-  Higher sample rates capture more detail.
-  CD quality audio uses 44,100 Hz; video production typically uses 48,000 Hz.</glossdef>
+<glossentry id="gl-sample-rate" xml:lang="en-GB">
+  <glossterm>Sample rate</glossterm>
+  <glossdef>The number of audio samples captured per second, measured in hertz. Higher sample rates capture more detail. CD audio uses 44,100 Hz; video production typically uses 48,000 Hz.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Sample rate</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Sample rate</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

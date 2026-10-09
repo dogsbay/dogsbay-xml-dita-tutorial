@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="common-steps">
-  <title>Common Steps</title>
-  <shortdesc>Reusable task steps that other topics pull in by conref. This task is a warehouse
-  for shared content and is not published on its own.</shortdesc>
+<task id="common-steps" xml:lang="en-GB">
+  <title>Common steps</title>
+  <shortdesc>Reusable steps that other tasks pull in by conref. This task is a warehouse and is not published on its own.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="author"/>
+      <category>warehouse</category>
+      <keywords>
+        <keyword>reuse</keyword>
+        <keyword>conref</keyword>
+        <keyword>steps</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step id="select-region">
-        <cmd>Select the region of audio you want to process.</cmd>
+        <cmd>Select the region of audio you want to work on.</cmd>
         <info>
-          <p>Click and drag in the waveform to select a region.
-          The selected area appears highlighted in blue.
-          To select the entire track, press <uicontrol>Ctrl+A</uicontrol> (Windows/Linux) or <uicontrol>Cmd+A</uicontrol> (macOS).</p>
+          <p>Click and drag in the waveform to select a region; the selection is highlighted.</p>
         </info>
       </step>
       <step id="save-project">
-        <cmd>Save your project by choosing <menucascade>
-            <uicontrol>File</uicontrol>
-            <uicontrol>Save Project</uicontrol>
-            <uicontrol>Save Project</uicontrol>
-          </menucascade>.</cmd>
+        <cmd>Save the project with <menucascade><uicontrol>File</uicontrol><uicontrol>Save Project</uicontrol><uicontrol>Save Project</uicontrol></menucascade>.</cmd>
+        <info>
+          <p><keyword keyref="product-name"/> saves the project as a single <keyword keyref="project-extension"/> file in the folder you choose; the <wintitle>Save Project</wintitle> dialog suggests your Documents folder.</p>
+        </info>
+      </step>
+      <!-- Conref push: this step is inserted before the marked step in the recording task. -->
+      <step conaction="pushbefore">
+        <cmd>Turn the playback volume down before you listen.</cmd>
+        <info>
+          <p>A recording can be much louder than you expect; start low and turn it up.</p>
+        </info>
+      </step>
+      <step conaction="mark" conref="../topics/recording-your-first-track.dita#recording-your-first-track/play-back">
+        <cmd/>
       </step>
     </steps>
   </taskbody>

@@ -1,63 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="recording-your-first-track">
-  <title>Recording Your First Track</title>
+<task id="recording-your-first-track" xml:lang="en-GB">
+  <title>Recording your first track</title>
+  <shortdesc>Make your first recording in <keyword keyref="product-name"/>: pick a microphone, record, stop and play it back.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>recording</category>
+      <keywords>
+        <keyword>recording</keyword>
+        <keyword>microphone</keyword>
+        <keyword>Device Toolbar</keyword>
+        <indexterm>recording<indexterm>first track</indexterm></indexterm>
+        <indexterm>microphone</indexterm>
+        <indexterm>Device Toolbar</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
-      <p>This task walks you through making your first audio recording in <keyword keyref="product-name"/>.
-      You will need a microphone connected to your computer.
-      If you are unfamiliar with audio terminology, read <xref href="what-is-digital-audio.dita"/> first.</p>
-      <note type="tip" id="quiet-room-tip">
-        <p>For best results, record in a quiet room and position your microphone 6-12 inches from your mouth.</p>
-      </note>
+      <p>This task walks you through making your first audio recording.
+      You need a microphone connected to your computer.
+      If you are new to audio terms such as sample rate and clipping, read <xref href="what-is-digital-audio.dita"/> first.</p>
+      <note conkeyref="common-notes/quiet-room-tip"/>
+      <hazardstatement conkeyref="common-notes/hearing-hazard">
+        <messagepanel>
+          <typeofhazard/>
+          <howtoavoid/>
+        </messagepanel>
+      </hazardstatement>
     </context>
     <steps>
       <step>
         <cmd>Open <keyword keyref="product-name"/>.</cmd>
         <info>
-          <p>If this is your first time, <keyword keyref="product-name"/> will open with an empty project window showing a gray waveform area.</p>
+          <p>On first launch <keyword keyref="product-name"/> opens an empty project window with a gray waveform area.</p>
         </info>
       </step>
       <step>
-        <cmd>Select your microphone from the recording device dropdown in the <uicontrol>Device Toolbar</uicontrol>.</cmd>
+        <cmd>Select your microphone from the recording device list in the <uicontrol>Device Toolbar</uicontrol>.</cmd>
         <info>
           <p>The <uicontrol>Device Toolbar</uicontrol> is near the top of the window.
-          The recording device dropdown has a microphone icon next to it.</p>
+          The recording device list has a microphone icon next to it.
+          Click a control in the picture to read about it.</p>
+          <imagemap>
+            <image href="../images/device-toolbar.png">
+              <alt>The Device Toolbar: audio host, recording device, channels and playback device</alt>
+            </image>
+            <area>
+              <shape>rect</shape>
+              <coords>170,20,370,60</coords>
+              <xref href="preparing-to-record.dita">Recording device</xref>
+            </area>
+            <area>
+              <shape>rect</shape>
+              <coords>380,20,490,60</coords>
+              <xref href="what-is-digital-audio.dita">Channels</xref>
+            </area>
+          </imagemap>
         </info>
       </step>
       <step>
-        <cmd>Click the <uicontrol>Record</uicontrol> button to start recording.</cmd>
+        <cmd>Click <uicontrol>Record</uicontrol>, or press <uicontrol>R</uicontrol>, to start recording.</cmd>
         <info>
-          <p>You will see a blue waveform appear as <keyword keyref="product-name"/> captures audio from your microphone.</p>
-          <note type="warning">
-            <p>If you see a flat line instead of a waveform, your microphone may not be selected correctly.
-            Click <uicontrol>Stop</uicontrol> and check your recording device setting.</p>
-          </note>
+          <p>A blue waveform appears as <keyword keyref="product-name"/> captures audio from your microphone, like <xref href="what-is-digital-audio.dita#what-is-digital-audio/fig-waveform"/>.</p>
+          <note type="trouble">A flat line instead of a waveform means nothing is being captured.
+          See <xref keyref="silent" href="recording-is-silent.dita"/>.</note>
         </info>
       </step>
       <step>
-        <cmd>Speak into your microphone or play the audio you want to capture.</cmd>
+        <cmd>Speak into your microphone, or play the audio you want to capture.</cmd>
       </step>
       <step>
-        <cmd>Click the <uicontrol>Stop</uicontrol> button when you are finished recording.</cmd>
+        <cmd>Click <uicontrol>Stop</uicontrol> when you are finished.</cmd>
       </step>
-      <step>
-        <cmd>Click the <uicontrol>Play</uicontrol> button to listen to your recording.</cmd>
+      <step id="play-back">
+        <cmd>Click <uicontrol>Play</uicontrol> to listen to your recording.</cmd>
       </step>
       <step conref="../shared/common-steps.dita#common-steps/save-project">
         <cmd/>
       </step>
     </steps>
     <result>
-      <p>You now have a recorded audio track in your <keyword keyref="product-name"/> project.
-      The waveform display shows the shape of your recorded audio.
-      Louder sounds appear as taller waves.</p>
+      <p>You now have a recorded audio track in your project.
+      The waveform shows the shape of the recorded audio: louder sounds appear as taller waves.</p>
     </result>
+    <postreq>
+      <p>Trim the false starts (<xref href="trimming-audio.dita"/>), then export the result (<xref href="exporting-audio.dita"/>).</p>
+    </postreq>
   </taskbody>
   <related-links>
-    <link href="digital-audio-basics.dita"/>
-    <link href="exporting-audio.dita"/>
-    <link href="supported-audio-formats.dita"/>
+    <link href="removing-background-noise.dita"/>
   </related-links>
 </task>

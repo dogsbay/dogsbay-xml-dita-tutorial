@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
-  <title>Glossary Key Definitions</title>
+<map xml:lang="en-GB">
+  <title>Glossary key definitions</title>
 
   <keydef keys="gl-sample-rate" href="topics/glossary/g-sample-rate.dita"/>
   <keydef keys="gl-bit-depth" href="topics/glossary/g-bit-depth.dita"/>
@@ -10,13 +10,6 @@
   <keydef keys="gl-normalization" href="topics/glossary/g-normalization.dita"/>
   <keydef keys="gl-compression" href="topics/glossary/g-compression.dita"/>
   <keydef keys="gl-waveform" href="topics/glossary/g-waveform.dita"/>
-  <!-- Stray duplicate: product-version is already defined in keydefs-product.ditamap
-       (3.4). This shadowed copy (3.3) is dead weight and drifts out of date. -->
-  <keydef keys="product-version">
-    <topicmeta>
-      <keywords>
-        <keyword>3.3</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
+  <keydef keys="gl-decibel" href="topics/glossary/audio-units.dita#gl-decibel"/>
+  <keydef keys="gl-hertz" href="topics/glossary/audio-units.dita#gl-hertz"/>
 </map>

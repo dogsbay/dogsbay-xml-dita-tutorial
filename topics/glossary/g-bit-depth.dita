@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 
-<glossentry id="gl-bit-depth">
-  <glossterm>Bit Depth</glossterm>
-  <glossdef>The number of bits used to represent each audio sample.
-  Higher bit depth provides greater dynamic range and precision.
-  Common values are 16-bit (CD quality), 24-bit (professional), and 32-bit float (internal processing).</glossdef>
+<glossentry id="gl-bit-depth" xml:lang="en-GB">
+  <glossterm>Bit depth</glossterm>
+  <glossdef>The number of bits used to store each sample, which sets how precisely amplitude is recorded. 16-bit audio has 65,536 possible values; 24-bit has over 16 million.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Bit depth</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Bit depth</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="preparing-to-record" xml:lang="en-GB">
+  <title>Preparing to record</title>
+  <shortdesc>Checks to make in any order before you press Record: input level, sample rate and disk space.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-15"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>recording</category>
+      <keywords>
+        <keyword>recording</keyword>
+        <keyword>levels</keyword>
+        <keyword>sample rate</keyword>
+        <keyword>disk space</keyword>
+        <indexterm>recording<indexterm>preparing</indexterm><indexterm>levels</indexterm></indexterm>
+        <indexterm>clipping</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>None of these checks depends on another, so do them in whatever order suits you.</p>
+    </context>
+    <steps-unordered>
+      <step>
+        <cmd>Speak at normal volume and watch the recording meter; aim for peaks around -12 <abbreviated-form keyref="gl-decibel"/>.</cmd>
+        <tutorialinfo>
+          <p>Leaving headroom avoids <term keyref="gl-clipping">clipping</term>, the flat-topped distortion that no effect can repair.</p>
+        </tutorialinfo>
+      </step>
+      <step>
+        <cmd>Set the project sample rate to 44,100 Hz in the bottom-left corner of the window.</cmd>
+      </step>
+      <step>
+        <cmd>Check that the drive holding the project has at least 1 GB free.</cmd>
+        <info>
+          <p>An hour of stereo audio at 44,100 Hz and 32-bit float needs about 1.2 GB.</p>
+        </info>
+      </step>
+    </steps-unordered>
+  </taskbody>
+</task>
