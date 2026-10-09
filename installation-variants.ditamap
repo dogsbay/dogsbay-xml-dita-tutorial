@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
-  <title>Installation (per-platform variants)</title>
-  <!-- DITA 1.3 branch filtering: one source topic, three filtered variants. Each
-       <ditavalref> tells DITA-OT to duplicate the install topic and filter it for one
-       platform, naming the generated resources with the dvrResourcePrefix. This
-       replaces maintaining three near-identical platform deliverables in project.json. -->
-  <topicref href="topics/installing-audacity.dita">
+<map xml:lang="en-GB">
+  <title>Installing Audacity: one topic, three platform variants</title>
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/glossary/audio-units.dita" toc="no"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- The exporting task links to the formats topic by key; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/supported-audio-formats.dita" keys="formats" toc="no"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+  <!-- Branch filtering (DITA 1.3): each ditavalref makes DITA-OT copy this branch
+       and filter the copy for one platform. The copies get the prefix and suffix
+       named in ditavalmeta; the keys defined inside the branch get a key scope
+       prefix so the three copies do not collide. -->
+  <topicref href="topics/installing-audacity.dita" keys="install">
     <ditavalref href="filters/platform-windows.ditaval">
       <ditavalmeta>
         <dvrResourcePrefix>win-</dvrResourcePrefix>
+        <dvrKeyscopePrefix>win.</dvrKeyscopePrefix>
       </ditavalmeta>
     </ditavalref>
-    <ditavalref href="filters/platform-macos.ditaval">
+    <ditavalref href="filters/platform-mac.ditaval">
       <ditavalmeta>
         <dvrResourcePrefix>mac-</dvrResourcePrefix>
+        <dvrKeyscopePrefix>mac.</dvrKeyscopePrefix>
       </ditavalmeta>
     </ditavalref>
     <ditavalref href="filters/platform-linux.ditaval">
       <ditavalmeta>
-        <dvrResourcePrefix>linux-</dvrResourcePrefix>
+        <dvrResourceSuffix>-linux</dvrResourceSuffix>
+        <dvrKeyscopePrefix>linux.</dvrKeyscopePrefix>
       </ditavalmeta>
     </ditavalref>
+    <topicref href="topics/recording-your-first-track.dita" keys="first-track">
+      <topicref href="topics/recording-is-silent.dita" keys="silent"/>
+    </topicref>
   </topicref>
 </map>

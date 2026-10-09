@@ -1,49 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="exporting-audio">
-  <title>Exporting Audio</title>
+<task id="exporting-audio" xml:lang="en-GB" status="changed">
+  <title>Exporting audio</title>
+  <shortdesc>Export a finished project as a WAV, MP3, OGG or FLAC file that other programs and devices can play.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-22"/>
+      <revised modified="2026-03-05"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>exporting</category>
+      <keywords>
+        <keyword>export</keyword>
+        <keyword>MP3</keyword>
+        <keyword>WAV</keyword>
+        <keyword>FLAC</keyword>
+        <keyword>OGG</keyword>
+        <indexterm>exporting</indexterm>
+        <indexterm>audio formats<indexterm>MP3</indexterm><indexterm>WAV</indexterm></indexterm>
+      </keywords>
+    </metadata>
+    <change-historylist>
+      <change-item>
+        <change-person>The Audacity tutorial team</change-person>
+        <change-completed>2026-03-05</change-completed>
+        <change-summary>Marked the metadata-tags step as new in 3.4; confirmed it is still a separate dialog.</change-summary>
+      </change-item>
+    </change-historylist>
+  </prolog>
   <taskbody>
-    <context>
-      <p>After editing your audio, you need to export it to a standard audio format for sharing or playback.
-      Audacity project files (.aup3) can only be opened by Audacity, so you must export to formats like MP3 or WAV.</p>
-    </context>
+    <prereq>
+      <p>Finish editing and save the project.
+      A project file (<filepath>.aup3</filepath>) can only be opened by <keyword keyref="product-name"/>; exporting creates an ordinary audio file.</p>
+    </prereq>
     <steps>
       <step>
-        <cmd>Choose <menucascade>
-            <uicontrol>File</uicontrol>
-            <uicontrol>Export</uicontrol>
-            <uicontrol>Export as MP3</uicontrol>
-          </menucascade>.</cmd>
+        <cmd>Choose <menucascade><uicontrol>File</uicontrol><uicontrol>Export Audio</uicontrol></menucascade>.</cmd>
+        <stepresult>
+          <p>The <wintitle>Export Audio</wintitle> dialog opens.</p>
+        </stepresult>
       </step>
       <step>
-        <cmd>In the export dialog, choose a location and filename for your file.</cmd>
+        <cmd>Choose a format (see <xref keyref="formats/choosing"/>).</cmd>
+        <choices>
+          <choice>Choose <uicontrol>WAV</uicontrol> or <uicontrol>FLAC</uicontrol> for an archive copy with no quality loss.</choice>
+          <choice>Choose <uicontrol>MP3</uicontrol> or <uicontrol>OGG</uicontrol> for a small file to share.</choice>
+        </choices>
       </step>
       <step>
-        <cmd>Set the <uicontrol>Bit Rate Mode</uicontrol> to <uicontrol>Constant</uicontrol> and the <uicontrol>Quality</uicontrol> to <uicontrol>192 kbps</uicontrol> for a good balance of quality and file size.</cmd>
+        <cmd>Set the format options.</cmd>
         <info>
-          <note type="tip">
-            <p>For podcasts, 128 kbps mono is usually sufficient and produces smaller files.
-            For music, use 256 kbps or higher.</p>
-          </note>
+          <p>For MP3, the bit rate controls the trade-off between size and quality.</p>
         </info>
+        <stepxmp>
+          <p audience="podcaster">A spoken-word podcast exports well at <uicontrol>128 kbps</uicontrol>, <uicontrol>Mono</uicontrol>.
+          Music needs <uicontrol>192 kbps</uicontrol> or more, <uicontrol>Stereo</uicontrol>.</p>
+          <p audience="beginner">If in doubt, keep the defaults: they suit most recordings.</p>
+        </stepxmp>
       </step>
       <step>
-        <cmd>Click <uicontrol>Save</uicontrol>.</cmd>
+        <cmd>Choose a folder and a file name, then click <uicontrol>Export</uicontrol>.</cmd>
+        <steptroubleshooting>
+          <p>If the <uicontrol>Export</uicontrol> button is disabled, the file name is empty or the folder is read-only.</p>
+        </steptroubleshooting>
       </step>
-      <step>
-        <cmd>Fill in the metadata tags (Title, Artist, Album) if desired, then click <uicontrol>OK</uicontrol>.</cmd>
+      <step importance="optional">
+        <cmd rev="3.4">Fill in the <wintitle>Edit Metadata Tags</wintitle> dialog and click <uicontrol>OK</uicontrol>.</cmd>
+        <info>
+          <p>Title, artist and album are shown by most players.</p>
+        </info>
       </step>
     </steps>
     <result>
-      <p>Your audio is now saved as an MP3 file that can be played on any device or uploaded to the web.</p>
-      <note type="tip">
-        <p>To export as WAV instead (for lossless quality), choose <menucascade>
-          <uicontrol>File</uicontrol>
-          <uicontrol>Export</uicontrol>
-          <uicontrol>Export as WAV</uicontrol>
-        </menucascade>.</p>
-      </note>
+      <p>The exported file is in the folder you chose.
+      The project itself is unchanged.</p>
     </result>
+    <example>
+      <title>Exporting a podcast episode</title>
+      <p>Choose <uicontrol>MP3</uicontrol>, set <uicontrol>Bit Rate Mode</uicontrol> to <uicontrol>Constant</uicontrol>, <uicontrol>Quality</uicontrol> to <uicontrol>128 kbps</uicontrol> and <uicontrol>Channel Mode</uicontrol> to <uicontrol>Force export to mono</uicontrol>.
+      A 30-minute episode exports to a file of about 27 MB.</p>
+    </example>
   </taskbody>
+  <related-links>
+    <link href="trimming-audio.dita">
+      <desc>Clean up the recording before you export it.</desc>
+    </link>
+  </related-links>
 </task>

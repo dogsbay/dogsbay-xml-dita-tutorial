@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="effect-presets" xml:lang="en-GB">
+  <title>Presets</title>
+  <shortdesc>Most effect dialogs can save their settings as a named preset.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>presets</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>In an effect dialog, choose <menucascade><uicontrol>Presets and settings</uicontrol><uicontrol>Save Preset</uicontrol></menucascade> and give the settings a name.
+        The preset then appears in the same menu for that effect in every project.</p>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE learningAssessment PUBLIC "-//OASIS//DTD DITA Learning Assessment//EN" "learningAssessment.dtd">
+
+<learningAssessment id="check-your-understanding" xml:lang="en-GB">
+  <title>Check your understanding</title>
+  <shortdesc>Four questions on recording, editing and exporting, with feedback on every answer.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>learning</category>
+      <keywords>
+        <keyword>quiz</keyword>
+        <keyword>assessment</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <learningAssessmentbody>
+    <lcIntro>
+      <p>Answer these after working through the recording and editing chapters.
+      Each answer explains why it is right or wrong.</p>
+    </lcIntro>
+    <lcObjectives>
+      <lcObjectivesStem>After this guide you can:</lcObjectivesStem>
+      <lcObjectivesGroup>
+        <lcObjective>Make a recording with sensible levels.</lcObjective>
+        <lcObjective>Remove noise before shaping the sound.</lcObjective>
+        <lcObjective>Choose an export format for the purpose.</lcObjective>
+      </lcObjectivesGroup>
+    </lcObjectives>
+    <lcDuration>
+      <lcTime value="PT5M">About 5 minutes</lcTime>
+    </lcDuration>
+    <lcInteraction>
+      <lcTrueFalse2 id="q1">
+        <lcQuestion2>Clipping can be repaired afterwards with the Normalize effect.</lcQuestion2>
+        <lcAnswerOptionGroup2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>True</lcAnswerContent2>
+            <lcFeedback2>Normalize only changes the level; the flattened peaks stay flat.</lcFeedback2>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>False</lcAnswerContent2>
+            <lcCorrectResponse2/>
+            <lcFeedback2>Correct. Clipped samples are lost at recording time, so leave headroom instead.</lcFeedback2>
+          </lcAnswerOption2>
+        </lcAnswerOptionGroup2>
+      </lcTrueFalse2>
+      <lcSingleSelect2 id="q2">
+        <lcQuestion2>What is a good peak level to aim for while recording speech?</lcQuestion2>
+        <lcAnswerOptionGroup2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>0 dB, as loud as possible</lcAnswerContent2>
+            <lcFeedback2>At 0 dB any louder syllable clips.</lcFeedback2>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>About -12 dB</lcAnswerContent2>
+            <lcCorrectResponse2/>
+            <lcFeedback2>Correct. That leaves headroom for louder moments and for the effects chain.</lcFeedback2>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>About -40 dB</lcAnswerContent2>
+            <lcFeedback2>Too quiet: raising it later also raises the noise floor.</lcFeedback2>
+          </lcAnswerOption2>
+        </lcAnswerOptionGroup2>
+      </lcSingleSelect2>
+      <lcMultipleSelect2 id="q3">
+        <lcQuestion2>Which formats keep every sample of the recording? Choose all that apply.</lcQuestion2>
+        <lcAnswerOptionGroup2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>WAV</lcAnswerContent2>
+            <lcCorrectResponse2/>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>MP3</lcAnswerContent2>
+            <lcFeedback2>MP3 is lossy: it discards detail to shrink the file.</lcFeedback2>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>FLAC</lcAnswerContent2>
+            <lcCorrectResponse2/>
+          </lcAnswerOption2>
+          <lcAnswerOption2>
+            <lcAnswerContent2>OGG Vorbis</lcAnswerContent2>
+            <lcFeedback2>OGG Vorbis is lossy, like MP3.</lcFeedback2>
+          </lcAnswerOption2>
+        </lcAnswerOptionGroup2>
+      </lcMultipleSelect2>
+      <lcSequencing2 id="q4">
+        <lcQuestion2>Put the post-production steps for a podcast in order.</lcQuestion2>
+        <lcSequenceOptionGroup2>
+          <lcSequenceOption2>
+            <lcAnswerContent2>Noise reduction</lcAnswerContent2>
+            <lcSequence2 value="1"/>
+          </lcSequenceOption2>
+          <lcSequenceOption2>
+            <lcAnswerContent2>Compression</lcAnswerContent2>
+            <lcSequence2 value="2"/>
+          </lcSequenceOption2>
+          <lcSequenceOption2>
+            <lcAnswerContent2>Normalization</lcAnswerContent2>
+            <lcSequence2 value="3"/>
+          </lcSequenceOption2>
+          <lcSequenceOption2>
+            <lcAnswerContent2>Export</lcAnswerContent2>
+            <lcSequence2 value="4"/>
+          </lcSequenceOption2>
+        </lcSequenceOptionGroup2>
+      </lcSequencing2>
+    </lcInteraction>
+    <lcSummary>
+      <p>Leave headroom, clean before you shape, and keep a lossless master.</p>
+    </lcSummary>
+  </learningAssessmentbody>
+</learningAssessment>

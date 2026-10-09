@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 
-<reference id="effects-reference">
-  <title>Effects Reference</title>
+<reference id="effects-reference" xml:lang="en-GB">
+  <title>Effects reference</title>
+  <shortdesc>The built-in effects, what each one does, and the parameters that matter.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-02-10"/>
+    </critdates>
+    <metadata>
+      <audience type="user"/>
+      <category>reference</category>
+      <keywords>
+        <keyword>effects</keyword>
+        <keyword>Amplify</keyword>
+        <keyword>Compressor</keyword>
+        <keyword>Normalize</keyword>
+        <keyword>Loudness Normalization</keyword>
+        <indexterm>effects<indexterm>reference</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
-      <p>Audacity includes several built-in audio effects.
-      Apply effects by selecting a region of audio and choosing an effect from the <uicontrol>Effect</uicontrol> menu.</p>
-      <!-- Conref push (DITA 1.3): this caution is meant to be pushed before the
-           destructive-effects warning in editing-techniques. But the required
-           sibling <note conaction="mark" conref="editing-techniques.dita#…"/>
-           that identifies WHERE to push is missing, so the push goes nowhere. -->
-      <note conaction="pushbefore" type="caution">Some effects are destructive and cannot be undone once the project is saved and reopened.</note>
+      <p><keyword keyref="product-name"/> includes several built-in effects.
+        Select a region of audio, then choose an effect from the <uicontrol>Effect</uicontrol> menu.</p>
+      <hazardstatement type="warning">
+        <messagepanel>
+          <typeofhazard>Amplify with <uicontrol>Allow clipping</uicontrol> enabled</typeofhazard>
+          <consequence>The output can exceed 0 dB and reach your speakers or headphones as a sudden, very loud burst.</consequence>
+          <howtoavoid>Leave <uicontrol>Allow clipping</uicontrol> off unless you intend to clip, and preview at low volume.</howtoavoid>
+        </messagepanel>
+      </hazardstatement>
     </section>
-    <table>
-      <title>Built-in Audio Effects</title>
+    <table outputclass="compact">
+      <title>Built-in audio effects</title>
       <tgroup cols="3">
         <colspec colname="effect" colwidth="1*"/>
         <colspec colname="description" colwidth="2*"/>
@@ -23,42 +44,40 @@
           <row>
             <entry>Effect</entry>
             <entry>Description</entry>
-            <entry>Key Parameters</entry>
+            <entry>Key parameters</entry>
           </row>
         </thead>
         <tbody>
           <row>
             <entry>Amplify</entry>
-            <entry>Increases or decreases the volume of the selected audio.</entry>
-            <entry>Amplification (dB): positive values increase volume, negative values decrease it. "Allow clipping" checkbox.</entry>
+            <entry>Increases or decreases the volume of the selection.</entry>
+            <entry>Amplification (dB); <uicontrol>Allow clipping</uicontrol>.</entry>
           </row>
           <row>
             <entry>Noise Reduction</entry>
-            <entry>Removes consistent background noise such as hum, hiss, or fan noise.
-            Requires a noise profile sample.</entry>
-            <entry>Noise reduction (dB): 6-12 dB for mild noise, 12-24 dB for heavy noise.
-            Sensitivity and frequency smoothing controls.</entry>
+            <entry>Removes steady background noise such as hum, hiss or fan noise.
+              Needs a noise profile.</entry>
+            <entry>Noise reduction (dB): 6 to 12 for mild noise, 12 to 24 for heavy; sensitivity; frequency smoothing.</entry>
           </row>
           <row>
             <entry>Compressor</entry>
-            <entry>Reduces the dynamic range of audio, making quiet parts louder and loud parts quieter.</entry>
-            <entry>Threshold (dB), Ratio (e.g., 3:1), Attack time (secs), Release time (secs).</entry>
-          </row>
-          <row>
-            <entry>Equalization</entry>
-            <entry>Adjusts the balance of frequency components in the audio.
-            Use to boost or cut bass, midrange, or treble.</entry>
-            <entry>Frequency curve with adjustable points, or preset curves (e.g., Bass Boost, Treble Boost).</entry>
+            <entry>Reduces the dynamic range: quiet parts louder, loud parts quieter.</entry>
+            <entry>Threshold (dB), ratio (for example 3:1), attack and release times.</entry>
           </row>
           <row>
             <entry>Normalize</entry>
-            <entry>Adjusts the peak amplitude to a target level and optionally removes DC offset.</entry>
-            <entry>Normalize peak amplitude to (dB): typically -1.0 dB. "Remove DC offset" checkbox.</entry>
+            <entry>Sets the peak amplitude to a target level and optionally removes DC offset.</entry>
+            <entry>Peak amplitude (dB), typically -1.0; <uicontrol>Remove DC offset</uicontrol>.</entry>
+          </row>
+          <row rev="3.4" status="new">
+            <entry>Loudness Normalization</entry>
+            <entry>Sets the perceived loudness of the selection to a target, for podcast platforms that specify one.</entry>
+            <entry>Target (LUFS), typically -16 for podcasts; <uicontrol>Normalize</uicontrol> to perceived loudness or RMS.</entry>
           </row>
           <row>
-            <entry>Fade In / Fade Out</entry>
-            <entry>Gradually increases (fade in) or decreases (fade out) the volume of the selected audio.</entry>
-            <entry>No parameters — applies a linear fade to the selection.</entry>
+            <entry>Fade In, Fade Out</entry>
+            <entry>Ramps the volume of the selection up from silence, or down to it.</entry>
+            <entry>None: a linear fade over the selection.</entry>
           </row>
         </tbody>
       </tgroup>

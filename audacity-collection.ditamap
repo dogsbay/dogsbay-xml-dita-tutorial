@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
-  <title>Audacity Documentation Collection</title>
-
+<map xml:lang="en-GB">
+  <title>Audacity documentation collection</title>
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
+  <!-- Root-scope keys. The conref push in shared/common-steps.dita reaches the
+       recording task directly, outside any guide's scope, and that copy of the
+       topic resolves its keys here. Keys used by such content must exist in the
+       root scope too. -->
+  <mapref href="keydefs-product.ditamap"/>
+  <mapref href="keydefs-glossary.ditamap"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <keydef keys="formats" href="topics/supported-audio-formats.dita"/>
+  <keydef keys="silent" href="topics/recording-is-silent.dita"/>
+  <!-- Each guide defines its own "start-here" key. Combined flat they would
+       collide (first definition wins). A key scope on each mapref keeps them
+       apart: userguide.start-here, beginner.start-here, podcaster.start-here. -->
   <topichead navtitle="Audacity User Guide">
-    <mapref href="audacity-guide.ditamap"/>
+    <mapref href="audacity-guide.ditamap" keyscope="userguide"/>
   </topichead>
   <topichead navtitle="Beginner's Guide">
-    <mapref href="beginner-guide.ditamap"/>
+    <mapref href="beginner-guide.ditamap" keyscope="beginner"/>
   </topichead>
   <topichead navtitle="Podcaster's Guide">
-    <mapref href="podcaster-guide.ditamap"/>
+    <mapref href="podcaster-guide.ditamap" keyscope="podcaster"/>
   </topichead>
+  <!-- A topicref keyref="start-here" here would resolve to nothing: the bare
+       key is not defined in the root scope, only the scoped
+       userguide.start-here, beginner.start-here and podcaster.start-here are.
+       DITA-OT drops such a topicref from the output silently (DOTJ047I only
+       with -v), and topics pulled in from the root scope would lose the keys
+       their own guide defines, so the collection only aggregates the guides. -->
 </map>

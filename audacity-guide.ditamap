@@ -1,40 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
+<map xml:lang="en-GB">
   <title>Audacity User Guide</title>
+  <topicmeta>
+    <shortdesc>Record, edit and export audio with <keyword keyref="product-name"/>, from your first track to a finished file.</shortdesc>
+    <author type="creator">The Audacity tutorial team</author>
+    <publisher>DogsBay Ltd.</publisher>
+    <copyright>
+      <copyryear year="2026"/>
+      <copyrholder>DogsBay Ltd.</copyrholder>
+    </copyright>
+    <critdates>
+      <created date="2026-01-10"/>
+    </critdates>
+    <audience type="user"/>
+    <keywords>
+      <keyword>Audacity</keyword>
+      <keyword>audio editing</keyword>
+    </keywords>
+  </topicmeta>
 
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
   <mapref href="keydefs-glossary.ditamap"/>
-  <!-- This guide's own entry point, under the bare key "start-here". -->
   <keydef keys="start-here" href="topics/what-is-audacity.dita"/>
+  <!-- Warehouses: pulled in by conref and conkeyref, never pages of their own. -->
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
+  <!-- Print only: the licence page belongs in the PDF, not in the web TOC or search. -->
+  <topicref href="topics/about-this-guide.dita" print="printonly" toc="no" search="no"/>
 
-  <topichead navtitle="Getting Started">
-    <topicref href="topics/what-is-audacity.dita"/>
-    <topicref href="topics/what-is-digital-audio.dita"/>
-    <topicref href="topics/installing-audacity.dita"/>
+  <topichead navtitle="Getting started">
+    <!-- Two small topics, one page: to-content merges the child into the parent. -->
+    <topicref href="topics/what-is-audacity.dita" collection-type="family" chunk="to-content">
+      <topicref href="topics/what-is-digital-audio.dita" keys="digital-audio"/>
+    </topicref>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
   </topichead>
 
-  <topichead navtitle="Recording and Editing">
-    <topicref href="topics/recording-your-first-track.dita"/>
-    <topicref href="topics/editing-techniques.dita"/>
-    <topicref href="topics/trimming-audio.dita"/>
-    <topicref href="topics/removing-background-noise.dita"/>
-    <topicref href="topics/exporting-audio.dita"/>
-    <topicref href="topics/burning-an-audio-cd.dita"/>
-    <topicref href="topics/keyboard-shortcuts.dita" id="keyboard-shortcuts"/>
+  <topichead navtitle="Recording and editing">
+    <topicgroup collection-type="sequence">
+      <topicref href="topics/preparing-to-record.dita"/>
+      <topicref href="topics/recording-your-first-track.dita"/>
+      <topicref href="topics/trimming-audio.dita"/>
+      <topicref href="topics/exporting-audio.dita"/>
+    </topicgroup>
+    <!-- A topicset: a named, reusable branch other maps can pull in by topicsetref. -->
+    <topicset id="cleanup" navtitle="Cleaning up a recording">
+      <topicref href="topics/removing-background-noise.dita" linking="targetonly"/>
+      <topicref href="topics/effect-order.dita"/>
+    </topicset>
   </topichead>
 
-  <topichead navtitle="Podcast Production">
-    <topicref href="topics/podcast-production-workflow.dita"/>
+  <topichead navtitle="Check your understanding">
+    <topicref href="learning/check-your-understanding.dita"/>
+  </topichead>
+
+  <topichead navtitle="Troubleshooting" id="troubleshooting">
+    <topicref href="topics/recording-is-silent.dita" keys="silent"/>
+  </topichead>
+
+  <topichead navtitle="Podcast production" audience="podcaster">
+    <topicref href="topics/podcast-production-workflow.dita" keys="podcast-workflow"/>
+  </topichead>
+
+  <topichead navtitle="Automation">
+    <topicref href="topics/exporting-from-a-script.dita"/>
   </topichead>
 
   <topichead navtitle="Reference" id="reference">
-    <topicref href="topics/supported-audio-formats.dita"/>
-    <topicref href="topics/effects-reference.dita"/>
+    <topicref href="topics/supported-audio-formats.dita" keys="formats" locktitle="yes">
+      <topicmeta>
+        <navtitle>Audio formats</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref href="topics/effects-reference.dita" keys="effects"/>
+    <topicref href="topics/effect-presets.dita"/>
+    <topicref href="topics/scripting-reference.dita" keys="scripting"/>
+  </topichead>
+  <topichead navtitle="Glossary">
+    <topicref href="topics/glossary/audio-units.dita"/>
+    <topicref href="topics/glossary/g-bit-depth.dita"/>
+    <topicref href="topics/glossary/g-clipping.dita"/>
+    <topicref href="topics/glossary/g-compression.dita"/>
+    <topicref href="topics/glossary/g-normalization.dita"/>
+    <topicref href="topics/glossary/g-sample-rate.dita"/>
+    <topicref href="topics/glossary/g-waveform.dita"/>
   </topichead>
 
   <reltable>
+    <title>Concept, task and reference links</title>
     <relheader>
       <relcolspec type="concept"/>
       <relcolspec type="task"/>
@@ -45,6 +101,7 @@
         <topicref href="topics/what-is-digital-audio.dita"/>
       </relcell>
       <relcell>
+        <topicref href="topics/preparing-to-record.dita"/>
         <topicref href="topics/recording-your-first-track.dita"/>
       </relcell>
       <relcell>
@@ -55,6 +112,7 @@
       <relcell/>
       <relcell>
         <topicref href="topics/exporting-audio.dita"/>
+        <topicref href="topics/trimming-audio.dita"/>
       </relcell>
       <relcell>
         <topicref href="topics/supported-audio-formats.dita"/>

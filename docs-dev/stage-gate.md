@@ -38,8 +38,9 @@ CLI (Xerces with the DITA-OT catalog).
 
 ## Verified behaviour
 
-- On `main` (the deliberately broken demo) the gate fails: 2 invalid files and
-  the reference, key, conref-push and index findings listed in `ISSUES.md`.
+- On `main`, the finished project, the gate passes, as on `tutorial/26-final`.
+  The broken agent demo it used to fail on has moved to a repository of its
+  own.
 - On a one-topic project it passes, with and without a map and `project.json`.
 - Timing on the full guide: validate about 2 s, health about 2.5 s, the four
   deliverables about 11 s.

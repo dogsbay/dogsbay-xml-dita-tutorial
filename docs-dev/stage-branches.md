@@ -3,13 +3,15 @@
 The step-by-step tutorial lives on a chain of branches, `tutorial/00-setup`
 through `tutorial/26-final`. Each branch is the previous one plus the commits
 for one lesson, so `git diff tutorial/05-inline-and-block tutorial/06-rich-tasks`
-is exactly what stage 06 teaches. See `docs-dev/redesign.md` for the current
-sequence and verification results.
+is exactly what stage 06 teaches.
 
 ## Shape
 
 - `tutorial/00-setup` is an **orphan** branch: no history shared with `main`,
-  which is the finished, deliberately broken demo project.
+  which used to be the deliberately broken agent demo. The demo has moved to
+  a repository of its own. `main` is now the finished project: the tree of
+  `tutorial/26-final` plus the maintainer files (`scripts/` and `docs-dev/`),
+  committed on top of the old history.
 - Every stage carries its own `scripts/check-stage.sh` (see `stage-gate.md`),
   a `README.md` whose "You are on" line names the stage, and the licence files.
 - Commit messages start with `Stage NN:`.

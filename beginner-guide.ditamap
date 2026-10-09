@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 
-<map>
+<map xml:lang="en-GB">
   <title>Audacity Beginner's Guide</title>
-
+  <mapref href="subject-scheme.ditamap" type="subjectScheme"/>
   <mapref href="keydefs-product.ditamap"/>
-  <!-- This guide's own entry point, under the bare key "start-here". -->
+  <mapref href="keydefs-glossary.ditamap"/>
+  <!-- Abbreviated forms link into this glossary group; toc="no" publishes it without a TOC entry. -->
+  <topicref href="topics/glossary/audio-units.dita" toc="no"/>
+  <keydef keys="common-notes" href="shared/common-notes.dita"/>
+  <!-- This guide's own landing page, under the same bare key every guide uses. -->
   <keydef keys="start-here" href="topics/recording-your-first-track.dita"/>
+  <topicref href="shared/common-steps.dita" processing-role="resource-only"/>
 
   <topichead navtitle="Introduction">
     <topicref href="topics/what-is-audacity.dita"/>
-    <topicref href="topics/installing-audacity.dita"/>
+    <topicref href="topics/installing-audacity.dita" keys="install"/>
   </topichead>
-
-  <topichead navtitle="Your First Recording">
+  <topichead navtitle="Your first recording">
     <topicref href="topics/recording-your-first-track.dita"/>
     <topicref href="topics/trimming-audio.dita"/>
     <topicref href="topics/exporting-audio.dita"/>
   </topichead>
-
-  <topichead navtitle="Quick Reference">
-    <topicref href="topics/keyboard-shortcuts.dita"/>
-    <topicref href="topics/supported-audio-formats.dita"/>
+  <topicref href="learning/check-your-understanding.dita"/>
+  <topichead navtitle="Troubleshooting">
+    <topicref href="topics/recording-is-silent.dita" keys="silent"/>
+  </topichead>
+  <topichead navtitle="Quick reference">
+    <!-- The same source topic, published under a different file name in this guide. -->
+    <topicref href="topics/supported-audio-formats.dita" keys="formats" copy-to="topics/formats-quick-reference.dita"/>
   </topichead>
 </map>

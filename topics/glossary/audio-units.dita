@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
+
+<glossgroup id="audio-units" xml:lang="en-GB">
+  <title>Units</title>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>units</keyword>
+        <keyword>glossary</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <glossentry id="gl-decibel">
+    <glossterm><sort-as value="decibel"/>dB (decibel)</glossterm>
+    <glossdef>A logarithmic unit for the ratio between two levels. In audio editing, 0 dB is the loudest level a file can hold, and quieter sounds are negative.</glossdef>
+    <prolog>
+      <author type="creator">The Audacity tutorial team</author>
+      <metadata>
+        <keywords>
+          <keyword>decibel</keyword>
+          <keyword>glossary</keyword>
+          <indexterm>decibel</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <glossBody>
+      <glossSurfaceForm>decibel (dB)</glossSurfaceForm>
+      <glossAlt>
+        <glossAbbreviation>dB</glossAbbreviation>
+      </glossAlt>
+    </glossBody>
+  </glossentry>
+  <glossentry id="gl-hertz">
+    <glossterm>hertz</glossterm>
+    <glossdef>Cycles per second. Sample rates are given in hertz: 44,100 Hz means 44,100 samples every second.</glossdef>
+    <prolog>
+      <author type="creator">The Audacity tutorial team</author>
+      <metadata>
+        <keywords>
+          <keyword>hertz</keyword>
+          <keyword>glossary</keyword>
+          <indexterm>hertz</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <glossBody>
+      <glossSurfaceForm>hertz (Hz)</glossSurfaceForm>
+      <glossAlt>
+        <glossAbbreviation>Hz</glossAbbreviation>
+      </glossAlt>
+      <glossAlt>
+        <glossSynonym>cycles per second</glossSynonym>
+      </glossAlt>
+    </glossBody>
+  </glossentry>
+</glossgroup>

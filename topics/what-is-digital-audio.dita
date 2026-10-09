@@ -1,68 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
-<concept id="what-is-digital-audio">
-  <title>What is Digital Audio?</title>
+<concept id="what-is-digital-audio" xml:lang="en-GB">
+  <title>What is digital audio?</title>
+  <shortdesc>Digital audio is sound stored as numbers: samples taken thousands of times a second at a chosen precision.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-10"/>
+      <revised modified="2026-03-02"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="novice"/>
+      <category>concept</category>
+      <keywords>
+        <keyword>digital audio</keyword>
+        <keyword>sample rate</keyword>
+        <keyword>bit depth</keyword>
+        <keyword>waveform</keyword>
+        <keyword>decibel</keyword>
+        <indexterm>digital audio</indexterm>
+        <indexterm>sample rate</indexterm>
+        <indexterm>bit depth</indexterm>
+        <indexterm>waveform</indexterm>
+        <indexterm>decibel<index-see-also>amplitude</index-see-also></indexterm>
+        <indexterm>amplitude</indexterm>
+        <indexterm><index-sort-as>clipping</index-sort-as>Clipping (distortion)</indexterm>
+        <indexterm>dB<index-see>decibel</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>Digital audio is sound that has been converted into a numerical representation.
-    Understanding a few key concepts will help you make better recordings and edits in <keyword keyref="product-name"/>.</p>
-
-    <p audience="beginner">You do not need to understand all these details to start recording.
-    The default settings in <keyword keyref="product-name"/> work well for most purposes.
-    Come back to this topic later when you want to fine-tune your recordings.</p>
-
+    A few key concepts help you make better recordings and edits.
+    If you would rather start recording, go straight to <xref href="recording-your-first-track.dita"/> and come back later.</p>
+    <p audience="beginner">You do not need all of this to start recording: the default settings work well.
+    Come back to this topic when you want to fine-tune a recording.</p>
     <section>
       <title>Waveforms</title>
-      <p>Sound travels through air as a continuous <abbreviated-form keyref="gl-waveform"/> of pressure changes.
+      <p>Sound travels through air as a continuous <term keyref="gl-waveform">waveform</term> of pressure changes.
       A microphone converts these pressure changes into an electrical signal.
-      To store this signal digitally, the computer takes thousands of measurements (samples) of the signal's amplitude per second.</p>
+      To store the signal digitally, the computer takes thousands of measurements, called <term>samples</term>, of the signal's amplitude every second.</p>
+      <fig id="fig-waveform">
+        <title>A recorded waveform, with clipping at the right</title>
+        <image href="../images/waveform.png" placement="break" scale="80">
+          <alt>A waveform whose peaks are cut flat at the right-hand end</alt>
+        </image>
+      </fig>
+      <p>Drawn schematically, one cycle of a pure tone looks like this:</p>
+      <fig>
+        <title>One cycle of a sine wave</title>
+        <svg-container>
+          <svg:svg xmlns:svg="http://www.w3.org/2000/svg" width="320" height="120" viewBox="0 0 320 120">
+            <svg:line x1="0" y1="60" x2="320" y2="60" stroke="#999" stroke-width="1"/>
+            <svg:path d="M0,60 C40,0 80,0 120,60 S200,120 240,60 S300,20 320,45" fill="none" stroke="#3c78c8" stroke-width="3"/>
+            <svg:text x="8" y="16" font-size="12" fill="#333">amplitude</svg:text>
+            <svg:text x="270" y="76" font-size="12" fill="#333">time</svg:text>
+          </svg:svg>
+        </svg-container>
+      </fig>
     </section>
-
     <section audience="podcaster">
-      <title>Sample Rate</title>
-      <p>The <abbreviated-form keyref="gl-sample-rate"/> is the number of samples captured per second, measured in Hertz (Hz).
-      Common sample rates include:</p>
-      <ul>
-        <li>44,100 Hz (CD quality) — sufficient for most audio work</li>
-        <li>48,000 Hz — standard for video production</li>
-        <li>96,000 Hz — used in professional music production</li>
-      </ul>
-      <p>A higher sample rate captures more detail but produces larger files.</p>
+      <title>Sample rate</title>
+      <p>The <term keyref="gl-sample-rate">sample rate</term> is the number of samples captured per second, measured in <abbreviated-form keyref="gl-hertz"/>.
+      Common sample rates are:</p>
+      <sl>
+        <sli>44,100 Hz: CD quality, enough for most audio work</sli>
+        <sli>48,000 Hz: the standard for video production</sli>
+        <sli>96,000 Hz: used in professional music production</sli>
+      </sl>
+      <p>A higher sample rate captures more detail but produces larger files.<fn>File size grows in proportion to the sample rate: a 96 kHz file is more than twice the size of the same recording at 44.1 kHz.</fn></p>
     </section>
-
     <section audience="podcaster">
-      <title>Bit Depth</title>
-      <p><abbreviated-form keyref="gl-bit-depth"/> determines how precisely each sample's amplitude is recorded.
-      Common bit depths are:</p>
-      <ul>
-        <li>16-bit — CD quality, 65,536 possible amplitude values</li>
-        <li>24-bit — professional quality, over 16 million values</li>
-        <li>32-bit float — used internally by Audacity for lossless editing</li>
-      </ul>
+      <title>Bit depth</title>
+      <p><term keyref="gl-bit-depth">Bit depth</term> determines how precisely each sample's amplitude is recorded.</p>
+      <simpletable>
+        <sthead>
+          <stentry>Bit depth</stentry>
+          <stentry>Amplitude values</stentry>
+          <stentry>Typical use</stentry>
+        </sthead>
+        <strow>
+          <stentry>16-bit</stentry>
+          <stentry>65,536</stentry>
+          <stentry>CD audio</stentry>
+        </strow>
+        <strow>
+          <stentry>24-bit</stentry>
+          <stentry>over 16 million</stentry>
+          <stentry>professional recording</stentry>
+        </strow>
+        <strow>
+          <stentry>32-bit float</stentry>
+          <stentry>effectively unlimited</stentry>
+          <stentry>editing inside <keyword keyref="product-name"/></stentry>
+        </strow>
+      </simpletable>
     </section>
-
     <section>
-      <title>Key Audio Terms</title>
+      <title>Key audio terms</title>
       <dl>
         <dlentry>
           <dt>Amplitude</dt>
           <dd>The height of a sound wave, corresponding to how loud the sound is.
-          Measured in decibels (dB).</dd>
+          Measured in <abbreviated-form keyref="gl-decibel"/>, a ratio against a reference level:
+          <equation-block>
+            <mathml>
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="block">
+                <m:mrow>
+                  <m:msub><m:mi>L</m:mi><m:mtext>dB</m:mtext></m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>20</m:mn>
+                  <m:msub><m:mi>log</m:mi><m:mn>10</m:mn></m:msub>
+                  <m:mfrac><m:mi>A</m:mi><m:msub><m:mi>A</m:mi><m:mn>0</m:mn></m:msub></m:mfrac>
+                </m:mrow>
+              </m:math>
+            </mathml>
+            <ph>L (dB) = 20 log10 (A / A0)</ph>
+          </equation-block>
+          A level of <equation-inline><mathml><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mtext>dB</m:mtext></m:mrow></m:math></mathml><ph>−6 dB</ph></equation-inline> is half the amplitude of the reference.</dd>
         </dlentry>
         <dlentry>
-          <dt>Clipping</dt>
-          <dd>Distortion that occurs when the audio signal exceeds the maximum amplitude the system can represent.
-          Appears as flat-topped waveforms.</dd>
+          <dt>
+            <term keyref="gl-clipping">Clipping</term>
+          </dt>
+          <dd>Distortion that occurs when the signal exceeds the maximum amplitude the system can represent.
+          It appears as flat-topped waveforms.</dd>
         </dlentry>
         <dlentry>
-          <dt>Mono vs. Stereo</dt>
-          <dd>Mono audio uses a single channel; stereo uses two channels (left and right) to create a sense of spatial width.</dd>
+          <dt>Mono and stereo</dt>
+          <dd>Mono audio uses a single channel.
+          Stereo uses two channels, left and right, to create a sense of width.</dd>
         </dlentry>
       </dl>
+      <lq reftitle="The Audacity Manual">Audio is measured in decibels because the ear hears ratios, not differences.</lq>
+      <p>The same idea in Hebrew, for a right-to-left example: <ph xml:lang="he" dir="rtl">האוזן שומעת יחסים</ph> (the ear hears ratios).</p>
     </section>
   </conbody>
   <related-links>
-    <link href="recording-your-first-track.dita"/>
-    <link href="supported-audio-formats.dita"/>
+    <linklist>
+      <title>Put it into practice</title>
+      <link href="recording-your-first-track.dita"/>
+      <link href="preparing-to-record.dita"/>
+    </linklist>
+    <linkpool>
+      <link href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)" scope="external" format="html">
+        <linktext>Sampling (signal processing)</linktext>
+      </link>
+    </linkpool>
   </related-links>
 </concept>

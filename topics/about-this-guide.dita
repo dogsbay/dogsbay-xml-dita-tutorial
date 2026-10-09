@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+
+<topic id="about-this-guide" xml:lang="en-GB">
+  <title>About this guide</title>
+  <shortdesc>Who wrote this guide, the licence it is published under, and the material it adapts.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <audience type="user"/>
+      <category>front matter</category>
+      <keywords>
+        <keyword>licence</keyword>
+        <keyword>credits</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>This guide is published under the Creative Commons Attribution 4.0 licence.
+    Its topics are adapted from <cite>The Audacity Manual</cite>, copyright the <keyword keyref="product-name"/> Team and the Manual's authors, under the Creative Commons Attribution 3.0 licence.</p>
+    <p>New to <keyword keyref="product-name"/>? Start with <xref keyref="start-here"/>.
+    New to audio? Read <xref keyref="digital-audio"/> first.
+    Here for podcasting? Go straight to <xref keyref="podcast-workflow"/>.
+    Recording nothing but silence? See <xref keyref="silent"/>.</p>
+    <p><keyword keyref="product-name"/> is a registered trademark of Dominic Mazzoni.
+    The <keyword keyref="product-name"/> Team does not endorse this guide and is not affiliated with it.</p>
+  </body>
+</topic>

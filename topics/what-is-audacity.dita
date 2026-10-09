@@ -1,24 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 
-<topic id="what-is-audacity">
+<concept id="what-is-audacity" xml:lang="en-GB">
   <title>What is <keyword keyref="product-name"/>?</title>
-  <shortdesc>This page is about the software and some of the things it does.</shortdesc>
+  <shortdesc><keyword keyref="product-name"/> is a free, open-source audio editor and recorder for Windows, macOS and Linux.</shortdesc>
   <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <copyright>
+      <copyryear year="2026"/>
+      <copyrholder>DogsBay Ltd.</copyrholder>
+    </copyright>
+    <critdates>
+      <created date="2026-01-10"/>
+    </critdates>
     <metadata>
       <audience type="user" experiencelevel="novice"/>
+      <category>concept</category>
+      <keywords>
+        <keyword>Audacity</keyword>
+        <keyword>audio editor</keyword>
+        <keyword>open source</keyword>
+        <indexterm>Audacity<indexterm>overview</indexterm></indexterm>
+        <indexterm>audio editor<index-see>Audacity</index-see></indexterm>
+      </keywords>
     </metadata>
+    <resourceid appname="audacity-help" id="intro"/>
+    <data name="reading-time" value="2 min"/>
   </prolog>
-  <body>
-    <p><keyword keyref="product-name"/> is a free, open-source, cross-platform audio editor and recorder.
-    It runs on Windows, macOS, and Linux, making it one of the most <b>accessible</b> audio editing tools available.</p>
+  <conbody>
+    <p><keyword keyref="product-name"/> records live audio, imports and exports the common audio formats, and edits sound with cut, copy, paste and a library of effects.
+    It is free to download and use, and it runs on Windows, macOS and Linux.</p>
     <p>With <keyword keyref="product-name"/> you can:</p>
     <ul>
-      <li>Record live audio through a microphone or mixer</li>
-      <li>Import and export audio in many formats (WAV, MP3, OGG, FLAC)</li>
-      <li>Edit audio with cut, copy, paste, and delete</li>
-      <li>Apply effects like noise reduction, equalization, and compression</li>
+      <li>Record live audio through a microphone or mixer.</li>
+      <li>Import and export audio in many formats, including WAV, MP3, OGG and FLAC.</li>
+      <li>Edit audio with cut, copy, paste and delete.</li>
+      <li>Apply effects such as noise reduction, equalization and compression.</li>
     </ul>
-    <p>Whether you are recording a podcast, <ph>digitizing</ph> vinyl records, or editing sound effects for a video, <keyword keyref="product-name"/> provides the tools you need — at no cost.</p>
-  </body>
-</topic>
+    <section>
+      <title>Who uses it</title>
+      <p>Podcasters record and clean up their episodes.
+      Archivists digitize vinyl records and cassettes.
+      Video makers edit sound effects and voice-overs.
+      Whatever the project, <keyword keyref="product-name"/> provides the tools at no cost.</p>
+    </section>
+  </conbody>
+  <related-links>
+    <link keyref="install"/>
+    <link href="https://www.audacityteam.org/" scope="external" format="html">
+      <linktext>The <keyword keyref="product-name"/> website</linktext>
+      <desc>Downloads, the manual and the user forum.</desc>
+    </link>
+  </related-links>
+</concept>

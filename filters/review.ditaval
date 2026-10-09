@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Review build: nothing is excluded; changed content is flagged instead. -->
+<val>
+  <style-conflict background-conflict-color="yellow"/>
+  <prop att="audience" val="podcaster" action="flag" backcolor="#e8f4ff">
+    <startflag>
+      <alt-text>[podcaster]</alt-text>
+    </startflag>
+    <endflag>
+      <alt-text>[/podcaster]</alt-text>
+    </endflag>
+  </prop>
+  <revprop val="3.4" action="flag" changebar="solid" color="#b00020">
+    <startflag>
+      <alt-text>[new in 3.4]</alt-text>
+    </startflag>
+  </revprop>
+</val>

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 
-<glossentry id="gl-compression">
-  <glossterm>Dynamic Range Compression</glossterm>
-  <glossdef>An audio process that reduces the difference between the loudest and quietest parts of a recording.
-  Compression makes quiet passages louder and prevents loud passages from peaking.
-  It is widely used in podcasting and broadcast audio.</glossdef>
+<glossentry id="gl-compression" xml:lang="en-GB">
+  <glossterm>Compression</glossterm>
+  <glossdef>Reducing the dynamic range of audio so that quiet parts are louder and loud parts quieter. Not to be confused with file compression such as MP3.</glossdef>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <metadata>
+      <keywords>
+        <keyword>Compression</keyword>
+        <keyword>glossary</keyword>
+        <indexterm>Compression</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </glossentry>

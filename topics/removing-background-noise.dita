@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 
-<task id="removing-background-noise">
-  <title>Removing Background Noise</title>
+<task id="removing-background-noise" xml:lang="en-GB">
+  <title>Removing background noise</title>
+  <shortdesc>Take a noise profile from a quiet section, then apply Noise Reduction to the whole track to remove hum, hiss and fan noise.</shortdesc>
+  <prolog>
+    <author type="creator">The Audacity tutorial team</author>
+    <critdates>
+      <created date="2026-01-20"/>
+    </critdates>
+    <metadata>
+      <audience type="user" experiencelevel="intermediate"/>
+      <category>editing</category>
+      <keywords>
+        <keyword>noise reduction</keyword>
+        <keyword>noise profile</keyword>
+        <keyword>effects</keyword>
+        <indexterm>noise reduction</indexterm>
+        <indexterm>effects<indexterm>Noise Reduction</indexterm></indexterm>
+        <indexterm>hum<index-see>noise reduction</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
-      <p>Background noise — such as hum from electronics, hiss from a microphone, or fan noise — can degrade the quality of your recordings. <keyword keyref="product-name"/> includes a Noise Reduction effect that can dramatically improve audio clarity.</p>
-      <note conref="../shared/common-notes.dita#common-notes/backup-warningX" type="warning">
-        <p/>
-      </note>
-      <note type="tip" audience="podcaster">
-        <p>For podcast recordings, apply noise reduction before compression and equalization.
-        The order of effects matters: clean the audio first, then shape its dynamics and tone.</p>
-      </note>
+      <p>Background noise such as hum from electronics, hiss from a microphone or fan noise degrades a recording.
+      The Noise Reduction effect learns what the noise sounds like from a section that contains nothing else, then removes it everywhere.</p>
+      <note conkeyref="common-notes/backup-warning"/>
+      <note type="tip" audience="podcaster">For podcast recordings, apply noise reduction before compression and equalization.
+      Clean the audio first, then shape its dynamics and tone.</note>
     </context>
     <steps>
       <step>
-        <cmd>Identify a section of audio that contains only the background noise (no speech or desired audio).</cmd>
+        <cmd>Find a section of the recording that contains only the background noise.</cmd>
         <info>
-          <p>Look for a quiet gap at the beginning or end of your recording.
+          <p>Look for a quiet gap at the beginning or end.
           You need at least half a second of noise-only audio.</p>
         </info>
       </step>
@@ -26,50 +42,33 @@
         <cmd/>
       </step>
       <step>
-        <cmd>Choose <menucascade>
-            <uicontrol>Effect</uicontrol>
-            <uicontrol>Noise Reduction</uicontrol>
-          </menucascade>.</cmd>
+        <cmd>Choose <menucascade><uicontrol>Effect</uicontrol><uicontrol>Noise Removal and Repair</uicontrol><uicontrol>Noise Reduction</uicontrol></menucascade>, then click <uicontrol>Get Noise Profile</uicontrol>.</cmd>
+        <stepresult>
+          <p><keyword keyref="product-name"/> captures the character of the noise and closes the dialog.</p>
+        </stepresult>
       </step>
       <step>
-        <cmd>Click <uicontrol>Get Noise Profile</uicontrol>.</cmd>
-        <info>
-          <p>This captures the characteristics of the background noise.
-          The dialog will close automatically.</p>
-        </info>
+        <cmd>Select the whole track with <ph platform="windows linux"><uicontrol>Ctrl+A</uicontrol></ph><ph platform="mac"> <ph platform="windows linux">or, on macOS,</ph> <uicontrol>Cmd+A</uicontrol></ph>.</cmd>
       </step>
       <step>
-        <cmd>Select the entire track by pressing <uicontrol>Ctrl+A</uicontrol> (Windows/Linux) or <uicontrol>Cmd+A</uicontrol> (macOS).</cmd>
-      </step>
-      <step>
-        <cmd>Choose <menucascade>
-            <uicontrol>Effect</uicontrol>
-            <uicontrol>Noise Reduction</uicontrol>
-          </menucascade> again.</cmd>
-      </step>
-      <step>
-        <cmd>Adjust the settings and click <uicontrol>OK</uicontrol>.</cmd>
+        <cmd>Open <uicontrol>Noise Reduction</uicontrol> again, adjust the settings and click <uicontrol>OK</uicontrol>.</cmd>
         <info>
           <p>Recommended starting settings:</p>
           <ul>
-            <li>Noise reduction: 12 dB</li>
-            <li>Sensitivity: 6</li>
-            <li>Frequency smoothing: 3</li>
+            <li conref="../shared/common-notes.dita#common-notes/nr-first" conrefend="../shared/common-notes.dita#common-notes/nr-last"/>
           </ul>
-          <note type="warning">
-            <p>Excessive noise reduction can make voices sound metallic or underwater.
-            Start with moderate settings and increase gradually.
-            Use <uicontrol>Preview</uicontrol> to listen before applying.</p>
-          </note>
+          <note type="caution">Too much noise reduction makes voices sound metallic or underwater.
+          Start moderate, increase gradually, and use <uicontrol>Preview</uicontrol> before applying.</note>
         </info>
-      </step>
-      <step conref="../shared/common-steps.dita#common-steps/save-project">
-        <cmd/>
       </step>
     </steps>
     <result>
-      <p>The background noise has been reduced across your entire track.
-      Play back the audio to verify the result sounds natural.</p>
+      <p>The background noise is reduced across the whole track.
+      Play it back to check that the voice still sounds natural.</p>
     </result>
+    <tasktroubleshooting>
+      <p>If the voice sounds hollow after the effect, undo, then lower <uicontrol>Noise reduction</uicontrol> to 6 dB and try again.
+      If the noise is a constant hum at one pitch, the <uicontrol>Notch Filter</uicontrol> effect removes it with less damage to the voice.</p>
+    </tasktroubleshooting>
   </taskbody>
 </task>

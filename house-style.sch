@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Audacity guide house style as machine-checkable rules.
-  Run across the project with:  dogsbay schematron-project . house-style.sch
+  Run across the project with:  dogsbay-xml project-health . (house rules from .dogsbay/config.xml)
   (or ask the agent: "run our house-style rules and fix the violations").
 
   Design notes:
@@ -55,7 +55,7 @@
 
   <pattern id="note-type-allowed">
     <rule context="note[@type]">
-      <assert test="@type = 'note' or @type = 'tip' or @type = 'important' or @type = 'caution' or @type = 'warning' or @type = 'attention' or @type = 'danger' or @type = 'fastpath' or @type = 'remember' or @type = 'restriction' or @type = 'trouble' or @type = 'other'">note type is not an allowed DITA value.</assert>
+      <assert test="@type = 'note' or @type = 'tip' or @type = 'important' or @type = 'notice' or @type = 'caution' or @type = 'warning' or @type = 'attention' or @type = 'danger' or @type = 'fastpath' or @type = 'remember' or @type = 'restriction' or @type = 'trouble' or @type = 'other'">note type is not an allowed DITA value.</assert>
     </rule>
   </pattern>
 
