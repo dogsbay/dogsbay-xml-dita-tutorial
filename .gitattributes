@@ -1,0 +1,19 @@
+# What a copy of this project should not carry.
+#
+# `git archive` is how the sample project reaches DogsBay XML's File > Open
+# Sample Project, and how GitHub builds the zip of a branch. Both give someone
+# a folder on their own disk with no branches in it, so the files that exist to
+# keep the 27 stage branches in order are noise there at best: rebase-stages.sh
+# and check-all-stages.sh operate on refs the copy does not have, and
+# docs-dev/ documents a ladder of branches rather than the guide.
+#
+# check-stage.sh and check-output-links.py stay: both take a project root or an
+# output directory as an argument and work on any copy, and the README points
+# at them from the Verification section.
+docs-dev/ export-ignore
+scripts/check-all-stages.sh export-ignore
+scripts/rebase-stages.sh export-ignore
+scripts/check-excerpts.sh export-ignore
+scripts/check-excerpts.py export-ignore
+scripts/test_checks.py export-ignore
+.gitattributes export-ignore
