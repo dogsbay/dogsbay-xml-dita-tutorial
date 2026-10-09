@@ -10,7 +10,7 @@ not its documentation.
 
 ## Follow the tutorial
 
-- **Written lessons:** <https://dogsbay.ai/dogsbay-xml-dita-tutorial-docs/>
+- **Written lessons:** <https://dogsbay.ai/dita-tutorial/>
 - **Videos:** one for each stage, linked from its lesson.
 - **Editor:** the lessons use [DogsBay XML](https://github.com/dogsbay/dogsbay-xml),
   which is free and open source. Any XML or text editor works, with DITA-OT to
